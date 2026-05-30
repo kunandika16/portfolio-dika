@@ -9,45 +9,115 @@ const projectsData = {
   "Web & dashboard": [
     {
       id: 1,
-      title: "Streamlining AI app builder experience with cleaner UI",
-      company: "Walturn",
-      year: "2025",
-      description: "Redesigning Vibe Studio to eliminate UI clutter, surface hidden features, streamline upgrades, and make credit information visible-directly addressing user frustrations that were blocking conversions.",
-      tags: ["Redesign", "Web App", "Web Design"],
-      images: [
-        "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?q=80&w=800&auto=format",
-        "https://images.unsplash.com/photo-1498049794561-7780e7231661?q=80&w=800&auto=format",
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format"
-      ],
+      title: "ITMS (Integrated Talent Management System)",
+      company: "Internal",
+      year: "2024",
+      description: "Sistem manajemen bakat yang terintegrasi dengan HR analytics dan fitur pengelolaan karyawan yang modern dan efisien.",
+      tags: ["Dashboard", "HR System", "Web App"],
+      images: ["/images/projects/itms.png"],
       bgColor: "bg-blue-50/60"
     },
     {
       id: 2,
-      title: "Building Amartha 'Funds' design systems",
-      company: "Amartha",
-      year: "2024",
-      description: "Amartha's Funds product faced scalability challenges with inconsistent UI patterns and fragmented components. Learn how we built a robust design system that unified the experience and improved team velocity.",
-      tags: ["Design System", "UI/UX", "Dashboard"],
-      images: [
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format",
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=800&auto=format"
-      ],
+      title: "Explora",
+      company: "Internal",
+      year: "2023",
+      description: "Knowledge Management & Event System untuk memfasilitasi pertukaran pengetahuan dan pengelolaan acara perusahaan.",
+      tags: ["Knowledge Management", "Event System", "Web App"],
+      images: ["/images/projects/explora.png"],
       bgColor: "bg-fuchsia-50/60"
+    },
+    {
+      id: 3,
+      title: "Orlens",
+      company: "Internal",
+      year: "2023",
+      description: "Sistem Organization and Job Management yang membantu perusahaan dalam memetakan struktur organisasi dan pekerjaan.",
+      tags: ["Organization", "Management", "Dashboard"],
+      images: ["/images/projects/orlens.png"],
+      bgColor: "bg-emerald-50/60"
+    },
+    {
+      id: 4,
+      title: "ARMS",
+      company: "Internal",
+      year: "2024",
+      description: "Attrition Retention Management System untuk menganalisis dan mengelola retensi karyawan di perusahaan.",
+      tags: ["Retention", "Analytics", "Dashboard"],
+      images: ["/images/projects/arms.png"],
+      bgColor: "bg-amber-50/60"
+    },
+    {
+      id: 5,
+      title: "SIMAsuransi",
+      company: "Client",
+      year: "2023",
+      description: "Sistem Informasi Management Asuransi untuk mempermudah proses klaim dan pengelolaan polis asuransi.",
+      tags: ["Insurance", "Management", "Web App"],
+      images: ["/images/projects/simasuransi.png"],
+      bgColor: "bg-blue-50/60"
+    },
+    {
+      id: 8,
+      title: "AnselEnamel Calculator Tank",
+      company: "Client",
+      year: "2024",
+      description: "Aplikasi Rekomendasi Hitungan Kebutuhan Tank berdasarkan volume dan luas lahan dengan antarmuka yang user-friendly.",
+      tags: ["Calculator", "Industrial", "Web App"],
+      images: ["/images/projects/anselenamel.png"],
+      bgColor: "bg-slate-50/60"
+    },
+    {
+      id: 9,
+      title: "CGN Logistik",
+      company: "CGN",
+      year: "2024",
+      description: "Sistem Informasi Management Logistik dan Landing Page untuk perusahaan logistik modern.",
+      tags: ["Logistics", "Management", "Landing Page"],
+      images: ["/images/projects/cgn.png"],
+      bgColor: "bg-indigo-50/60"
+    },
+    {
+      id: 10,
+      title: "IdeTravel.com",
+      company: "Client",
+      year: "2024",
+      description: "Landing Page Travel Umroh yang elegan dan informatif untuk menarik calon jemaah.",
+      tags: ["Landing Page", "Travel", "Web Design"],
+      images: ["/images/projects/idetravel.png"],
+      bgColor: "bg-emerald-50/60"
+    },
+    {
+      id: 11,
+      title: "Sistem Informasi Dinas Kelautan dan Perikanan Sulawesi Selatan",
+      company: "Government",
+      year: "2023",
+      description: "Sistem informasi dashboard untuk memantau data kelautan dan perikanan di wilayah Sulawesi Selatan.",
+      tags: ["Government", "Information System", "Dashboard"],
+      images: ["/images/projects/sistem_dinas.png"],
+      bgColor: "bg-cyan-50/60"
     }
   ],
   "Mobile App": [
     {
-      id: 3,
-      title: "NexPay Mobile Banking Experience",
-      company: "NexPay",
-      year: "2023",
-      description: "A complete overhaul of the NexPay mobile app focusing on seamless transactions, better financial visibility, and an intuitive user interface.",
-      tags: ["Mobile App", "Fintech", "UX Research"],
-      images: [
-        "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?q=80&w=800&auto=format",
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=800&auto=format"
-      ],
-      bgColor: "bg-emerald-50/60"
+      id: 6,
+      title: "TemuHobi.com",
+      company: "Startup",
+      year: "2024",
+      description: "Aplikasi yang mempertemukan pegiat hobi dan komunitas dengan fitur sosial yang interaktif dan dinamis.",
+      tags: ["Mobile App", "Community", "Social"],
+      images: ["/images/projects/temuhobi.png"],
+      bgColor: "bg-orange-50/60"
+    },
+    {
+      id: 7,
+      title: "Uangku",
+      company: "Startup",
+      year: "2024",
+      description: "Aplikasi pencatatan keuangan inovatif yang terintegrasi penuh dengan WhatsApp untuk kemudahan input transaksi.",
+      tags: ["Finance", "WhatsApp Integration", "Mobile App"],
+      images: ["/images/projects/uangku.png"],
+      bgColor: "bg-green-50/60"
     }
   ],
   "Brand identity": [

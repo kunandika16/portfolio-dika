@@ -4,9 +4,17 @@ import { ExternalLink, Play, X } from 'lucide-react';
 
 const projectsData = {
   "Software Development": [
-    { id: 1, title: "Fintech Dashboard UI", desc: "A modern financial dashboard with real-time analytics and beautiful charts.", stack: ["React", "Tailwind", "Node.js"], img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format" },
-    { id: 2, title: "E-Commerce Platform", desc: "Full-stack scalable marketplace application with a smooth checkout flow.", stack: ["Next.js", "Prisma", "Stripe"], img: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=800&auto=format" },
-    { id: 3, title: "AI Content Generator", desc: "SaaS platform leveraging advanced LLMs for rapid copywriting.", stack: ["Vue", "FastAPI", "OpenAI"], img: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=800&auto=format" }
+    { id: 1, title: "ITMS", desc: "Integrated Talent Management System with HR analytics.", stack: ["React", "Node.js", "Tailwind"], img: "/images/projects/itms.png" },
+    { id: 2, title: "Explora", desc: "Knowledge Management & Event System.", stack: ["Next.js", "Express", "MongoDB"], img: "/images/projects/explora.png" },
+    { id: 3, title: "Orlens", desc: "Organization and Job Management platform.", stack: ["Vue", "Laravel", "MySQL"], img: "/images/projects/orlens.png" },
+    { id: 4, title: "ARMS", desc: "Attrition Retention Management System.", stack: ["React", "Python", "PostgreSQL"], img: "/images/projects/arms.png" },
+    { id: 5, title: "SIMAsuransi", desc: "Sistem Informasi Management Asuransi.", stack: ["Angular", "Spring Boot", "Oracle"], img: "/images/projects/simasuransi.png" },
+    { id: 6, title: "TemuHobi.com", desc: "Aplikasi Mempertemukan Pegiat Hobi dan Komunitas.", stack: ["React Native", "Firebase", "Node.js"], img: "/images/projects/temuhobi.png" },
+    { id: 7, title: "Uangku", desc: "Aplikasi Pencatatan Keuangan berbasis whatsapp.", stack: ["Node.js", "WhatsApp API", "MongoDB"], img: "/images/projects/uangku.png" },
+    { id: 8, title: "AnselEnamel", desc: "Calculator Tank: Rekomendasi Hitungan Kebutuhan Tank.", stack: ["React", "Tailwind", "Vite"], img: "/images/projects/anselenamel.png" },
+    { id: 9, title: "CGN Logistik", desc: "Sistem Informasi Management Logistik dan Landing Page.", stack: ["Next.js", "Prisma", "PostgreSQL"], img: "/images/projects/cgn.png" },
+    { id: 10, title: "IdeTravel.com", desc: "Landing Page Travel Umroh.", stack: ["React", "Framer Motion", "Tailwind"], img: "/images/projects/idetravel.png" },
+    { id: 11, title: "Sistem Informasi Dinas", desc: "Sistem Informasi Dinas Kelautan dan Perikanan Sulawesi Selatan.", stack: ["PHP", "CodeIgniter", "MySQL"], img: "/images/projects/sistem_dinas.png" }
   ],
   "Graphic Design": [
     { id: 4, title: "Neon Cyberpunk Brand", category: "Branding", img: "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=800&auto=format" },
