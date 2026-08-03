@@ -66,9 +66,9 @@ export default function Footer() {
                 Feel free to reach out for collaboration purposes or just a friendly hello 👋
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href="mailto:sasongkobr@gmail.com" className="flex items-center gap-3 px-5 py-3.5 rounded-lg border border-[#2a2a3a] hover:border-[#3a3a4a] bg-transparent transition-all text-sm font-medium group">
+                <a href="mailto:andikaryan16@gmail.com" className="flex items-center gap-3 px-5 py-3.5 rounded-lg border border-[#2a2a3a] hover:border-[#3a3a4a] bg-transparent transition-all text-sm font-medium group">
                   <Mail size={18} className="text-slate-400 group-hover:text-white transition-colors" />
-                  <span className="text-slate-200">sasongkobr@gmail.com</span>
+                  <span className="text-slate-200">andikaryan16@gmail.com</span>
                 </a>
                 <a href="#" className="flex items-center gap-2 px-6 py-3.5 rounded-lg bg-white text-[#0B0B14] text-sm font-bold hover:bg-slate-200 transition-all shadow-lg">
                   Get in touch <ArrowRight size={18} />

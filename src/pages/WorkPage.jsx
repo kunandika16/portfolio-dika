@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { getTechLogo } from '../data/techLogos';
 
 const categories = ["Web & dashboard", "Mobile App", "Brand identity"];
 
@@ -14,17 +15,19 @@ const projectsData = {
       year: "2024",
       description: "Sistem manajemen bakat yang terintegrasi dengan HR analytics dan fitur pengelolaan karyawan yang modern dan efisien.",
       tags: ["Dashboard", "HR System", "Web App"],
+      stack: ["React", "Node.js", "Tailwind"],
       images: ["/images/projects/itms.png"],
       bgColor: "bg-blue-50/60"
     },
     {
       id: 2,
       title: "Explora",
-      company: "Internal",
+      company: "PT Pos Indonesia",
       year: "2023",
-      description: "Knowledge Management & Event System untuk memfasilitasi pertukaran pengetahuan dan pengelolaan acara perusahaan.",
-      tags: ["Knowledge Management", "Event System", "Web App"],
-      images: ["/images/projects/explora.png"],
+      description: "Knowledge Management & Event Management untuk memfasilitasi pertukaran pengetahuan dan pengelolaan acara perusahaan.",
+      tags: ["Knowledge Management", "Event Management", "Web App"],
+      stack: ["ReactJS", "MaterialUI", "Express", "PostgreSQL"],
+      images: ["/images/projects/explora/layar.png"],
       bgColor: "bg-fuchsia-50/60"
     },
     {
@@ -34,6 +37,7 @@ const projectsData = {
       year: "2023",
       description: "Sistem Organization and Job Management yang membantu perusahaan dalam memetakan struktur organisasi dan pekerjaan.",
       tags: ["Organization", "Management", "Dashboard"],
+      stack: ["Vue", "Laravel", "MySQL"],
       images: ["/images/projects/orlens.png"],
       bgColor: "bg-emerald-50/60"
     },
@@ -44,6 +48,7 @@ const projectsData = {
       year: "2024",
       description: "Attrition Retention Management System untuk menganalisis dan mengelola retensi karyawan di perusahaan.",
       tags: ["Retention", "Analytics", "Dashboard"],
+      stack: ["React", "Python", "PostgreSQL"],
       images: ["/images/projects/arms.png"],
       bgColor: "bg-amber-50/60"
     },
@@ -54,6 +59,7 @@ const projectsData = {
       year: "2023",
       description: "Sistem Informasi Management Asuransi untuk mempermudah proses klaim dan pengelolaan polis asuransi.",
       tags: ["Insurance", "Management", "Web App"],
+      stack: ["Angular", "Spring Boot", "Oracle"],
       images: ["/images/projects/simasuransi.png"],
       bgColor: "bg-blue-50/60"
     },
@@ -64,6 +70,7 @@ const projectsData = {
       year: "2024",
       description: "Aplikasi Rekomendasi Hitungan Kebutuhan Tank berdasarkan volume dan luas lahan dengan antarmuka yang user-friendly.",
       tags: ["Calculator", "Industrial", "Web App"],
+      stack: ["React", "Tailwind", "Vite"],
       images: ["/images/projects/anselenamel.png"],
       bgColor: "bg-slate-50/60"
     },
@@ -74,6 +81,7 @@ const projectsData = {
       year: "2024",
       description: "Sistem Informasi Management Logistik dan Landing Page untuk perusahaan logistik modern.",
       tags: ["Logistics", "Management", "Landing Page"],
+      stack: ["Next.js", "Prisma", "PostgreSQL"],
       images: ["/images/projects/cgn.png"],
       bgColor: "bg-indigo-50/60"
     },
@@ -84,6 +92,7 @@ const projectsData = {
       year: "2024",
       description: "Landing Page Travel Umroh yang elegan dan informatif untuk menarik calon jemaah.",
       tags: ["Landing Page", "Travel", "Web Design"],
+      stack: ["React", "Framer Motion", "Tailwind"],
       images: ["/images/projects/idetravel.png"],
       bgColor: "bg-emerald-50/60"
     },
@@ -94,6 +103,7 @@ const projectsData = {
       year: "2023",
       description: "Sistem informasi dashboard untuk memantau data kelautan dan perikanan di wilayah Sulawesi Selatan.",
       tags: ["Government", "Information System", "Dashboard"],
+      stack: ["PHP", "CodeIgniter", "MySQL"],
       images: ["/images/projects/sistem_dinas.png"],
       bgColor: "bg-cyan-50/60"
     }
@@ -106,6 +116,7 @@ const projectsData = {
       year: "2024",
       description: "Aplikasi yang mempertemukan pegiat hobi dan komunitas dengan fitur sosial yang interaktif dan dinamis.",
       tags: ["Mobile App", "Community", "Social"],
+      stack: ["React Native", "Firebase", "Node.js"],
       images: ["/images/projects/temuhobi.png"],
       bgColor: "bg-orange-50/60"
     },
@@ -116,6 +127,7 @@ const projectsData = {
       year: "2024",
       description: "Aplikasi pencatatan keuangan inovatif yang terintegrasi penuh dengan WhatsApp untuk kemudahan input transaksi.",
       tags: ["Finance", "WhatsApp Integration", "Mobile App"],
+      stack: ["Node.js", "WhatsApp API", "MongoDB"],
       images: ["/images/projects/uangku.png"],
       bgColor: "bg-green-50/60"
     }
@@ -247,6 +259,20 @@ export default function WorkPage() {
                       </span>
                     ))}
                   </div>
+
+                  {project.stack && (
+                    <div className="flex flex-wrap gap-2.5 mb-14 -mt-6">
+                      {project.stack.map(tech => {
+                        const logo = getTechLogo(tech);
+                        return (
+                          <span key={tech} className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white border border-slate-200/80 text-slate-600 text-[13px] font-medium rounded-full shadow-sm">
+                            {logo && <img src={logo.url} alt={tech} className="w-3.5 h-3.5" loading="lazy" />}
+                            {tech}
+                          </span>
+                        );
+                      })}
+                    </div>
+                  )}
                   
                   <Link to={`/article/${project.id}`} className="mt-auto text-slate-700 font-bold text-[15px] flex items-center gap-2 hover:gap-3 hover:text-indigo-600 transition-all w-max group">
                     Read case study <ArrowRight size={16} className="text-slate-400 group-hover:text-indigo-600 transition-colors" />

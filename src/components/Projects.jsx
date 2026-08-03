@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Play, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { getTechLogo } from '../data/techLogos';
 
 const projectsData = {
   "Software Development": [
     { id: 1, title: "ITMS", desc: "Integrated Talent Management System with HR analytics.", stack: ["React", "Node.js", "Tailwind"], img: "/images/projects/itms.png" },
-    { id: 2, title: "Explora", desc: "Knowledge Management & Event System.", stack: ["Next.js", "Express", "MongoDB"], img: "/images/projects/explora.png" },
+    { id: 2, title: "Explora", desc: "Knowledge Management & Event Management.", stack: ["ReactJS", "MaterialUI", "Express", "PostgreSQL"], img: "/images/projects/explora/header.png" },
     { id: 3, title: "Orlens", desc: "Organization and Job Management platform.", stack: ["Vue", "Laravel", "MySQL"], img: "/images/projects/orlens.png" },
     { id: 4, title: "ARMS", desc: "Attrition Retention Management System.", stack: ["React", "Python", "PostgreSQL"], img: "/images/projects/arms.png" },
     { id: 5, title: "SIMAsuransi", desc: "Sistem Informasi Management Asuransi.", stack: ["Angular", "Spring Boot", "Oracle"], img: "/images/projects/simasuransi.png" },
@@ -131,30 +133,38 @@ export default function Projects() {
 function ProjectCard({ project, category, onVideoClick }) {
   if (category === "Software Development") {
     return (
-      <motion.div 
-        whileHover={{ y: -8 }}
-        className="bg-white rounded-[20px] p-4 border border-slate-100 shadow-xl shadow-slate-200/40 group overflow-hidden flex flex-col h-full"
-      >
-        <div className="w-full h-48 rounded-xl overflow-hidden relative mb-5 border border-slate-100 group-hover:shadow-md transition-all">
-           <img src={project.img} alt={project.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
-        </div>
-        <div className="px-1 flex flex-col flex-grow">
-           <h3 className="font-bold text-lg mb-2 text-slate-900 group-hover:text-primary transition-colors">{project.title}</h3>
-           <p className="text-sm text-slate-500 mb-5 line-clamp-2">{project.desc}</p>
-           
-           <div className="flex flex-wrap gap-2 mb-6 mt-auto">
-             {project.stack.map(s => (
-               <span key={s} className="px-2.5 py-1 text-[10px] font-semibold tracking-wide uppercase bg-blue-50/50 text-blue-600 rounded-md border border-blue-100/50">{s}</span>
-             ))}
-           </div>
-           
-           <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
-             <button className="text-sm font-semibold text-primary flex items-center gap-1 hover:gap-2 transition-all">
-               View Project <ExternalLink size={14} />
-             </button>
-           </div>
-        </div>
-      </motion.div>
+      <Link to={`/article/${project.id}`} className="block h-full">
+        <motion.div 
+          whileHover={{ y: -8 }}
+          className="bg-white rounded-[20px] p-4 border border-slate-100 shadow-xl shadow-slate-200/40 group overflow-hidden flex flex-col h-full"
+        >
+          <div className="w-full h-48 rounded-xl overflow-hidden relative mb-5 border border-slate-100 group-hover:shadow-md transition-all">
+             <img src={project.img} alt={project.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+          </div>
+          <div className="px-1 flex flex-col flex-grow">
+             <h3 className="font-bold text-lg mb-2 text-slate-900 group-hover:text-primary transition-colors">{project.title}</h3>
+             <p className="text-sm text-slate-500 mb-5 line-clamp-2">{project.desc}</p>
+             
+             <div className="flex flex-wrap gap-2 mb-6 mt-auto">
+               {project.stack.map(s => {
+                 const logo = getTechLogo(s);
+                 return (
+                   <span key={s} className="inline-flex items-center gap-1.5 px-2.5 py-1 text-[10px] font-semibold tracking-wide uppercase bg-blue-50/50 text-blue-600 rounded-md border border-blue-100/50">
+                     {logo && <img src={logo.url} alt={s} className="w-3 h-3" loading="lazy" />}
+                     {s}
+                   </span>
+                 );
+               })}
+             </div>
+             
+             <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
+               <span className="text-sm font-semibold text-primary flex items-center gap-1 hover:gap-2 transition-all">
+                 View Project <ExternalLink size={14} />
+               </span>
+             </div>
+          </div>
+        </motion.div>
+      </Link>
     )
   }
 
