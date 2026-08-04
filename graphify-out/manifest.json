@@ -1,0 +1,122 @@
+{
+  ".commandcode/settings.json": {
+    "mtime": 1785826913.025214,
+    "ast_hash": "a9b13f0c49eff69b99e82078d8a92787",
+    "semantic_hash": "a9b13f0c49eff69b99e82078d8a92787"
+  },
+  "craco.config.js": {
+    "mtime": 1779106317.5263233,
+    "ast_hash": "429c8019b6fc575d66cc74ce2dffe1ea",
+    "semantic_hash": "429c8019b6fc575d66cc74ce2dffe1ea"
+  },
+  "jsconfig.json": {
+    "mtime": 1779105592.4461968,
+    "ast_hash": "ab2698309edf6fb0e69b424ddf30fdd5",
+    "semantic_hash": "ab2698309edf6fb0e69b424ddf30fdd5"
+  },
+  "package.json": {
+    "mtime": 1779106986.6200032,
+    "ast_hash": "32b5381f6b37d6c1726aad59fa3e1ca8",
+    "semantic_hash": "32b5381f6b37d6c1726aad59fa3e1ca8"
+  },
+  "plugins/health-check/health-endpoints.js": {
+    "mtime": 1779105592.4461968,
+    "ast_hash": "704dd5d09710cac09df7a4a6d9a08c21",
+    "semantic_hash": "704dd5d09710cac09df7a4a6d9a08c21"
+  },
+  "plugins/health-check/webpack-health-plugin.js": {
+    "mtime": 1779105592.4612033,
+    "ast_hash": "0f312267003a7aaef51f9257bdd55ee5",
+    "semantic_hash": "0f312267003a7aaef51f9257bdd55ee5"
+  },
+  "postcss.config.js": {
+    "mtime": 1779105592.4612033,
+    "ast_hash": "762a94d1749c8e97eebf3f94102e8eb2",
+    "semantic_hash": "762a94d1749c8e97eebf3f94102e8eb2"
+  },
+  "src/App.jsx": {
+    "mtime": 1785815693.3756382,
+    "ast_hash": "c1fd053736060c339b36dfbc7522f53a",
+    "semantic_hash": "c1fd053736060c339b36dfbc7522f53a"
+  },
+  "src/components/Footer.jsx": {
+    "mtime": 1785780986.7081757,
+    "ast_hash": "127a94a14d97d61901cf07cf6ba3ad9c",
+    "semantic_hash": "127a94a14d97d61901cf07cf6ba3ad9c"
+  },
+  "src/components/Header.jsx": {
+    "mtime": 1785815704.6666667,
+    "ast_hash": "7de798bb91c45e4a9dc72140b86c61b7",
+    "semantic_hash": "7de798bb91c45e4a9dc72140b86c61b7"
+  },
+  "src/components/Hero.jsx": {
+    "mtime": 1785815736.3332703,
+    "ast_hash": "4818501d2828eccb0377e49548ec120a",
+    "semantic_hash": "4818501d2828eccb0377e49548ec120a"
+  },
+  "src/components/Projects.jsx": {
+    "mtime": 1785815754.2431772,
+    "ast_hash": "38cee8c9a0e70b13b409863e299989a2",
+    "semantic_hash": "38cee8c9a0e70b13b409863e299989a2"
+  },
+  "src/components/Stats.jsx": {
+    "mtime": 1785815762.2991538,
+    "ast_hash": "432684d105bcb594ed88999eacbb4ff9",
+    "semantic_hash": "432684d105bcb594ed88999eacbb4ff9"
+  },
+  "src/components/ui/button.jsx": {
+    "mtime": 1779105592.4622278,
+    "ast_hash": "48076d04888091ed3b4d4da53ea28f56",
+    "semantic_hash": "48076d04888091ed3b4d4da53ea28f56"
+  },
+  "src/data/caseStudies.js": {
+    "mtime": 1785781637.5444539,
+    "ast_hash": "278ecb96372b5d0077810ee5191ba2f8",
+    "semantic_hash": "278ecb96372b5d0077810ee5191ba2f8"
+  },
+  "src/data/techLogos.js": {
+    "mtime": 1785781833.252367,
+    "ast_hash": "a53dab829032b0dbbdb15ae63007986a",
+    "semantic_hash": "a53dab829032b0dbbdb15ae63007986a"
+  },
+  "src/index.js": {
+    "mtime": 1779105592.4622278,
+    "ast_hash": "e78967d93dd135557181306e6eb42632",
+    "semantic_hash": "e78967d93dd135557181306e6eb42632"
+  },
+  "src/lib/ThemeContext.jsx": {
+    "mtime": 1785815671.8079987,
+    "ast_hash": "1d2994776ab9d57946d438b687399c8c",
+    "semantic_hash": "1d2994776ab9d57946d438b687399c8c"
+  },
+  "src/lib/utils.js": {
+    "mtime": 1779105592.4778974,
+    "ast_hash": "1bc4c7c3c7e275ce4e1f56b595ef5a4e",
+    "semantic_hash": "1bc4c7c3c7e275ce4e1f56b595ef5a4e"
+  },
+  "src/pages/AboutPage.jsx": {
+    "mtime": 1785815795.3357062,
+    "ast_hash": "4776164260b309bbdd09459dae93f309",
+    "semantic_hash": "4776164260b309bbdd09459dae93f309"
+  },
+  "src/pages/ArticlePage.jsx": {
+    "mtime": 1785818601.8530757,
+    "ast_hash": "0c46c2f7660bbed934ce50d69aa6a383",
+    "semantic_hash": "0c46c2f7660bbed934ce50d69aa6a383"
+  },
+  "src/pages/Home.jsx": {
+    "mtime": 1779105592.4778974,
+    "ast_hash": "2a53ecf75203dc0ca746f3d2c5b9cf71",
+    "semantic_hash": "2a53ecf75203dc0ca746f3d2c5b9cf71"
+  },
+  "src/pages/WorkPage.jsx": {
+    "mtime": 1785815822.894467,
+    "ast_hash": "0ef9945b9c0516625e075d5c9c2c9daf",
+    "semantic_hash": "0ef9945b9c0516625e075d5c9c2c9daf"
+  },
+  "tailwind.config.js": {
+    "mtime": 1779108308.9117253,
+    "ast_hash": "651e0572eef765cc34328a5d7526e740",
+    "semantic_hash": "651e0572eef765cc34328a5d7526e740"
+  }
+}

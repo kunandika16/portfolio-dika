@@ -156,7 +156,7 @@ function ImageSlider({ images, bgColor }) {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -20 }}
           transition={{ duration: 0.3 }}
-          className="w-full h-full object-cover rounded-2xl shadow-xl border border-slate-200/50"
+          className="w-full h-full object-cover rounded-2xl shadow-xl border border-slate-200/50 dark:border-slate-700/50"
           alt="Project mockup"
           loading="lazy"
         />
@@ -165,13 +165,13 @@ function ImageSlider({ images, bgColor }) {
       {/* Navigation Arrows */}
       <button 
         onClick={prevSlide}
-        className="absolute left-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/40 hover:bg-white/70 text-slate-800 backdrop-blur-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all shadow-sm z-10"
+        className="absolute left-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/40 hover:bg-white/70 text-slate-800 dark:bg-white/10 dark:hover:bg-white/25 dark:text-white backdrop-blur-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all shadow-sm z-10"
       >
         <ChevronLeft size={20} />
       </button>
       <button 
         onClick={nextSlide}
-        className="absolute right-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/40 hover:bg-white/70 text-slate-800 backdrop-blur-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all shadow-sm z-10"
+        className="absolute right-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/40 hover:bg-white/70 text-slate-800 dark:bg-white/10 dark:hover:bg-white/25 dark:text-white backdrop-blur-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all shadow-sm z-10"
       >
         <ChevronRight size={20} />
       </button>
@@ -179,7 +179,7 @@ function ImageSlider({ images, bgColor }) {
       {/* Dots */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10">
         {images.map((_, idx) => (
-          <div key={idx} className={`h-2 rounded-full transition-all ${idx === currentIndex ? 'bg-slate-800 w-5' : 'bg-slate-800/30 w-2 hover:bg-slate-800/50'}`} />
+          <div key={idx} className={`h-2 rounded-full transition-all ${idx === currentIndex ? 'bg-slate-800 dark:bg-white w-5' : 'bg-slate-800/30 dark:bg-white/30 w-2 hover:bg-slate-800/50 dark:hover:bg-white/50'}`} />
         ))}
       </div>
     </div>
@@ -190,16 +190,16 @@ export default function WorkPage() {
   const [activeTab, setActiveTab] = useState(categories[0]);
 
   return (
-    <div className="pt-36 pb-24 max-w-[1400px] mx-auto px-6 lg:px-12 min-h-screen bg-white rounded-[40px] md:rounded-[60px] m-4">
-      <h1 className="text-4xl md:text-[44px] font-bold text-slate-900 mb-14 tracking-tight">Explore my latest works</h1>
+    <div className="pt-36 pb-24 max-w-[1400px] mx-auto px-6 lg:px-12 min-h-screen bg-white dark:bg-slate-900 rounded-[40px] md:rounded-[60px] m-4">
+      <h1 className="text-4xl md:text-[44px] font-bold text-slate-900 dark:text-white mb-14 tracking-tight">Explore my latest works</h1>
       
       {/* Tabs */}
-      <div className="flex gap-10 border-b border-slate-200/60 mb-16 relative">
+      <div className="flex gap-10 border-b border-slate-200/60 dark:border-slate-700 mb-16 relative">
         {categories.map(cat => (
           <button
             key={cat}
             onClick={() => setActiveTab(cat)}
-            className={`pb-5 relative text-[15px] font-semibold transition-colors ${activeTab === cat ? 'text-slate-900' : 'text-slate-400 hover:text-slate-600'}`}
+            className={`pb-5 relative text-[15px] font-semibold transition-colors ${activeTab === cat ? 'text-slate-900 dark:text-white' : 'text-slate-400 hover:text-slate-600 dark:hover:text-slate-200'}`}
           >
             {activeTab === cat && (
               <motion.div 
@@ -228,19 +228,19 @@ export default function WorkPage() {
               <div key={project.id} className="flex flex-col lg:flex-row gap-8">
                 
                 {/* Left Content */}
-                <div className="w-full lg:w-[38%] bg-[#f8fafc] rounded-[32px] p-10 lg:p-12 flex flex-col border border-slate-100 shadow-sm">
-                  <h2 className="text-2xl md:text-[28px] leading-[1.3] font-bold text-slate-900 mb-5">{project.title}</h2>
-                  <div className="text-slate-500 text-[15px] font-medium mb-8">
-                    {project.company} <span className="mx-2 text-slate-300">•</span> {project.year}
+                <div className="w-full lg:w-[38%] bg-[#f8fafc] dark:bg-slate-800/80 rounded-[32px] p-10 lg:p-12 flex flex-col border border-slate-100 dark:border-slate-700 shadow-sm">
+                  <h2 className="text-2xl md:text-[28px] leading-[1.3] font-bold text-slate-900 dark:text-white mb-5">{project.title}</h2>
+                  <div className="text-slate-500 dark:text-slate-400 text-[15px] font-medium mb-8">
+                    {project.company} <span className="mx-2 text-slate-300 dark:text-slate-600">•</span> {project.year}
                   </div>
                   
-                  <p className="text-slate-500 leading-relaxed mb-10 text-[15px]">
+                  <p className="text-slate-500 dark:text-slate-400 leading-relaxed mb-10 text-[15px]">
                     {project.description}
                   </p>
                   
                   <div className="flex flex-wrap gap-2.5 mb-14">
                     {project.tags.map(tag => (
-                      <span key={tag} className="px-3.5 py-1.5 bg-white border border-slate-200/80 text-slate-500 text-[13px] font-medium rounded-full shadow-sm">
+                      <span key={tag} className="px-3.5 py-1.5 bg-white dark:bg-slate-700/60 border border-slate-200/80 dark:border-slate-600/80 text-slate-500 dark:text-slate-300 text-[13px] font-medium rounded-full shadow-sm">
                         {tag}
                       </span>
                     ))}
@@ -251,7 +251,7 @@ export default function WorkPage() {
                       {project.stack.map(tech => {
                         const logo = getTechLogo(tech);
                         return (
-                          <span key={tech} className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white border border-slate-200/80 text-slate-600 text-[13px] font-medium rounded-full shadow-sm">
+                          <span key={tech} className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white dark:bg-slate-700/60 border border-slate-200/80 dark:border-slate-600/80 text-slate-600 dark:text-slate-300 text-[13px] font-medium rounded-full shadow-sm">
                             {logo && <img src={logo.url} alt={tech} className="w-3.5 h-3.5" loading="lazy" />}
                             {tech}
                           </span>
@@ -260,8 +260,8 @@ export default function WorkPage() {
                     </div>
                   )}
                   
-                  <Link to={`/article/${project.id}`} className="mt-auto text-slate-700 font-bold text-[15px] flex items-center gap-2 hover:gap-3 hover:text-indigo-600 transition-all w-max group">
-                    Read case study <ArrowRight size={16} className="text-slate-400 group-hover:text-indigo-600 transition-colors" />
+                  <Link to={`/article/${project.id}`} className="mt-auto text-slate-700 dark:text-slate-200 font-bold text-[15px] flex items-center gap-2 hover:gap-3 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all w-max group">
+                    Read case study <ArrowRight size={16} className="text-slate-400 dark:text-slate-500 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors" />
                   </Link>
                 </div>
 
@@ -274,7 +274,7 @@ export default function WorkPage() {
             ))}
             
             {projectsData[activeTab].length === 0 && (
-              <div className="text-center py-20 text-slate-500">
+              <div className="text-center py-20 text-slate-500 dark:text-slate-400">
                 More projects coming soon.
               </div>
             )}

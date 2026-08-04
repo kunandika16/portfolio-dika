@@ -50,14 +50,14 @@ export default function Hero() {
           <div className="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center text-[11px] text-white font-bold shadow-sm">
             AR
           </div>
-          <span className="text-[13px] font-semibold text-slate-700 tracking-wide">Andika Rian Ansari</span>
+          <span className="text-[13px] font-semibold text-slate-700 dark:text-slate-200 tracking-wide">Andika Rian Ansari</span>
           <Sparkles size={14} className="text-indigo-400 opacity-70" />
         </motion.div>
 
         {/* Headline — Sora display font */}
         <motion.h1
           variants={fadeUp}
-          className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-[72px] font-bold tracking-tight text-slate-900 mb-6 leading-[1.08] max-w-4xl mx-auto"
+          className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-[72px] font-bold tracking-tight text-slate-900 dark:text-white mb-6 leading-[1.08] max-w-4xl mx-auto"
         >
           Building{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-violet-500 to-sky-500 text-shimmer">
@@ -70,7 +70,7 @@ export default function Hero() {
         {/* Subheading */}
         <motion.p
           variants={fadeUp}
-          className="font-sans text-base md:text-lg text-slate-500 mb-10 max-w-2xl mx-auto leading-relaxed"
+          className="font-sans text-base md:text-lg text-slate-500 dark:text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed"
         >
           A software developer focused on building clean, scalable applications — from web dashboards to mobile experiences that solve real problems.
         </motion.p>
@@ -88,7 +88,7 @@ export default function Hero() {
           </Button>
           <Button
             size="lg"
-            className="rounded-full px-8 h-[52px] text-[15px] font-semibold glass-strong text-slate-700 hover:bg-white/80 transition-all duration-300 hover:-translate-y-1 shadow-[0_12px_36px_-12px_rgba(15,23,42,0.1)] hover:shadow-[0_16px_40px_-12px_rgba(15,23,42,0.15)]"
+            className="rounded-full px-8 h-[52px] text-[15px] font-semibold glass-strong text-slate-700 dark:text-slate-200 hover:bg-white/80 dark:hover:bg-slate-800/80 transition-all duration-300 hover:-translate-y-1 shadow-[0_12px_36px_-12px_rgba(15,23,42,0.1)] hover:shadow-[0_16px_40px_-12px_rgba(15,23,42,0.15)]"
           >
             Get In Touch
           </Button>
@@ -108,8 +108,8 @@ export default function Hero() {
               key={i}
               className="glass-subtle rounded-full px-5 py-2.5 flex items-center gap-2 text-[13px]"
             >
-              <span className="font-semibold text-slate-800">{stat.label}</span>
-              <span className="text-slate-400/70 font-medium">{stat.value}</span>
+              <span className="font-semibold text-slate-800 dark:text-slate-100">{stat.label}</span>
+              <span className="text-slate-400/70 dark:text-slate-400 font-medium">{stat.value}</span>
             </div>
           ))}
         </motion.div>

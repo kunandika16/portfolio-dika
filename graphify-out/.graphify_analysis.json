@@ -1,0 +1,292 @@
+{
+  "communities": {
+    "0": [
+      "class_variance_authority",
+      "clsx",
+      "framer_motion",
+      "lucide_react",
+      "package_dependencies",
+      "package_dependencies_class_variance_authority",
+      "package_dependencies_clsx",
+      "package_dependencies_framer_motion",
+      "package_dependencies_lucide_react",
+      "package_dependencies_radix_ui_react_slot",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_dependencies_react_router_dom",
+      "package_dependencies_react_scripts",
+      "package_dependencies_tailwind_merge",
+      "package_dependencies_tailwindcss_animate",
+      "radix_ui_react_slot",
+      "react",
+      "react_dom",
+      "react_router_dom",
+      "react_scripts",
+      "tailwind_merge",
+      "tailwindcss_animate"
+    ],
+    "1": [
+      "src_app",
+      "src_app_aboutpage",
+      "src_app_app",
+      "src_app_appcontent",
+      "src_app_articlepage",
+      "src_app_pageloader",
+      "src_app_scrolltotop",
+      "src_app_workpage",
+      "src_components_footer",
+      "src_components_footer_dribbble",
+      "src_components_footer_footer",
+      "src_components_footer_instagram",
+      "src_components_footer_linkedin",
+      "src_components_footer_twitter",
+      "src_components_header",
+      "src_components_header_header",
+      "src_index",
+      "src_index_root",
+      "src_lib_themecontext",
+      "src_lib_themecontext_themecontext",
+      "src_lib_themecontext_themeprovider",
+      "src_lib_themecontext_usetheme"
+    ],
+    "2": [
+      "autoprefixer",
+      "babel_plugin_proposal_private_property_in_object",
+      "craco_craco",
+      "eslint",
+      "eslint_js",
+      "eslint_plugin_react_hooks",
+      "globals",
+      "package_devdependencies",
+      "package_devdependencies_autoprefixer",
+      "package_devdependencies_babel_plugin_proposal_private_property_in_object",
+      "package_devdependencies_craco_craco",
+      "package_devdependencies_eslint",
+      "package_devdependencies_eslint_js",
+      "package_devdependencies_eslint_plugin_react_hooks",
+      "package_devdependencies_globals",
+      "package_devdependencies_postcss",
+      "package_devdependencies_tailwindcss",
+      "postcss",
+      "tailwindcss"
+    ],
+    "3": [
+      "src_components_projects",
+      "src_components_projects_projectcard",
+      "src_components_projects_projects",
+      "src_components_projects_projectsdata",
+      "src_data_casestudies",
+      "src_data_casestudies_casestudies",
+      "src_data_techlogos",
+      "src_data_techlogos_gettechlogo",
+      "src_data_techlogos_techlogos",
+      "src_pages_articlepage",
+      "src_pages_articlepage_articlepage",
+      "src_pages_workpage",
+      "src_pages_workpage_categories",
+      "src_pages_workpage_imageslider",
+      "src_pages_workpage_projectsdata",
+      "src_pages_workpage_workpage"
+    ],
+    "4": [
+      "src_components_hero",
+      "src_components_hero_fadeup",
+      "src_components_hero_hero",
+      "src_components_hero_sliderimages",
+      "src_components_hero_stagger",
+      "src_components_stats",
+      "src_components_stats_stats",
+      "src_components_ui_button",
+      "src_components_ui_button_button",
+      "src_components_ui_button_buttonvariants",
+      "src_lib_utils",
+      "src_lib_utils_cn",
+      "src_pages_home",
+      "src_pages_home_home"
+    ],
+    "5": [
+      "package",
+      "package_name",
+      "package_packagemanager",
+      "package_private",
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_start",
+      "package_scripts_test",
+      "package_version"
+    ],
+    "6": [
+      "package_browserslist",
+      "package_browserslist_development",
+      "package_browserslist_production",
+      "ref_0_2",
+      "ref_last_1_chrome_version",
+      "ref_last_1_firefox_version",
+      "ref_last_1_safari_version",
+      "ref_not_dead",
+      "ref_not_op_mini_all"
+    ],
+    "7": [
+      "plugins_health_check_webpack_health_plugin",
+      "plugins_health_check_webpack_health_plugin_webpackhealthplugin",
+      "plugins_health_check_webpack_health_plugin_webpackhealthplugin_apply",
+      "plugins_health_check_webpack_health_plugin_webpackhealthplugin_constructor",
+      "plugins_health_check_webpack_health_plugin_webpackhealthplugin_getsimplestatus",
+      "plugins_health_check_webpack_health_plugin_webpackhealthplugin_getstatus",
+      "plugins_health_check_webpack_health_plugin_webpackhealthplugin_reset"
+    ],
+    "8": [
+      "jsconfig",
+      "jsconfig_compileroptions",
+      "jsconfig_compileroptions_baseurl",
+      "jsconfig_compileroptions_paths",
+      "jsconfig_include",
+      "ref_src"
+    ],
+    "9": [
+      "plugins_health_check_health_endpoints",
+      "plugins_health_check_health_endpoints_formatbytes",
+      "plugins_health_check_health_endpoints_formatduration",
+      "plugins_health_check_health_endpoints_os",
+      "plugins_health_check_health_endpoints_server_start_time",
+      "plugins_health_check_health_endpoints_setuphealthendpoints"
+    ],
+    "10": [
+      "src_pages_aboutpage",
+      "src_pages_aboutpage_aboutpage",
+      "src_pages_aboutpage_achievements",
+      "src_pages_aboutpage_experiences",
+      "src_pages_aboutpage_skills"
+    ],
+    "11": [
+      "craco_config",
+      "craco_config_config",
+      "craco_config_path",
+      "craco_config_webpackconfig"
+    ],
+    "12": [
+      "postcss_config"
+    ],
+    "13": [
+      "tailwind_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.08695652173913043,
+    "1": 0.12121212121212122,
+    "2": 0.10526315789473684,
+    "3": 0.18333333333333332,
+    "4": 0.18681318681318682,
+    "5": 0.2222222222222222,
+    "6": 0.2222222222222222,
+    "7": 0.2857142857142857,
+    "8": 0.3333333333333333,
+    "9": 0.4666666666666667,
+    "10": 0.4,
+    "11": 0.5,
+    "12": 1.0,
+    "13": 1.0
+  },
+  "gods": [
+    {
+      "id": "src_data_techlogos_gettechlogo",
+      "label": "getTechLogo()",
+      "degree": 7
+    },
+    {
+      "id": "plugins_health_check_webpack_health_plugin_webpackhealthplugin",
+      "label": "WebpackHealthPlugin",
+      "degree": 6
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 4
+    },
+    {
+      "id": "package_browserslist_production",
+      "label": "production",
+      "degree": 4
+    },
+    {
+      "id": "package_browserslist_development",
+      "label": "development",
+      "degree": 4
+    },
+    {
+      "id": "jsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 3
+    },
+    {
+      "id": "package_browserslist",
+      "label": "browserslist",
+      "degree": 3
+    },
+    {
+      "id": "plugins_health_check_health_endpoints_setuphealthendpoints",
+      "label": "setupHealthEndpoints()",
+      "degree": 3
+    },
+    {
+      "id": "src_components_header_header",
+      "label": "Header()",
+      "degree": 3
+    },
+    {
+      "id": "src_components_ui_button_button",
+      "label": "Button",
+      "degree": 3
+    }
+  ],
+  "surprises": [
+    {
+      "source": "ProjectCard()",
+      "target": "getTechLogo()",
+      "source_files": [
+        "src/components/Projects.jsx",
+        "src/data/techLogos.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "peripheral node `ProjectCard()` unexpectedly reaches hub `getTechLogo()`"
+    },
+    {
+      "source": "ArticlePage()",
+      "target": "getTechLogo()",
+      "source_files": [
+        "src/pages/ArticlePage.jsx",
+        "src/data/techLogos.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "peripheral node `ArticlePage()` unexpectedly reaches hub `getTechLogo()`"
+    },
+    {
+      "source": "WorkPage()",
+      "target": "getTechLogo()",
+      "source_files": [
+        "src/pages/WorkPage.jsx",
+        "src/data/techLogos.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "peripheral node `WorkPage()` unexpectedly reaches hub `getTechLogo()`"
+    },
+    {
+      "source": "Header()",
+      "target": "useTheme()",
+      "source_files": [
+        "src/components/Header.jsx",
+        "src/lib/ThemeContext.jsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "cross-file semantic connection"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

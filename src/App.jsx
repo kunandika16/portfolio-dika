@@ -3,6 +3,7 @@ import { useEffect, lazy, Suspense } from 'react';
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './pages/Home'
+import { ThemeProvider } from './lib/ThemeContext'
 
 const WorkPage = lazy(() => import('./pages/WorkPage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
@@ -26,7 +27,7 @@ function PageLoader() {
 
 function AppContent() {
   return (
-    <div className="bg-[#0B0B14] min-h-screen font-sans text-foreground selection:bg-indigo-500/20 selection:text-indigo-600 overflow-x-hidden">
+    <div className="bg-[#0B0B14] dark:bg-[#0B0B14] min-h-screen font-sans text-foreground selection:bg-indigo-500/20 selection:text-indigo-600 overflow-x-hidden">
        <Header />
        <div className="relative z-10 drop-shadow-[0_20px_40px_rgba(0,0,0,0.5)]">
          <main className="bg-background bg-grid pb-24 rounded-b-[40px] md:rounded-b-[60px] overflow-hidden min-h-screen">
@@ -47,9 +48,11 @@ function AppContent() {
 
 export default function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      <AppContent />
-    </Router>
+    <ThemeProvider>
+      <Router>
+        <ScrollToTop />
+        <AppContent />
+      </Router>
+    </ThemeProvider>
   )
 }

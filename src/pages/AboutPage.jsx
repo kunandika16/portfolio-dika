@@ -111,7 +111,7 @@ export default function AboutPage() {
             
             {/* Profile Photo */}
             <motion.div variants={itemVariants} className="w-full lg:w-[40%] max-w-[400px]">
-              <div className="relative rounded-[32px] overflow-hidden p-2 bg-white border border-slate-200 shadow-xl shadow-slate-200/50">
+              <div className="relative rounded-[32px] overflow-hidden p-2 bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 shadow-xl shadow-slate-200/50 dark:shadow-black/30">
                 <div className="absolute inset-0 bg-gradient-to-tr from-blue-100 to-indigo-50 opacity-50"></div>
                 <img 
                   src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=600&auto=format" 
@@ -121,29 +121,29 @@ export default function AboutPage() {
                 />
                 
                 {/* Floating badge */}
-                <div className="absolute -right-4 top-10 bg-white/90 backdrop-blur-md px-4 py-3 rounded-2xl shadow-lg border border-slate-100 z-20 flex items-center gap-3">
+                <div className="absolute -right-4 top-10 bg-white/90 dark:bg-slate-800/90 backdrop-blur-md px-4 py-3 rounded-2xl shadow-lg border border-slate-100 dark:border-slate-700 z-20 flex items-center gap-3">
                   <div className="w-3 h-3 rounded-full bg-emerald-500 animate-pulse" />
-                  <span className="text-sm font-bold text-slate-800">Available for work</span>
+                  <span className="text-sm font-bold text-slate-800 dark:text-slate-100">Available for work</span>
                 </div>
               </div>
             </motion.div>
 
             {/* Bio & Motto */}
             <motion.div variants={itemVariants} className="w-full lg:w-[60%] flex flex-col justify-center pt-4 lg:pt-10">
-              <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">
+              <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mb-6 tracking-tight">
                 Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Andika</span>
               </h1>
               
-              <p className="text-lg text-slate-600 leading-relaxed mb-10">
+              <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-10">
                 I am a software developer based in Indonesia, focused on building clean, scalable applications that solve real problems. With strong fundamentals in frontend and backend development, I design and ship web dashboards, management systems, and mobile experiences — from concept to deployment.
               </p>
 
               {/* Motto Box */}
-              <div className="relative bg-slate-50 border border-slate-200/60 rounded-3xl p-8 md:p-10 overflow-hidden group">
+              <div className="relative bg-slate-50 dark:bg-slate-800/60 border border-slate-200/60 dark:border-slate-700/60 rounded-3xl p-8 md:p-10 overflow-hidden group">
                 <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-blue-500 to-indigo-600"></div>
-                <div className="absolute -right-10 -bottom-10 text-[120px] text-slate-100 font-serif leading-none opacity-50 group-hover:scale-110 transition-transform duration-500">"</div>
+                <div className="absolute -right-10 -bottom-10 text-[120px] text-slate-100 dark:text-slate-700 font-serif leading-none opacity-50 group-hover:scale-110 transition-transform duration-500">"</div>
                 
-                <h3 className="relative z-10 text-xl md:text-2xl font-medium text-slate-800 italic leading-snug">
+                <h3 className="relative z-10 text-xl md:text-2xl font-medium text-slate-800 dark:text-slate-100 italic leading-snug">
                   "I don't just write code; I build systems that run reliably, scale cleanly, and solve real business problems."
                 </h3>
               </div>
@@ -158,10 +158,10 @@ export default function AboutPage() {
             <div className="w-12 h-12 rounded-2xl bg-indigo-50 flex items-center justify-center border border-indigo-100">
               <Briefcase className="w-6 h-6 text-indigo-600" />
             </div>
-            <h2 className="text-3xl font-bold text-slate-900 tracking-tight">Professional Experience</h2>
+            <h2 className="text-3xl font-bold text-slate-900 dark:text-white tracking-tight">Professional Experience</h2>
           </motion.div>
 
-          <div className="relative border-l-2 border-slate-200 ml-6 md:ml-8 pl-8 md:pl-12 flex flex-col gap-12">
+          <div className="relative border-l-2 border-slate-200 dark:border-slate-700 ml-6 md:ml-8 pl-8 md:pl-12 flex flex-col gap-12">
             {experiences.map((exp, index) => (
               <motion.div 
                 key={exp.id}
@@ -169,19 +169,19 @@ export default function AboutPage() {
                 className="relative"
               >
                 {/* Timeline dot */}
-                <div className="absolute -left-[41px] md:-left-[57px] top-1.5 w-5 h-5 rounded-full bg-white border-4 border-indigo-500 shadow-sm" />
+                <div className="absolute -left-[41px] md:-left-[57px] top-1.5 w-5 h-5 rounded-full bg-white dark:bg-slate-800 border-4 border-indigo-500 shadow-sm" />
                 
-                <div className="bg-white rounded-[24px] p-8 border border-slate-100 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_30px_-10px_rgba(0,0,0,0.08)] transition-shadow">
+                <div className="bg-white dark:bg-slate-800/80 rounded-[24px] p-8 border border-slate-100 dark:border-slate-700 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_30px_-10px_rgba(0,0,0,0.08)] transition-shadow">
                   <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
                     <div>
-                      <h3 className="text-xl font-bold text-slate-900">{exp.role}</h3>
+                      <h3 className="text-xl font-bold text-slate-900 dark:text-white">{exp.role}</h3>
                       <p className="text-indigo-600 font-medium">{exp.company}</p>
                     </div>
-                    <span className="px-4 py-1.5 bg-slate-50 text-slate-600 text-sm font-semibold rounded-full border border-slate-200/60 w-max">
+                    <span className="px-4 py-1.5 bg-slate-50 dark:bg-slate-700/60 text-slate-600 dark:text-slate-300 text-sm font-semibold rounded-full border border-slate-200/60 dark:border-slate-600/60 w-max">
                       {exp.period}
                     </span>
                   </div>
-                  <p className="text-slate-600 leading-relaxed">
+                  <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
                     {exp.description}
                   </p>
                 </div>
@@ -193,8 +193,8 @@ export default function AboutPage() {
         {/* 3. Skills Section */}
         <section className="mb-24">
           <motion.div variants={itemVariants} className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-slate-900 tracking-tight mb-4">Skill Expertise</h2>
-            <p className="text-slate-500 max-w-2xl mx-auto">A focused skill set across frontend, backend, and interface design to ship complete software products.</p>
+            <h2 className="text-3xl font-bold text-slate-900 dark:text-white tracking-tight mb-4">Skill Expertise</h2>
+            <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">A focused skill set across frontend, backend, and interface design to ship complete software products.</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
@@ -202,15 +202,15 @@ export default function AboutPage() {
               <motion.div 
                 key={skill.id}
                 variants={itemVariants}
-                className={`rounded-[32px] p-8 border ${skill.color} bg-white shadow-sm hover:-translate-y-1 transition-transform duration-300`}
+                className={`rounded-[32px] p-8 border ${skill.color} bg-white dark:bg-slate-800/80 shadow-sm hover:-translate-y-1 transition-transform duration-300`}
               >
-                <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-6 bg-white shadow-sm border border-white/50`}>
+                <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-6 bg-white dark:bg-slate-700/60 shadow-sm border border-white/50 dark:border-slate-600/50`}>
                   {skill.icon}
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-6">{skill.category}</h3>
+                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-6">{skill.category}</h3>
                 <div className="flex flex-wrap gap-2.5">
                   {skill.items.map((item, idx) => (
-                    <span key={idx} className="px-3.5 py-1.5 bg-white border border-slate-200/60 text-slate-600 text-sm font-medium rounded-full shadow-sm">
+                    <span key={idx} className="px-3.5 py-1.5 bg-white dark:bg-slate-700/60 border border-slate-200/60 dark:border-slate-600/60 text-slate-600 dark:text-slate-300 text-sm font-medium rounded-full shadow-sm">
                       {item}
                     </span>
                   ))}
@@ -226,7 +226,7 @@ export default function AboutPage() {
             <div className="w-12 h-12 rounded-2xl bg-amber-50 flex items-center justify-center border border-amber-100">
               <Award className="w-6 h-6 text-amber-600" />
             </div>
-            <h2 className="text-3xl font-bold text-slate-900 tracking-tight">Key Achievements</h2>
+            <h2 className="text-3xl font-bold text-slate-900 dark:text-white tracking-tight">Key Achievements</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -234,14 +234,14 @@ export default function AboutPage() {
               <motion.div 
                 key={achievement.id}
                 variants={itemVariants}
-                className="flex items-center gap-5 p-6 rounded-[24px] bg-white border border-slate-100 shadow-sm hover:shadow-md transition-shadow"
+                className="flex items-center gap-5 p-6 rounded-[24px] bg-white dark:bg-slate-800/80 border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className="w-12 h-12 rounded-full bg-amber-50 flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 rounded-full bg-amber-50 dark:bg-amber-500/10 flex items-center justify-center flex-shrink-0">
                   {achievement.icon}
                 </div>
                 <div>
-                  <h4 className="font-bold text-slate-900 leading-tight mb-1">{achievement.title}</h4>
-                  <div className="text-sm text-slate-500 font-medium">
+                  <h4 className="font-bold text-slate-900 dark:text-white leading-tight mb-1">{achievement.title}</h4>
+                  <div className="text-sm text-slate-500 dark:text-slate-400 font-medium">
                     {achievement.issuer} <span className="mx-1">•</span> {achievement.year}
                   </div>
                 </div>

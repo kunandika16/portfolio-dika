@@ -14,14 +14,14 @@ export default function ArticlePage() {
   // Fallback ketika id tidak ditemukan
   if (!article) {
     return (
-      <div className="pt-32 pb-24 max-w-[1200px] mx-auto px-6 lg:px-12 bg-white">
-        <Link to="/work" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all font-medium text-slate-700 text-sm shadow-sm mb-12 w-max">
+      <div className="pt-32 pb-24 max-w-[1200px] mx-auto px-6 lg:px-12 bg-white dark:bg-slate-900">
+        <Link to="/work" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800 transition-all font-medium text-slate-700 dark:text-slate-300 text-sm shadow-sm mb-12 w-max">
           <ArrowLeft size={16} /> Back
         </Link>
         <div className="text-center py-24">
-          <div className="text-6xl mb-6 font-bold text-slate-200">404</div>
-          <h1 className="text-2xl font-bold text-slate-900 mb-3">Case study tidak ditemukan</h1>
-          <p className="text-slate-500 mb-8">Halaman case study yang Anda cari tidak tersedia.</p>
+          <div className="text-6xl mb-6 font-bold text-slate-200 dark:text-slate-700">404</div>
+          <h1 className="text-2xl font-bold text-slate-900 dark:text-white mb-3">Case study tidak ditemukan</h1>
+          <p className="text-slate-500 dark:text-slate-400 mb-8">Halaman case study yang Anda cari tidak tersedia.</p>
           <Link to="/work" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-indigo-600 text-white font-semibold text-sm hover:bg-indigo-700 transition-colors">
             Lihat semua project <ArrowUpRight size={16} />
           </Link>
@@ -31,10 +31,10 @@ export default function ArticlePage() {
   }
 
   return (
-    <div className="pt-32 pb-24 max-w-[1200px] mx-auto px-6 lg:px-12 bg-white">
+    <div className="pt-32 pb-24 max-w-[1200px] mx-auto px-6 lg:px-12 bg-white dark:bg-slate-900">
 
       {/* Back Button */}
-      <Link to="/work" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all font-medium text-slate-700 text-sm shadow-sm mb-12 w-max">
+      <Link to="/work" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800 transition-all font-medium text-slate-700 dark:text-slate-300 text-sm shadow-sm mb-12 w-max">
         <ArrowLeft size={16} /> Back
       </Link>
 
@@ -45,10 +45,10 @@ export default function ArticlePage() {
         transition={{ duration: 0.5 }}
         className="max-w-4xl"
       >
-        <h1 className="text-3xl md:text-4xl lg:text-[42px] font-medium text-slate-900 mb-6 leading-[1.2] tracking-tight">
+        <h1 className="text-3xl md:text-4xl lg:text-[42px] font-medium text-slate-900 dark:text-white mb-6 leading-[1.2] tracking-tight">
           {article.title}
         </h1>
-        <p className="text-slate-500 text-[17px] leading-relaxed mb-12">
+        <p className="text-slate-500 dark:text-slate-400 text-[17px] leading-relaxed mb-12">
           {article.subtitle}
         </p>
       </motion.div>
@@ -58,35 +58,35 @@ export default function ArticlePage() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.1 }}
-        className="w-full aspect-video rounded-[24px] overflow-hidden mb-16 border border-slate-100 shadow-sm"
+        className="w-full aspect-video rounded-[24px] overflow-hidden mb-16 border border-slate-100 dark:border-slate-700 shadow-sm"
       >
         <img src={article.heroImage} alt={article.title} className="w-full h-full object-cover" loading="lazy" />
       </motion.div>
 
       {/* Meta Info Grid */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-8 border-y border-slate-100 mb-16">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-8 border-y border-slate-100 dark:border-slate-700 mb-16">
         <div>
-          <h4 className="text-slate-900 font-semibold text-[15px] mb-2">Company</h4>
-          <p className="text-slate-500 text-[15px]">{article.company}</p>
+          <h4 className="text-slate-900 dark:text-white font-semibold text-[15px] mb-2">Company</h4>
+          <p className="text-slate-500 dark:text-slate-400 text-[15px]">{article.company}</p>
         </div>
         <div>
-          <h4 className="text-slate-900 font-semibold text-[15px] mb-2">Role</h4>
-          <p className="text-slate-500 text-[15px]">{article.role}</p>
+          <h4 className="text-slate-900 dark:text-white font-semibold text-[15px] mb-2">Role</h4>
+          <p className="text-slate-500 dark:text-slate-400 text-[15px]">{article.role}</p>
         </div>
         <div>
-          <h4 className="text-slate-900 font-semibold text-[15px] mb-2">Scope</h4>
-          <p className="text-slate-500 text-[15px]">{article.scope}</p>
+          <h4 className="text-slate-900 dark:text-white font-semibold text-[15px] mb-2">Scope</h4>
+          <p className="text-slate-500 dark:text-slate-400 text-[15px]">{article.scope}</p>
         </div>
         <div>
-          <h4 className="text-slate-900 font-semibold text-[15px] mb-2">Period</h4>
-          <p className="text-slate-500 text-[15px]">{article.period}</p>
+          <h4 className="text-slate-900 dark:text-white font-semibold text-[15px] mb-2">Period</h4>
+          <p className="text-slate-500 dark:text-slate-400 text-[15px]">{article.period}</p>
         </div>
       </div>
 
       {/* Overview Section */}
       <div className="max-w-[800px] mb-24">
-        <h2 className="text-2xl font-semibold text-slate-900 mb-6">Overview</h2>
-        <p className="text-slate-500 text-[17px] leading-relaxed">
+        <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-6">Overview</h2>
+        <p className="text-slate-500 dark:text-slate-400 text-[17px] leading-relaxed">
           {article.overview}
         </p>
       </div>
@@ -98,17 +98,17 @@ export default function ArticlePage() {
 
       {/* Challenges Section */}
       <div className="max-w-[1000px] mb-24">
-        <h2 className="text-2xl font-semibold text-slate-900 mb-4">The Challenges</h2>
-        <p className="text-slate-500 text-[17px] leading-relaxed mb-12">
+        <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">The Challenges</h2>
+        <p className="text-slate-500 dark:text-slate-400 text-[17px] leading-relaxed mb-12">
           Setiap project lahir dari permasalahan nyata yang dihadapi pengguna atau bisnis. Berikut tantangan utama yang coba dipecahkan:
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
           {article.challenges.map((challenge, index) => (
             <div key={index}>
-              <div className="text-indigo-600 font-bold text-xl mb-3">{String(index + 1).padStart(2, '0')}</div>
-              <h3 className="text-slate-900 font-medium text-[17px] mb-3">{challenge.title}</h3>
-              <p className="text-slate-500 leading-relaxed text-[15px]">{challenge.text}</p>
+              <div className="text-indigo-600 dark:text-indigo-400 font-bold text-xl mb-3">{String(index + 1).padStart(2, '0')}</div>
+              <h3 className="text-slate-900 dark:text-white font-medium text-[17px] mb-3">{challenge.title}</h3>
+              <p className="text-slate-500 dark:text-slate-400 leading-relaxed text-[15px]">{challenge.text}</p>
             </div>
           ))}
         </div>
@@ -121,8 +121,8 @@ export default function ArticlePage() {
 
       {/* The Solution Section */}
       <div className="max-w-[1000px] mb-24">
-        <h2 className="text-2xl font-semibold text-slate-900 mb-4">The Solution</h2>
-        <p className="text-slate-500 text-[17px] leading-relaxed mb-12">
+        <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">The Solution</h2>
+        <p className="text-slate-500 dark:text-slate-400 text-[17px] leading-relaxed mb-12">
           {article.solution}
         </p>
       </div>
@@ -130,22 +130,22 @@ export default function ArticlePage() {
       {/* Features Section */}
       <div className="max-w-[1000px] mb-24">
         <div className="flex items-center gap-4 mb-12">
-          <div className="w-12 h-12 rounded-2xl bg-indigo-50 flex items-center justify-center border border-indigo-100">
-            <Layers className="w-6 h-6 text-indigo-600" />
+          <div className="w-12 h-12 rounded-2xl bg-indigo-50 dark:bg-indigo-500/10 flex items-center justify-center border border-indigo-100 dark:border-indigo-500/20">
+            <Layers className="w-6 h-6 text-indigo-600 dark:text-indigo-400" />
           </div>
-          <h2 className="text-2xl font-semibold text-slate-900">Key Features</h2>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white">Key Features</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {article.features.map((feature) => (
-            <div key={feature.title} className="bg-slate-50/50 border border-slate-100 p-8 rounded-[24px]">
+            <div key={feature.title} className="bg-slate-50/50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-700 p-8 rounded-[24px]">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-9 h-9 rounded-xl bg-indigo-600/10 flex items-center justify-center">
-                  <MonitorSmartphone className="w-5 h-5 text-indigo-600" />
+                  <MonitorSmartphone className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
                 </div>
-                <h3 className="text-slate-900 font-medium text-[17px]">{feature.title}</h3>
+                <h3 className="text-slate-900 dark:text-white font-medium text-[17px]">{feature.title}</h3>
               </div>
-              <p className="text-slate-500 leading-relaxed text-[15px]">{feature.text}</p>
+              <p className="text-slate-500 dark:text-slate-400 leading-relaxed text-[15px]">{feature.text}</p>
             </div>
           ))}
         </div>
@@ -170,17 +170,17 @@ export default function ArticlePage() {
       {/* Tech Stack */}
       <div className="max-w-[1000px] mb-24">
         <div className="flex items-center gap-4 mb-12">
-          <div className="w-12 h-12 rounded-2xl bg-emerald-50 flex items-center justify-center border border-emerald-100">
-            <Wrench className="w-6 h-6 text-emerald-600" />
+          <div className="w-12 h-12 rounded-2xl bg-emerald-50 dark:bg-emerald-500/10 flex items-center justify-center border border-emerald-100 dark:border-emerald-500/20">
+            <Wrench className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
           </div>
-          <h2 className="text-2xl font-semibold text-slate-900">Tech Stack</h2>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white">Tech Stack</h2>
         </div>
 
         <div className="flex flex-wrap gap-3">
           {article.stack.map((tech) => {
             const logo = getTechLogo(tech);
             return (
-              <span key={tech} className="inline-flex items-center gap-2.5 px-5 py-2.5 bg-white border border-slate-200/80 text-slate-600 text-sm font-medium rounded-full shadow-sm">
+              <span key={tech} className="inline-flex items-center gap-2.5 px-5 py-2.5 bg-white dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700 text-slate-600 dark:text-slate-300 text-sm font-medium rounded-full shadow-sm">
                 {logo && <img src={logo.url} alt={tech} className="w-4 h-4" loading="lazy" />}
                 {tech}
               </span>
@@ -191,8 +191,8 @@ export default function ArticlePage() {
 
       {/* Result Section */}
       <div className="max-w-[1000px] mb-20">
-        <h2 className="text-2xl font-semibold text-slate-900 mb-4">Result</h2>
-        <p className="text-slate-600 text-[16px] leading-relaxed mb-6">
+        <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">Result</h2>
+        <p className="text-slate-600 dark:text-slate-300 text-[16px] leading-relaxed mb-6">
           {article.result}
         </p>
 
@@ -207,12 +207,12 @@ export default function ArticlePage() {
       {article.gallery && article.gallery.length > 0 && (
         <div className="max-w-[1000px]">
           <div className="flex items-center gap-4 mb-12">
-            <div className="w-12 h-12 rounded-2xl bg-purple-50 flex items-center justify-center border border-purple-100">
-              <Images className="w-6 h-6 text-purple-600" />
+            <div className="w-12 h-12 rounded-2xl bg-purple-50 dark:bg-purple-500/10 flex items-center justify-center border border-purple-100 dark:border-purple-500/20">
+              <Images className="w-6 h-6 text-purple-600 dark:text-purple-400" />
             </div>
             <div>
-              <h2 className="text-2xl font-semibold text-slate-900">Gallery</h2>
-              <p className="text-slate-500 text-[15px] mt-1">Klik gambar untuk melihat detail.</p>
+              <h2 className="text-2xl font-semibold text-slate-900 dark:text-white">Gallery</h2>
+              <p className="text-slate-500 dark:text-slate-400 text-[15px] mt-1">Klik gambar untuk melihat detail.</p>
             </div>
           </div>
 
