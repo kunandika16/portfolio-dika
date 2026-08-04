@@ -4,10 +4,10 @@ import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { getTechLogo } from '../data/techLogos';
 
-const categories = ["Web & dashboard", "Mobile App", "Brand identity"];
+const categories = ["Web App", "Mobile Apps", "UI/UX"];
 
 const projectsData = {
-  "Web & dashboard": [
+  "Web App": [
     {
       id: 1,
       title: "ITMS (Integrated Talent Management System)",
@@ -108,7 +108,7 @@ const projectsData = {
       bgColor: "bg-cyan-50/60"
     }
   ],
-  "Mobile App": [
+  "Mobile Apps": [
     {
       id: 6,
       title: "TemuHobi.com",
@@ -132,21 +132,7 @@ const projectsData = {
       bgColor: "bg-green-50/60"
     }
   ],
-  "Brand identity": [
-    {
-      id: 4,
-      title: "Modernizing Acme Corp Brand",
-      company: "Acme Corp",
-      year: "2023",
-      description: "Redefined the brand identity for Acme Corp including a new logo, typography, and color palette to appeal to a younger demographic.",
-      tags: ["Branding", "Logo Design", "Guidelines"],
-      images: [
-        "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=800&auto=format",
-        "https://images.unsplash.com/photo-1583847268964-b28ce8f30026?q=80&w=800&auto=format"
-      ],
-      bgColor: "bg-amber-50/60"
-    }
-  ]
+  "UI/UX": []
 };
 
 function ImageSlider({ images, bgColor }) {

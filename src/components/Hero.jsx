@@ -59,12 +59,12 @@ export default function Hero() {
           variants={fadeUp}
           className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-[72px] font-bold tracking-tight text-slate-900 mb-6 leading-[1.08] max-w-4xl mx-auto"
         >
-          Crafting{' '}
+          Building{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-violet-500 to-sky-500 text-shimmer">
-            Digital Experiences
+            Robust Software
           </span>
           <br className="hidden sm:block" />
-          That Deliver Impact
+          For Real-World Needs
         </motion.h1>
 
         {/* Subheading */}
@@ -72,7 +72,7 @@ export default function Hero() {
           variants={fadeUp}
           className="font-sans text-base md:text-lg text-slate-500 mb-10 max-w-2xl mx-auto leading-relaxed"
         >
-          Bridging design and engineering to build solutions that solve real problems and create meaningful connections.
+          A software developer focused on building clean, scalable applications — from web dashboards to mobile experiences that solve real problems.
         </motion.p>
 
         {/* CTA buttons — glass styling */}

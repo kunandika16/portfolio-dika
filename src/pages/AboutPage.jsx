@@ -1,20 +1,20 @@
 import { motion } from 'framer-motion';
-import { Briefcase, Code2, PenTool, Video, Award, Trophy, Star } from 'lucide-react';
+import { Briefcase, Code2, Layout, Database, Award, Trophy, Star, Layers } from 'lucide-react';
 
 const experiences = [
   {
     id: 1,
-    company: "Creative Digital Agency",
-    role: "Senior UI/UX Designer & Developer",
-    period: "2021 - Present",
-    description: "Leading the design and frontend development for high-profile clients, ensuring seamless user experiences and pixel-perfect implementations. Collaborated closely with cross-functional teams to deliver award-winning digital campaigns."
+    company: "PT Pos Indonesia",
+    role: "Frontend Developer",
+    period: "2023 - Present",
+    description: "Developing internal web applications and dashboards that streamline business operations. Collaborating with cross-functional teams to build clean, scalable interfaces that improve productivity."
   },
   {
     id: 2,
-    company: "Global Logistics Company",
-    role: "Frontend Engineer",
-    period: "2019 - 2021",
-    description: "Developed and maintained the internal tracking dashboard and customer-facing portal. Streamlined logistics operations through intuitive interfaces, reducing user errors by 40%."
+    company: "Software Development Company",
+    role: "Fullstack Developer",
+    period: "2021 - 2023",
+    description: "Designed and built end-to-end applications — from frontend interfaces to backend APIs and databases. Delivered multiple client projects across HR, logistics, and government sectors."
   },
   {
     id: 3,
@@ -28,24 +28,24 @@ const experiences = [
 const skills = [
   {
     id: 1,
-    category: "Software Development",
+    category: "Frontend",
     icon: <Code2 className="w-6 h-6 text-blue-500" />,
     color: "bg-blue-50 border-blue-100",
-    items: ["React.js", "Next.js", "Tailwind CSS", "TypeScript", "Node.js", "REST APIs"]
+    items: ["React.js", "Next.js", "Vue", "Angular", "TypeScript", "Tailwind CSS", "MaterialUI"]
   },
   {
     id: 2,
-    category: "UI/UX & Design",
-    icon: <PenTool className="w-6 h-6 text-purple-500" />,
-    color: "bg-purple-50 border-purple-100",
-    items: ["Figma", "Design Systems", "Prototyping", "User Research", "Wireframing", "Branding"]
+    category: "Backend & Database",
+    icon: <Database className="w-6 h-6 text-emerald-500" />,
+    color: "bg-emerald-50 border-emerald-100",
+    items: ["Node.js", "Express", "Laravel", "Spring Boot", "PostgreSQL", "MySQL", "MongoDB"]
   },
   {
     id: 3,
-    category: "Video & Content",
-    icon: <Video className="w-6 h-6 text-emerald-500" />,
-    color: "bg-emerald-50 border-emerald-100",
-    items: ["Video Editing", "Motion Graphics", "Premiere Pro", "After Effects", "Storyboarding", "Content Strategy"]
+    category: "UI/UX & Tools",
+    icon: <Layout className="w-6 h-6 text-purple-500" />,
+    color: "bg-purple-50 border-purple-100",
+    items: ["Figma", "Design Systems", "Prototyping", "REST APIs", "Git", "Firebase"]
   }
 ];
 
@@ -135,7 +135,7 @@ export default function AboutPage() {
               </h1>
               
               <p className="text-lg text-slate-600 leading-relaxed mb-10">
-                I am a passionate Creative Technologist based in Indonesia. With a unique blend of technical expertise and creative vision, I bridge the gap between design and engineering. My journey spans software development, graphic design, and video editing—allowing me to craft holistic digital experiences from concept to deployment.
+                I am a software developer based in Indonesia, focused on building clean, scalable applications that solve real problems. With strong fundamentals in frontend and backend development, I design and ship web dashboards, management systems, and mobile experiences — from concept to deployment.
               </p>
 
               {/* Motto Box */}
@@ -144,7 +144,7 @@ export default function AboutPage() {
                 <div className="absolute -right-10 -bottom-10 text-[120px] text-slate-100 font-serif leading-none opacity-50 group-hover:scale-110 transition-transform duration-500">"</div>
                 
                 <h3 className="relative z-10 text-xl md:text-2xl font-medium text-slate-800 italic leading-snug">
-                  "I don't just build websites; I build impactful digital experiences that connect with people and solve real business problems."
+                  "I don't just write code; I build systems that run reliably, scale cleanly, and solve real business problems."
                 </h3>
               </div>
             </motion.div>
@@ -194,7 +194,7 @@ export default function AboutPage() {
         <section className="mb-24">
           <motion.div variants={itemVariants} className="text-center mb-12">
             <h2 className="text-3xl font-bold text-slate-900 tracking-tight mb-4">Skill Expertise</h2>
-            <p className="text-slate-500 max-w-2xl mx-auto">A multidisciplinary skill set spanning development, design, and multimedia creation.</p>
+            <p className="text-slate-500 max-w-2xl mx-auto">A focused skill set across frontend, backend, and interface design to ship complete software products.</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
