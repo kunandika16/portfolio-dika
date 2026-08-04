@@ -54,8 +54,10 @@ export default function Footer() {
       {/* Garage Door Footer */}
       <footer ref={footerRef} className="fixed bottom-0 left-0 w-full z-0 bg-[#0B0B14] text-white flex flex-col justify-end max-h-screen">
         <div className="max-w-7xl mx-auto px-4 w-full pt-12 md:pt-20 flex flex-col relative z-20">
+          {/* Thin dotted texture over the dark footer */}
+          <div className="absolute inset-0 bg-dots bg-pattern-fade opacity-60 pointer-events-none" />
 
-          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-12 lg:gap-0">
+          <div className="relative flex flex-col lg:flex-row justify-between items-start lg:items-center gap-12 lg:gap-0">
             <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white drop-shadow-lg leading-[1.1]">
               Thanks for<br />
               stopping by!

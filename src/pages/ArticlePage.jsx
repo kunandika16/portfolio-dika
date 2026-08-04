@@ -14,7 +14,7 @@ export default function ArticlePage() {
   // Fallback ketika id tidak ditemukan
   if (!article) {
     return (
-      <div className="pt-32 pb-24 max-w-[1200px] mx-auto px-6 lg:px-12 bg-white dark:bg-slate-900">
+      <div className="pt-32 pb-24 max-w-[1200px] mx-auto px-6 lg:px-12 bg-white dark:bg-slate-900 bg-grid relative">
         <Link to="/work" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800 transition-all font-medium text-slate-700 dark:text-slate-300 text-sm shadow-sm mb-12 w-max">
           <ArrowLeft size={16} /> Back
         </Link>

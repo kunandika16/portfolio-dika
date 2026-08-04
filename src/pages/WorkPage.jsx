@@ -14,9 +14,9 @@ const projectsData = {
       company: "Internal",
       year: "2024",
       description: "Sistem manajemen bakat yang terintegrasi dengan HR analytics dan fitur pengelolaan karyawan yang modern dan efisien.",
-      tags: ["Dashboard", "HR System", "Web App"],
-      stack: ["React", "Node.js", "Tailwind"],
-      images: ["/images/projects/itms.png"],
+      tags: ["Talent Management", "Dashboard", "Web App"],
+      stack: ["ReactJS", "MaterialUI", "Redis", "Express", "PostgreSQL", "Kubernetes", "Jenkins"],
+      images: ["/images/projects/itms/itms.png"],
       bgColor: "bg-blue-50/60"
     },
     {
@@ -190,7 +190,7 @@ export default function WorkPage() {
   const [activeTab, setActiveTab] = useState(categories[0]);
 
   return (
-    <div className="pt-36 pb-24 max-w-[1400px] mx-auto px-6 lg:px-12 min-h-screen bg-white dark:bg-slate-900 rounded-[40px] md:rounded-[60px] m-4">
+    <div className="pt-36 pb-24 max-w-[1400px] mx-auto px-6 lg:px-12 min-h-screen bg-white dark:bg-slate-900 rounded-[40px] md:rounded-[60px] m-4 bg-grid relative">
       <h1 className="text-4xl md:text-[44px] font-bold text-slate-900 dark:text-white mb-14 tracking-tight">Explore my latest works</h1>
       
       {/* Tabs */}

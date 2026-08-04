@@ -6,7 +6,7 @@ import { getTechLogo } from '../data/techLogos';
 
 const projectsData = {
   "Web App": [
-    { id: 1, title: "ITMS", desc: "Integrated Talent Management System with HR analytics.", stack: ["React", "Node.js", "Tailwind"], img: "/images/projects/itms.png" },
+    { id: 1, title: "ITMS", desc: "Integrated Talent Management System with HR analytics.", stack: ["ReactJS", "MaterialUI", "Redis", "Express", "PostgreSQL", "Kubernetes", "Jenkins"], img: "/images/projects/itms/itms.png" },
     { id: 2, title: "Explora", desc: "Knowledge Management & Event Management.", stack: ["ReactJS", "MaterialUI", "Express", "PostgreSQL"], img: "/images/projects/explora/header.png" },
     { id: 3, title: "Orlens", desc: "Organization and Job Management platform.", stack: ["Vue", "Laravel", "MySQL"], img: "/images/projects/orlens.png" },
     { id: 4, title: "ARMS", desc: "Attrition Retention Management System.", stack: ["React", "Python", "PostgreSQL"], img: "/images/projects/arms.png" },
@@ -28,7 +28,7 @@ export default function Projects() {
   const [activeTab, setActiveTab] = useState(categories[0]);
 
   return (
-    <section className="py-24 relative bg-slate-50/50 dark:bg-slate-900/40" id="work">
+    <section className="py-24 relative bg-slate-50/50 dark:bg-slate-900/40 bg-grid-fine" id="work">
       <div className="max-w-7xl mx-auto px-4">
         
         <div className="text-center mb-16">

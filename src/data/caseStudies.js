@@ -4,41 +4,47 @@
 const caseStudies = {
   1: {
     title: "ITMS — Integrated Talent Management System",
-    subtitle: "Sistem manajemen bakat terintegrasi dengan HR analytics untuk mengelola siklus talenta karyawan — mulai dari rekrutmen, penilaian kinerja, hingga pengembangan karier — dalam satu dashboard.",
-    heroImage: "/images/projects/itms.png",
+    subtitle: "Platform talent management terintegrasi yang menyatukan Talent Management, Talent Development, Career Management, One Sheet Kompetensi, dan Dashboard analitik — satu sumber kebenaran untuk siklus talenta karyawan.",
+    heroImage: "/images/projects/itms/itms.png",
     company: "Internal",
-    role: "Frontend Developer",
-    scope: "UI Design, Frontend Development, Dashboard Analytics",
+    role: "Lead Frontend",
+    scope: "Frontend Architecture, Design System, Module Development, Dashboard Analytics, CI/CD",
     period: "2024",
     overview:
-      "ITMS (Integrated Talent Management System) dibangun untuk menjawab kebutuhan perusahaan akan satu wadah terpusat dalam mengelola talenta karyawan. Sebelumnya, data HR tersebar di berbagai spreadsheet dan aplikasi terpisah, sehingga menyulitkan HR dalam memantau kinerja, potensi, dan pengembangan karyawan secara menyeluruh. ITMS menyatukan proses talent management — mulai dari profil karyawan, penilaian kinerja, hingga analitik retensi — ke dalam satu platform yang mudah digunakan.",
+      "ITMS (Integrated Talent Management System) dibangun untuk menggantikan pengelolaan talenta karyawan yang selama ini tersebar di spreadsheet, dokumen terpisah, dan aplikasi yang tidak terhubung. Sebagai Lead Frontend, saya bertanggung jawab atas arsitektur frontend, konsistensi desain, dan pengembangan modul-modul inti — dari manajemen talenta, pengembangan kompetensi, hingga perencanaan karier — yang semuanya terhubung ke dashboard analitik terpadu. Sistem ini menjadi satu sumber kebenaran bagi HR dan manajemen dalam memetakan kinerja, potensi, dan kesiapan karier setiap karyawan.",
     challenges: [
       {
-        title: "Data HR yang Tersebar",
-        text: "Data karyawan, penilaian kinerja, dan riwayat pengembangan tersimpan terpisah-pisah sehingga sulit dipetakan dan sering tidak sinkron antar departemen.",
-      },
-      {
-        title: "Kesulitan Membaca Kinerja",
-        text: "Manajemen kesulitan melihat gambaran besar performa dan potensi karyawan karena tidak ada visualisasi data yang jelas dan real-time.",
+        title: "Data Talent yang Terfragmentasi",
+        text: "Profil, kompetensi, dan riwayat pengembangan karyawan tersimpan terpisah-pisah sehingga sulit dipetakan dan sering tidak sinkron antar departemen.",
       },
       {
         title: "Proses Talent Management Manual",
-        text: "Proses identifikasi talenta, review kinerja, dan perencanaan suksesi masih manual dan memakan banyak waktu serta rawan kesalahan.",
+        text: "Identifikasi talenta, review kinerja, dan perencanaan suksesi masih dilakukan manual, memakan waktu lama dan rawan inkonsistensi.",
+      },
+      {
+        title: "Kesulitan Membaca Potensi Karyawan",
+        text: "Manajemen tidak memiliki pandangan terpadu atas kompetensi dan kesiapan karier karyawan, sehingga keputusan promosi dan pengembangan sering tidak berbasis data.",
       },
     ],
     solution:
-      "ITMS dikembangkan sebagai platform web terpusat dengan fokus pada tiga hal: integrasi data HR dalam satu database, visualisasi analitik yang informatif, dan alur kerja talent management yang lebih terstruktur. Dashboard dirancang untuk memudahkan HR dan manajemen memantau seluruh siklus talenta karyawan secara real-time.",
+      "Sebagai Lead Frontend, saya merancang arsitektur frontend berbasis React.js dan Material UI dengan design system yang konsisten, lalu membangun lima modul utama: Talent Management System untuk pengelolaan data talenta, Talent Development System untuk program pengembangan, Career Management System untuk perencanaan karier, One Sheet Kompetensi Pegawai sebagai ringkasan kompetensi terpadu, dan Dashboard yang memvisualisasikan seluruh metrik talenta secara real-time. Sistem terhubung ke backend Express dengan PostgreSQL, memanfaatkan Redis untuk caching, serta di-deploy melalui pipeline Jenkins ke Kubernetes (OSS integration).",
     features: [
-      { title: "Dashboard Analitik HR", text: "Visualisasi data karyawan, tren kinerja, dan metrik talenta dalam satu tampilan yang mudah dipahami." },
-      { title: "Manajemen Profil Karyawan", text: "Data profil, jabatan, riwayat, dan dokumen karyawan terpusat dan mudah dikelola." },
-      { title: "Penilaian Kinerja", text: "Alur penilaian kinerja periodik dengan target dan skor yang dapat dilacak per periode." },
-      { title: "Talent Pool & Suksesi", text: "Identifikasi karyawan berpotensi dan perencanaan suksesi untuk posisi kunci." },
-      { title: "Laporan & Ekspor Data", text: "Laporan rekrutmen, kinerja, dan retensi yang dapat diekspor untuk kebutuhan manajemen." },
+      { title: "Talent Management System", text: "Pengelolaan data talenta, profil, dan mapping potensi karyawan dalam satu platform terpusat." },
+      { title: "Talent Development System", text: "Program pengembangan kompetensi, pelatihan, dan tracking progres karyawan secara terstruktur." },
+      { title: "Career Management System", text: "Perencanaan karier, jenjang jabatan, dan kesiapan suksesi untuk posisi kunci." },
+      { title: "One Sheet Kompetensi Pegawai", text: "Ringkasan kompetensi satu halaman per karyawan yang memudahkan review cepat oleh HR dan manajemen." },
+      { title: "Dashboard Analitik", text: "Visualisasi metrik talenta, tren kinerja, dan potensi karyawan secara real-time." },
     ],
-    stack: ["React", "Node.js", "Tailwind"],
-    screenshots: ["/images/projects/itms.png"],
+    stack: ["ReactJS", "MaterialUI", "Redis", "Express", "PostgreSQL", "Kubernetes", "Jenkins"],
+    screenshots: ["/images/projects/itms/itms-dashboard.png"],
+    gallery: [
+      "/images/projects/itms/itms-dashboard.png",
+      "/images/projects/itms/itms-development.png",
+      "/images/projects/itms/itms-login.png",
+      "/images/projects/itms/itms-onesheet.png",
+    ],
     result:
-      "ITMS menjadi platform talent management terpusat yang mempercepat akses data karyawan dan memberikan visibilitas penuh kepada manajemen terhadap performa serta potensi tim. Proses review kinerja dan perencanaan suksesi kini berjalan lebih sistematis dan terdokumentasi rapi.",
+      "ITMS menjadi platform talent management terpusat yang mempercepat akses data karyawan dan memberikan visibilitas penuh kepada manajemen terhadap performa serta potensi tim. Dengan arsitektur frontend yang modular dan pipeline CI/CD yang otomatis, tim dapat terus mengembangkan fitur secara cepat tanpa mengorbankan stabilitas, dan proses review kinerja serta perencanaan suksesi kini berjalan lebih sistematis dan terdokumentasi rapi.",
     link: null,
   },
 

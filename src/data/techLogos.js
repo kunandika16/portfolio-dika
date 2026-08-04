@@ -25,6 +25,9 @@ const techLogos = {
   Prisma: { slug: "prisma", color: "2D3748" },
   "Framer Motion": { slug: "framer", color: "0055FF" },
   Vite: { slug: "vite", color: "646CFF" },
+  Redis: { slug: "redis", color: "FF4438" },
+  Kubernetes: { slug: "kubernetes", color: "326CE5" },
+  Jenkins: { slug: "jenkins", color: "D24939" },
 };
 
 export function getTechLogo(name) {

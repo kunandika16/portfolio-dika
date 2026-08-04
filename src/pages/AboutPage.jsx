@@ -94,7 +94,7 @@ export default function AboutPage() {
   };
 
   return (
-    <div className="pt-32 pb-24 max-w-[1200px] mx-auto px-6 lg:px-12">
+    <div className="pt-32 pb-24 max-w-[1200px] mx-auto px-6 lg:px-12 relative bg-dots">
       
       {/* Soft background glow */}
       <div className="absolute top-[20%] left-[10%] w-[500px] h-[500px] bg-blue-400/10 rounded-full blur-[100px] -z-10 pointer-events-none" />

@@ -36,7 +36,7 @@ export default function Stats() {
       </div>
 
       {/* Infinite Logo Slider */}
-      <div className="w-full overflow-hidden flex flex-col justify-center bg-slate-50/50 dark:bg-slate-800/50 py-12 border-y border-slate-100 dark:border-slate-800 relative">
+      <div className="w-full overflow-hidden flex flex-col justify-center bg-slate-50/50 dark:bg-slate-800/50 py-12 border-y border-slate-100 dark:border-slate-800 relative bg-dots">
         <p className="text-center text-sm font-medium text-slate-400 dark:text-slate-400 mb-8 uppercase tracking-widest">Trusted by industry leaders</p>
         
         <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-slate-50/50 dark:from-slate-800/50 to-transparent z-10 pointer-events-none" />

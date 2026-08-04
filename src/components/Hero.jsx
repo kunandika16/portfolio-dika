@@ -36,6 +36,9 @@ export default function Hero() {
       <div className="absolute top-[15%] right-[5%] w-[350px] h-[350px] bg-violet-400/8 rounded-full blur-[100px] -z-10 pointer-events-none animate-float-delayed" />
       <div className="absolute bottom-[20%] left-[5%] w-[300px] h-[300px] bg-sky-400/8 rounded-full blur-[100px] -z-10 pointer-events-none animate-float-delayed" />
 
+      {/* Fine dotted pattern — soft, elegant texture behind the headline */}
+      <div className="absolute inset-0 bg-dots bg-pattern-fade -z-10 pointer-events-none" />
+
       <motion.div
         variants={stagger}
         initial="hidden"
