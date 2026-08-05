@@ -5,7 +5,7 @@ const caseStudies = {
   1: {
     title: "ITMS — Integrated Talent Management System",
     subtitle: "Platform talent management terintegrasi yang menyatukan Talent Management, Talent Development, Career Management, One Sheet Kompetensi, dan Dashboard analitik — satu sumber kebenaran untuk siklus talenta karyawan.",
-    heroImage: "/images/projects/itms/itms.png",
+    heroImage: "/images/projects/itms/itms.webp",
     company: "Internal",
     role: "Lead Frontend",
     scope: "Frontend Architecture, Design System, Module Development, Dashboard Analytics, CI/CD",
@@ -36,12 +36,12 @@ const caseStudies = {
       { title: "Dashboard Analitik", text: "Visualisasi metrik talenta, tren kinerja, dan potensi karyawan secara real-time." },
     ],
     stack: ["ReactJS", "MaterialUI", "Redis", "Express", "PostgreSQL", "Kubernetes", "Jenkins"],
-    screenshots: ["/images/projects/itms/itms-dashboard.png"],
+    screenshots: ["/images/projects/itms/ITMS-dashboard.webp"],
     gallery: [
-      "/images/projects/itms/itms-dashboard.png",
-      "/images/projects/itms/itms-development.png",
-      "/images/projects/itms/itms-login.png",
-      "/images/projects/itms/itms-onesheet.png",
+      "/images/projects/itms/ITMS-dashboard.webp",
+      "/images/projects/itms/itms-development.webp",
+      "/images/projects/itms/itms-login.webp",
+      "/images/projects/itms/itms-onesheet.webp",
     ],
     result:
       "ITMS menjadi platform talent management terpusat yang mempercepat akses data karyawan dan memberikan visibilitas penuh kepada manajemen terhadap performa serta potensi tim. Dengan arsitektur frontend yang modular dan pipeline CI/CD yang otomatis, tim dapat terus mengembangkan fitur secara cepat tanpa mengorbankan stabilitas, dan proses review kinerja serta perencanaan suksesi kini berjalan lebih sistematis dan terdokumentasi rapi.",
@@ -51,7 +51,7 @@ const caseStudies = {
   2: {
     title: "Explora — Knowledge Management & Event Management",
     subtitle: "Platform manajemen pengetahuan dan sistem acara yang memfasilitasi pertukaran knowledge antar karyawan serta pengelolaan event perusahaan dalam satu tempat.",
-    heroImage: "/images/projects/explora/header.png",
+    heroImage: "/images/projects/explora/header.webp",
     company: "PT Pos Indonesia",
     role: "Frontend Developer",
     scope: "UI Design, Frontend Development",
@@ -82,13 +82,13 @@ const caseStudies = {
     ],
     stack: ["ReactJS", "MaterialUI", "Express", "PostgreSQL"],
     screenshots: [
-      "/images/projects/explora/layar.png",
-      "/images/projects/explora/article.png",
-      "/images/projects/explora/event.png",
+      "/images/projects/explora/layar.webp",
+      "/images/projects/explora/article.webp",
+      "/images/projects/explora/event.webp",
     ],
     gallery: [
-      "/images/projects/explora/article.png",
-      "/images/projects/explora/event.png",
+      "/images/projects/explora/article.webp",
+      "/images/projects/explora/event.webp",
     ],
     result:
       "Explora berhasil menjadi pusat dokumentasi pengetahuan perusahaan dan platform pengelolaan event yang andal. Karyawan kini dapat mengakses materi dan mengikuti event internal dengan lebih mudah, mendorong budaya berbagi pengetahuan yang lebih aktif.",
@@ -98,7 +98,7 @@ const caseStudies = {
   3: {
     title: "Orlens — Organization & Job Management",
     subtitle: "Platform untuk memetakan struktur organisasi, jabatan, dan deskripsi pekerjaan secara digital agar lebih transparan dan mudah dikelola.",
-    heroImage: "/images/projects/orlens.png",
+    heroImage: "/images/projects/orlens.webp",
     company: "Internal",
     role: "Fullstack Developer",
     scope: "UI Design, Fullstack Development, Data Modeling",
@@ -128,7 +128,7 @@ const caseStudies = {
       { title: "Pemetaan Kebutuhan SDM", text: "Identifikasi posisi kosong dan kebutuhan sumber daya dengan cepat." },
     ],
     stack: ["Vue", "Laravel", "MySQL"],
-    screenshots: ["/images/projects/orlens.png"],
+    screenshots: ["/images/projects/orlens.webp"],
     result:
       "Orlens memberikan perusahaan satu sumber kebenaran untuk struktur organisasi dan definisi jabatan. Proses perencanaan SDM, rekrutmen, dan evaluasi menjadi lebih cepat karena data organisasi kini transparan, konsisten, dan mudah diakses.",
     link: null,
@@ -137,7 +137,7 @@ const caseStudies = {
   4: {
     title: "ARMS — Attrition Retention Management System",
     subtitle: "Sistem analitik untuk memantau tren attrition dan mengelola strategi retensi karyawan agar perusahaan mampu mempertahankan talenta terbaiknya.",
-    heroImage: "/images/projects/arms.png",
+    heroImage: "/images/projects/arms.webp",
     company: "Internal",
     role: "Frontend Developer",
     scope: "Dashboard Design, Data Visualization, Frontend Development",
@@ -167,7 +167,7 @@ const caseStudies = {
       { title: "Laporan Manajemen", text: "Ringkasan eksekutif untuk mendukung keputusan strategis HR." },
     ],
     stack: ["React", "Python", "PostgreSQL"],
-    screenshots: ["/images/projects/arms.png"],
+    screenshots: ["/images/projects/arms.webp"],
     result:
       "ARMS memberikan kemampuan prediksi dan pemantauan attrition secara real-time. Manajemen kini dapat mengidentifikasi risiko keluarnya karyawan lebih dini dan mengevaluasi program retensi dengan data yang jelas, sehingga keputusan HR lebih tepat sasaran.",
     link: null,
@@ -176,7 +176,7 @@ const caseStudies = {
   5: {
     title: "SIMAsuransi — Sistem Informasi Management Asuransi",
     subtitle: "Sistem informasi untuk mengelola polis, klaim, dan data nasabah asuransi secara digital agar proses bisnis lebih cepat, akurat, dan terdokumentasi.",
-    heroImage: "/images/projects/simasuransi.png",
+    heroImage: "/images/projects/simasuransi.webp",
     company: "Client",
     role: "Frontend Developer",
     scope: "UI Design, Frontend Development, Dashboard",
@@ -206,7 +206,7 @@ const caseStudies = {
       { title: "Laporan Otomatis", text: "Rekap polis, klaim, dan premi yang dapat dihasilkan otomatis dan akurat." },
     ],
     stack: ["Angular", "Spring Boot", "Oracle"],
-    screenshots: ["/images/projects/simasuransi.png"],
+    screenshots: ["/images/projects/simasuransi.webp"],
     result:
       "SIMAsuransi mempercepat proses pengelolaan polis dan klaim secara signifikan. Status klaim kini transparan dan dapat dilacak, laporan lebih akurat, dan data nasabah terpusat sehingga layanan kepada nasabah menjadi lebih responsif.",
     link: null,
@@ -214,14 +214,14 @@ const caseStudies = {
 
   6: {
     title: "TemuHobi.com — Platform Komunitas Hobi",
-    subtitle: "Aplikasi yang mempertemukan pegiat hobi dengan komunitas dan kegiatan sesuai minat, membangun ruang sosial yang interaktif dan dinamis.",
-    heroImage: "/images/projects/temuhobi.png",
+    subtitle: "Platform yang mempertemukan pegiat hobi dengan komunitas dan kegiatan sesuai minat, meraih penghargaan dari Kemenparekraf.",
+    heroImage: "/images/projects/temuhobi/temuhobi-cover.webp",
     company: "Startup",
-    role: "Mobile Developer",
-    scope: "Product Design, Mobile Development, Firebase Integration",
+    role: "Frontend Developer",
+    scope: "Frontend Development, Product Design",
     period: "2024",
     overview:
-      "TemuHobi.com lahir dari gagasan bahwa banyak orang kesulitan menemukan komunitas yang sesuai dengan hobinya. Aplikasi ini menyediakan direktori komunitas berbasis minat, tempat anggota berinteraksi, serta informasi kegiatan yang bisa diikuti — membantu pengguna menemukan teman senasib dan tempat berkembang.",
+      "TemuHobi.com lahir dari gagasan bahwa banyak orang kesulitan menemukan komunitas yang sesuai dengan hobinya. Aplikasi ini menyediakan direktori komunitas berbasis minat, tempat anggota berinteraksi, serta informasi kegiatan yang bisa diikuti — membantu pengguna menemukan teman senasib dan tempat berkembang. Sebagai Frontend Developer di tim startup, saya membangun antarmuka dengan React TypeScript dan Ant Design, terhubung ke backend Express dengan PostgreSQL, serta di-deploy di Cloudflare. Project ini diakui melalui penghargaan dari Kemenparekraf.",
     challenges: [
       {
         title: "Komunitas Sulit Ditemukan",
@@ -237,24 +237,30 @@ const caseStudies = {
       },
     ],
     solution:
-      "TemuHobi.com dibangun sebagai aplikasi mobile yang mempertemukan minat dengan komunitas. Pengguna dapat menjelajahi komunitas berdasarkan kategori hobi, bergabung, berinteraksi dalam ruang diskusi, dan mendapatkan informasi kegiatan yang terpusat dan mudah diakses.",
+      "TemuHobi.com dibangun sebagai aplikasi yang mempertemukan minat dengan komunitas. Sebagai frontend developer, saya bertanggung jawab mengembangkan UI yang responsif dengan React TypeScript dan Ant Design, memastikan konsistensi desain, dan mengintegrasikan seluruh antarmuka dengan API backend Express yang menggunakan PostgreSQL. Aplikasi di-deploy pada infrastruktur Cloudflare untuk performa yang cepat dan andal. Pengguna dapat menjelajahi komunitas berdasarkan kategori hobi, bergabung, berinteraksi dalam ruang diskusi, dan mendapatkan informasi kegiatan yang terpusat dan mudah diakses.",
     features: [
       { title: "Direktori Komunitas", text: "Jelajahi komunitas berdasarkan kategori minat dan hobi." },
       { title: "Profil Pengguna", text: "Profil yang menampilkan minat dan komunitas yang diikuti pengguna." },
       { title: "Ruang Diskusi", text: "Forum interaksi antar anggota komunitas yang terorganisir." },
       { title: "Kalender Kegiatan", text: "Informasi kegiatan dan acara komunitas dalam satu tempat." },
     ],
-    stack: ["React Native", "Firebase", "Node.js"],
-    screenshots: ["/images/projects/temuhobi.png"],
+    stack: ["ReactTS", "AntDesign", "Express", "PostgreSQL", "Cloudflare"],
+    screenshots: ["/images/projects/temuhobi/temuhobi-isi.webp"],
+    gallery: [
+      "/images/projects/temuhobi/temuhobi1.webp",
+      "/images/projects/temuhobi/temuhobi2.webp",
+      "/images/projects/temuhobi/temuhobi3.webp",
+      "/images/projects/temuhobi/temuhobi4.webp",
+    ],
     result:
-      "TemuHobi.com menyediakan jalur yang mudah bagi pengguna untuk menemukan dan bergabung dengan komunitas yang sesuai. Interaksi anggota menjadi lebih terorganisir dan informasi kegiatan lebih mudah diakses, memperkuat ekosistem hobi di Indonesia.",
+      "TemuHobi.com menyediakan jalur yang mudah bagi pengguna untuk menemukan dan bergabung dengan komunitas yang sesuai. Interaksi anggota menjadi lebih terorganisir dan informasi kegiatan lebih mudah diakses, memperkuat ekosistem hobi di Indonesia. Project ini mendapat pengakuan melalui penghargaan dari Kemenparekraf.",
     link: null,
   },
 
   7: {
     title: "Uangku — Pencatatan Keuangan via WhatsApp",
     subtitle: "Aplikasi pencatatan keuangan inovatif yang terintegrasi penuh dengan WhatsApp untuk kemudahan input transaksi harian tanpa perlu membuka aplikasi terpisah.",
-    heroImage: "/images/projects/uangku.png",
+    heroImage: "/images/projects/uangku.webp",
     company: "Startup",
     role: "Backend Developer",
     scope: "System Design, Backend Development, WhatsApp API Integration",
@@ -284,7 +290,7 @@ const caseStudies = {
       { title: "Multi-User Support", text: "Mendukung banyak pengguna dengan data yang terpisah dan aman." },
     ],
     stack: ["Node.js", "WhatsApp API", "MongoDB"],
-    screenshots: ["/images/projects/uangku.png"],
+    screenshots: ["/images/projects/uangku.webp"],
     result:
       "Uangku berhasil menurunkan hambatan mencatat keuangan dengan menghadirkan pencatatan di dalam aplikasi yang paling sering dibuka pengguna. Kategori otomatis dan laporan berkala membantu pengguna memahami pola pengeluaran tanpa usaha tambahan.",
     link: null,
@@ -293,13 +299,13 @@ const caseStudies = {
   8: {
     title: "AnselEnamel Calculator Tank",
     subtitle: "Aplikasi rekomendasi perhitungan kebutuhan tank berdasarkan volume dan luas lahan, dirancang dengan antarmuka yang sederhana dan user-friendly.",
-    heroImage: "/images/projects/anselenamel.png",
-    company: "Client",
-    role: "Frontend Developer",
-    scope: "UI Design, Frontend Development, Calculator Logic",
+    heroImage: "/images/projects/ansal/ansal-cover.webp",
+    company: "Ansal Enamel Indonesia",
+    role: "Fullstack Developer",
+    scope: "Fullstack Development, UI Design, Calculator Logic",
     period: "2024",
     overview:
-      "AnselEnamel Calculator Tank adalah aplikasi web yang membantu pengguna menghitung kebutuhan tank (tangki) berdasarkan parameter seperti volume dan luas lahan. Dikembangkan untuk klien industri, aplikasi ini menyederhanakan proses perhitungan teknis yang sebelumnya rumit menjadi interaktif dan mudah dipahami, lengkap dengan rekomendasi hasil yang informatif.",
+      "AnselEnamel Calculator Tank adalah aplikasi web yang membantu pengguna menghitung kebutuhan tank (tangki) berdasarkan parameter seperti volume dan luas lahan. Dikembangkan untuk klien Ansal Enamel Indonesia, aplikasi ini menyederhanakan proses perhitungan teknis yang sebelumnya rumit menjadi interaktif dan mudah dipahami, lengkap dengan rekomendasi hasil yang informatif. Sebagai fullstack developer, saya membangun aplikasi dengan Next.js, memanfaatkan Google Apps Script untuk logika kalkulasi, komponen UI dari Shadcn, dan men-deploy-nya di Vercel.",
     challenges: [
       {
         title: "Perhitungan Teknis yang Rumit",
@@ -315,15 +321,21 @@ const caseStudies = {
       },
     ],
     solution:
-      "AnselEnamel Calculator Tank dikembangkan sebagai aplikasi web interaktif dengan input parameter yang intuitif dan hasil perhitungan langsung. Tampilan dirancang bersih dan modern agar mudah digunakan sekaligus mencerminkan kualitas produk klien.",
+      "AnselEnamel Calculator Tank dikembangkan sebagai aplikasi web interaktif dengan input parameter yang intuitif dan hasil perhitungan langsung. Sebagai fullstack developer, saya merancang arsitektur frontend dengan Next.js dan komponen Shadcn, menghubungkan logika kalkulasi melalui Google Apps Script, serta men-deploy aplikasi di Vercel untuk akses yang cepat dan andal. Tampilan dirancang bersih dan modern agar mudah digunakan sekaligus mencerminkan kualitas produk klien.",
     features: [
       { title: "Input Parameter Fleksibel", text: "Masukkan volume, luas lahan, dan parameter lain dengan mudah." },
       { title: "Hasil Perhitungan Instan", text: "Rekomendasi kebutuhan tank dihitung dan ditampilkan secara real-time." },
       { title: "Antarmuka Modern", text: "Desain bersih dan responsif yang nyaman di perangkat apa pun." },
       { title: "Hasil Siap Dibagikan", text: "Hasil perhitungan mudah dibagikan ke tim penjualan atau pelanggan." },
     ],
-    stack: ["React", "Tailwind", "Vite"],
-    screenshots: ["/images/projects/anselenamel.png"],
+    stack: ["NextJs", "AppScript", "Vercel", "Shadcn"],
+    screenshots: ["/images/projects/ansal/ansal-isi.webp"],
+    gallery: [
+      "/images/projects/ansal/ansal (1).png",
+      "/images/projects/ansal/ansal (2).png",
+      "/images/projects/ansal/ansal (3).png",
+      "/images/projects/ansal/ansal (4).png",
+    ],
     result:
       "Aplikasi ini membantu klien menyampaikan rekomendasi produk secara lebih jelas dan profesional. Calon pembeli kini dapat menghitung sendiri kebutuhan tank-nya secara mandiri, meningkatkan kepercayaan dan mempercepat proses penjualan.",
     link: null,
@@ -332,13 +344,13 @@ const caseStudies = {
   9: {
     title: "CGN Logistik — Sistem Informasi Management Logistik",
     subtitle: "Sistem informasi manajemen logistik lengkap dengan landing page perusahaan, mendukung operasional pengiriman dan memperkuat citra brand.",
-    heroImage: "/images/projects/cgn.png",
-    company: "CGN",
+    heroImage: "/images/projects/cgn-logistik/cgn-cover.webp",
+    company: "CGN Logistik",
     role: "Fullstack Developer",
-    scope: "Product Design, Fullstack Development, Landing Page",
+    scope: "Fullstack Development, Product Design, Landing Page",
     period: "2024",
     overview:
-      "CGN Logistik mencakup dua hal: sistem informasi manajemen logistik untuk mengelola operasional pengiriman, dan landing page perusahaan yang profesional. Sistem membantu internal mengelola data pengiriman, armada, dan pelanggan, sementara landing page menjadi wajah digital yang memperkuat kepercayaan pelanggan terhadap layanan CGN.",
+      "CGN Logistik mencakup dua hal: sistem informasi manajemen logistik untuk mengelola operasional pengiriman, dan landing page perusahaan yang profesional. Sebagai pemilik CGN Logistik dan fullstack developer, saya membangun sistem dengan Laravel dan MySQL, dengan antarmuka yang responsif menggunakan TailwindCSS. Sistem membantu internal mengelola data pengiriman, armada, dan pelanggan, sementara landing page menjadi wajah digital yang memperkuat kepercayaan pelanggan terhadap layanan CGN.",
     challenges: [
       {
         title: "Operasional Belum Terdigitalisasi",
@@ -354,15 +366,21 @@ const caseStudies = {
       },
     ],
     solution:
-      "CGN Logistik dibangun sebagai dua lapisan solusi: dashboard internal untuk manajemen pengiriman dan armada, serta landing page publik yang modern. Sistem dirancang modular agar data operasional dan citra brand dapat berkembang bersama pertumbuhan bisnis.",
+      "CGN Logistik dibangun sebagai dua lapisan solusi: dashboard internal untuk manajemen pengiriman dan armada, serta landing page publik yang modern. Sebagai fullstack developer, saya mengembangkan backend dengan Laravel dan database MySQL, serta membangun antarmuka yang bersih dan responsif dengan TailwindCSS. Sistem dirancang modular agar data operasional dan citra brand dapat berkembang bersama pertumbuhan bisnis.",
     features: [
       { title: "Manajemen Pengiriman", text: "Kelola data pengiriman, status, dan dokumentasi dalam satu sistem." },
       { title: "Dashboard Operasional", text: "Pemantauan armada dan aktivitas pengiriman secara terpusat." },
       { title: "Landing Page Profesional", text: "Tampilan digital yang memperkenalkan layanan dan membangun kepercayaan." },
       { title: "Manajemen Pelanggan", text: "Data pelanggan dan riwayat pengiriman yang mudah diakses." },
     ],
-    stack: ["Next.js", "Prisma", "PostgreSQL"],
-    screenshots: ["/images/projects/cgn.png"],
+    stack: ["Laravel", "MySQL", "TailwindCSS"],
+    screenshots: ["/images/projects/cgn-logistik/cgn-isi.webp"],
+    gallery: [
+      "/images/projects/cgn-logistik/cgn-logistiktemuhobi-copy-2.webp",
+      "/images/projects/cgn-logistik/cgn-logistiktemuhobi-copy-3.webp",
+      "/images/projects/cgn-logistik/cgn-logistiktemuhobi-copy.webp",
+      "/images/projects/cgn-logistik/cgn-logistiktemuhobi.webp",
+    ],
     result:
       "CGN mendapatkan sistem manajemen logistik yang terpusat dan landing page yang profesional. Operasional pengiriman lebih mudah dipantau, dan citra digital perusahaan meningkat, mendukung akuisisi pelanggan korporat baru.",
     link: null,
@@ -371,7 +389,7 @@ const caseStudies = {
   10: {
     title: "IdeTravel.com — Landing Page Travel Umroh",
     subtitle: "Landing page travel umroh yang elegan dan informatif, dirancang untuk membangun kepercayaan calon jemaah dan mendorong konversi pendaftaran.",
-    heroImage: "/images/projects/idetravel.png",
+    heroImage: "/images/projects/idetravel.webp",
     company: "Client",
     role: "Frontend Developer",
     scope: "UI/UX Design, Frontend Development, Motion Design",
@@ -401,7 +419,7 @@ const caseStudies = {
       { title: "Call-to-Action Terarah", text: "Alur pendaftaran dan kontak yang jelas di setiap bagian halaman." },
     ],
     stack: ["React", "Framer Motion", "Tailwind"],
-    screenshots: ["/images/projects/idetravel.png"],
+    screenshots: ["/images/projects/idetravel.webp"],
     result:
       "IdeTravel.com memberikan kesan profesional dan menenangkan yang relevan dengan konteks ibadah umroh. Landing page ini memperkuat kepercayaan calon jemaah dan menyediakan jalur konversi yang jelas, mendukung pertumbuhan pendaftaran klien.",
     link: null,
@@ -410,7 +428,7 @@ const caseStudies = {
   11: {
     title: "Sistem Informasi Dinas Kelautan dan Perikanan Sulawesi Selatan",
     subtitle: "Sistem informasi dashboard untuk memantau data kelautan dan perikanan di Sulawesi Selatan, mendukung pengambilan keputusan berbasis data.",
-    heroImage: "/images/projects/sistem_dinas.png",
+    heroImage: "/images/projects/sistem_dinas.webp",
     company: "Government",
     role: "Fullstack Developer",
     scope: "Dashboard Design, Fullstack Development, Data Visualization",
@@ -440,7 +458,7 @@ const caseStudies = {
       { title: "Pemantauan Wilayah", text: "Informasi kegiatan dan potensi per wilayah kerja dalam satu platform." },
     ],
     stack: ["PHP", "CodeIgniter", "MySQL"],
-    screenshots: ["/images/projects/sistem_dinas.png"],
+    screenshots: ["/images/projects/sistem_dinas.webp"],
     result:
       "Sistem ini memberikan dinas kemampuan memantau data kelautan dan perikanan secara terpusat dan real-time. Pelaporan menjadi lebih cepat dan akurat, serta pimpinan dinas dapat mengambil keputusan berbasis data yang lebih baik.",
     link: null,

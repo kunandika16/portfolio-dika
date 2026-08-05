@@ -16,7 +16,7 @@ const projectsData = {
       description: "Sistem manajemen bakat yang terintegrasi dengan HR analytics dan fitur pengelolaan karyawan yang modern dan efisien.",
       tags: ["Talent Management", "Dashboard", "Web App"],
       stack: ["ReactJS", "MaterialUI", "Redis", "Express", "PostgreSQL", "Kubernetes", "Jenkins"],
-      images: ["/images/projects/itms/itms.png"],
+      images: ["/images/projects/itms/itms.webp"],
       bgColor: "bg-blue-50/60"
     },
     {
@@ -27,7 +27,7 @@ const projectsData = {
       description: "Knowledge Management & Event Management untuk memfasilitasi pertukaran pengetahuan dan pengelolaan acara perusahaan.",
       tags: ["Knowledge Management", "Event Management", "Web App"],
       stack: ["ReactJS", "MaterialUI", "Express", "PostgreSQL"],
-      images: ["/images/projects/explora/layar.png"],
+      images: ["/images/projects/explora/layar.webp"],
       bgColor: "bg-fuchsia-50/60"
     },
     {
@@ -38,7 +38,7 @@ const projectsData = {
       description: "Sistem Organization and Job Management yang membantu perusahaan dalam memetakan struktur organisasi dan pekerjaan.",
       tags: ["Organization", "Management", "Dashboard"],
       stack: ["Vue", "Laravel", "MySQL"],
-      images: ["/images/projects/orlens.png"],
+      images: ["/images/projects/orlens.webp"],
       bgColor: "bg-emerald-50/60"
     },
     {
@@ -49,7 +49,7 @@ const projectsData = {
       description: "Attrition Retention Management System untuk menganalisis dan mengelola retensi karyawan di perusahaan.",
       tags: ["Retention", "Analytics", "Dashboard"],
       stack: ["React", "Python", "PostgreSQL"],
-      images: ["/images/projects/arms.png"],
+      images: ["/images/projects/arms.webp"],
       bgColor: "bg-amber-50/60"
     },
     {
@@ -60,29 +60,29 @@ const projectsData = {
       description: "Sistem Informasi Management Asuransi untuk mempermudah proses klaim dan pengelolaan polis asuransi.",
       tags: ["Insurance", "Management", "Web App"],
       stack: ["Angular", "Spring Boot", "Oracle"],
-      images: ["/images/projects/simasuransi.png"],
+      images: ["/images/projects/simasuransi.webp"],
       bgColor: "bg-blue-50/60"
     },
     {
       id: 8,
       title: "AnselEnamel Calculator Tank",
-      company: "Client",
+      company: "Ansal Enamel Indonesia",
       year: "2024",
       description: "Aplikasi Rekomendasi Hitungan Kebutuhan Tank berdasarkan volume dan luas lahan dengan antarmuka yang user-friendly.",
       tags: ["Calculator", "Industrial", "Web App"],
-      stack: ["React", "Tailwind", "Vite"],
-      images: ["/images/projects/anselenamel.png"],
+      stack: ["NextJs", "AppScript", "Vercel", "Shadcn"],
+      images: ["/images/projects/ansal/ansal-cover.webp"],
       bgColor: "bg-slate-50/60"
     },
     {
       id: 9,
       title: "CGN Logistik",
-      company: "CGN",
+      company: "CGN Logistik",
       year: "2024",
       description: "Sistem Informasi Management Logistik dan Landing Page untuk perusahaan logistik modern.",
       tags: ["Logistics", "Management", "Landing Page"],
-      stack: ["Next.js", "Prisma", "PostgreSQL"],
-      images: ["/images/projects/cgn.png"],
+      stack: ["Laravel", "MySQL", "TailwindCSS"],
+      images: ["/images/projects/cgn-logistik/cgn-cover.webp"],
       bgColor: "bg-indigo-50/60"
     },
     {
@@ -93,7 +93,7 @@ const projectsData = {
       description: "Landing Page Travel Umroh yang elegan dan informatif untuk menarik calon jemaah.",
       tags: ["Landing Page", "Travel", "Web Design"],
       stack: ["React", "Framer Motion", "Tailwind"],
-      images: ["/images/projects/idetravel.png"],
+      images: ["/images/projects/idetravel.webp"],
       bgColor: "bg-emerald-50/60"
     },
     {
@@ -104,7 +104,7 @@ const projectsData = {
       description: "Sistem informasi dashboard untuk memantau data kelautan dan perikanan di wilayah Sulawesi Selatan.",
       tags: ["Government", "Information System", "Dashboard"],
       stack: ["PHP", "CodeIgniter", "MySQL"],
-      images: ["/images/projects/sistem_dinas.png"],
+      images: ["/images/projects/sistem_dinas.webp"],
       bgColor: "bg-cyan-50/60"
     }
   ],
@@ -114,10 +114,10 @@ const projectsData = {
       title: "TemuHobi.com",
       company: "Startup",
       year: "2024",
-      description: "Aplikasi yang mempertemukan pegiat hobi dan komunitas dengan fitur sosial yang interaktif dan dinamis.",
-      tags: ["Mobile App", "Community", "Social"],
-      stack: ["React Native", "Firebase", "Node.js"],
-      images: ["/images/projects/temuhobi.png"],
+      description: "Platform yang mempertemukan pegiat hobi dan komunitas, meraih penghargaan dari Kemenparekraf.",
+      tags: ["Community", "Social", "Award"],
+      stack: ["ReactTS", "AntDesign", "Express", "PostgreSQL", "Cloudflare"],
+      images: ["/images/projects/temuhobi/temuhobi-cover.webp"],
       bgColor: "bg-orange-50/60"
     },
     {
@@ -128,7 +128,7 @@ const projectsData = {
       description: "Aplikasi pencatatan keuangan inovatif yang terintegrasi penuh dengan WhatsApp untuk kemudahan input transaksi.",
       tags: ["Finance", "WhatsApp Integration", "Mobile App"],
       stack: ["Node.js", "WhatsApp API", "MongoDB"],
-      images: ["/images/projects/uangku.png"],
+      images: ["/images/projects/uangku.webp"],
       bgColor: "bg-green-50/60"
     }
   ],

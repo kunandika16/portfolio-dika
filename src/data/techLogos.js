@@ -5,13 +5,20 @@ const techLogos = {
   React: { slug: "react", color: "61DAFB" },
   "React.js": { slug: "react", color: "61DAFB" },
   ReactJS: { slug: "react", color: "61DAFB" },
+  ReactTS: { slug: "react", color: "61DAFB" },
+  AntDesign: { slug: "antdesign", color: "0170FE" },
   "React Native": { slug: "react", color: "61DAFB" },
   "Next.js": { slug: "nextdotjs", color: "000000" },
+  NextJs: { slug: "nextdotjs", color: "000000" },
+  AppScript: { slug: "googlesheets", color: "34A853" },
+  Vercel: { slug: "vercel", color: "000000" },
+  Shadcn: { slug: "shadcnui", color: "000000" },
   Vue: { slug: "vuedotjs", color: "4FC08D" },
   Angular: { slug: "angular", color: "DD0031" },
   "Node.js": { slug: "nodedotjs", color: "5FA04E" },
   Express: { slug: "express", color: "000000" },
   Tailwind: { slug: "tailwindcss", color: "06B6D4" },
+  TailwindCSS: { slug: "tailwindcss", color: "06B6D4" },
   MaterialUI: { slug: "mui", color: "007FFF" },
   Laravel: { slug: "laravel", color: "FF2D20" },
   Python: { slug: "python", color: "3776AB" },
@@ -28,6 +35,7 @@ const techLogos = {
   Redis: { slug: "redis", color: "FF4438" },
   Kubernetes: { slug: "kubernetes", color: "326CE5" },
   Jenkins: { slug: "jenkins", color: "D24939" },
+  Cloudflare: { slug: "cloudflare", color: "F38020" },
 };
 
 export function getTechLogo(name) {

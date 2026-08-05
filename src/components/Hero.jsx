@@ -3,11 +3,10 @@ import { Button } from './ui/button';
 import { ArrowRight, Sparkles } from 'lucide-react';
 
 const sliderImages = [
-  "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?q=80&w=800&auto=format",
-  "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format",
-  "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?q=80&w=800&auto=format",
-  "https://images.unsplash.com/photo-1498049794561-7780e7231661?q=80&w=800&auto=format",
-  "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=800&auto=format"
+  "/images/projects/ansal/ansal-cover.webp",
+  "/images/projects/explora/header.webp",
+  "/images/projects/itms/itms.webp",
+  "/images/projects/temuhobi/temuhobi-cover.webp",
 ];
 
 const stagger = {
