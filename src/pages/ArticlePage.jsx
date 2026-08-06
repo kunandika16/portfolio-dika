@@ -151,16 +151,19 @@ export default function ArticlePage() {
         </div>
       </div>
 
-      {/* Screenshot */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-        className="w-full rounded-[24px] overflow-hidden mb-24 border border-slate-100 shadow-sm"
-      >
-        <img src={article.screenshots[0]} alt={`${article.title} screenshot`} className="w-full object-cover" loading="lazy" />
-      </motion.div>
+      {/* Screenshots */}
+      {article.screenshots.map((src) => (
+        <motion.div
+          key={src}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="w-full rounded-[24px] overflow-hidden mb-8 border border-slate-100 shadow-sm"
+        >
+          <img src={src} alt={`${article.title} screenshot`} className="w-full object-cover" loading="lazy" />
+        </motion.div>
+      ))}
 
       {/* Diagonal Divider */}
       <div className="w-full h-8 mb-24 border-y border-slate-100/50 opacity-30"

@@ -36,6 +36,8 @@ const techLogos = {
   Kubernetes: { slug: "kubernetes", color: "326CE5" },
   Jenkins: { slug: "jenkins", color: "D24939" },
   Cloudflare: { slug: "cloudflare", color: "F38020" },
+  Flutter: { slug: "flutter", color: "02569B" },
+  NFC: { slug: "nfc", color: "002E5B" },
 };
 
 export function getTechLogo(name) {

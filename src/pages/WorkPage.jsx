@@ -87,13 +87,13 @@ const projectsData = {
     },
     {
       id: 10,
-      title: "IdeTravel.com",
+      title: "Ide Tour Travel",
       company: "Client",
       year: "2024",
       description: "Landing Page Travel Umroh yang elegan dan informatif untuk menarik calon jemaah.",
       tags: ["Landing Page", "Travel", "Web Design"],
       stack: ["React", "Framer Motion", "Tailwind"],
-      images: ["/images/projects/idetravel.webp"],
+      images: ["/images/projects/idetour/travel.png"],
       bgColor: "bg-emerald-50/60"
     },
     {
@@ -130,6 +130,28 @@ const projectsData = {
       stack: ["Node.js", "WhatsApp API", "MongoDB"],
       images: ["/images/projects/uangku.webp"],
       bgColor: "bg-green-50/60"
+    },
+    {
+      id: 12,
+      title: "MusicRent",
+      company: "Startup",
+      year: "2025",
+      description: "Aplikasi penyewaan alat musik dengan sistem booking, manajemen inventaris, dan pembayaran terintegrasi.",
+      tags: ["Rental", "Booking", "Mobile App"],
+      stack: ["React Native", "Firebase", "MySQL"],
+      images: ["/images/projects/musicrent.webp"],
+      bgColor: "bg-purple-50/60"
+    },
+    {
+      id: 13,
+      title: "NFC Absensi",
+      company: "School",
+      year: "2025",
+      description: "Aplikasi absensi sekolah berbasis NFC melalui mobile app untuk pencatatan kehadiran yang cepat dan akurat.",
+      tags: ["Attendance", "NFC", "Education"],
+      stack: ["Flutter", "AppScript", "NFC"],
+      images: ["/images/projects/nfcPresensi.webp"],
+      bgColor: "bg-teal-50/60"
     }
   ],
   "UI/UX": []

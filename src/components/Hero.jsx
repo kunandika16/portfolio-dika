@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { Button } from './ui/button';
 import { ArrowRight, Sparkles } from 'lucide-react';
 
@@ -7,6 +8,8 @@ const sliderImages = [
   "/images/projects/explora/header.webp",
   "/images/projects/itms/itms.webp",
   "/images/projects/temuhobi/temuhobi-cover.webp",
+  "/images/projects/musicrent.webp",
+  "/images/projects/nfcPresensi.webp",
 ];
 
 const stagger = {
@@ -82,18 +85,26 @@ export default function Hero() {
           variants={fadeUp}
           className="flex flex-wrap items-center justify-center gap-4"
         >
-          <Button
-            size="lg"
-            className="rounded-full px-8 h-[52px] text-[15px] font-semibold bg-slate-900 hover:bg-slate-800 text-white shadow-[0_16px_40px_-12px_rgba(15,23,42,0.35)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_48px_-12px_rgba(15,23,42,0.4)]"
+          <Link to="/work">
+            <Button
+              size="lg"
+              className="rounded-full px-8 h-[52px] text-[15px] font-semibold bg-slate-900 hover:bg-slate-800 text-white shadow-[0_16px_40px_-12px_rgba(15,23,42,0.35)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_48px_-12px_rgba(15,23,42,0.4)]"
+            >
+              View My Work <ArrowRight size={16} className="ml-1" />
+            </Button>
+          </Link>
+          <a
+            href="https://wa.me/6285398212081?text=halo%20kak%20saya%20mau%20info%20terkait%20jasa%20pembuatan%20aplikasi"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            View My Work <ArrowRight size={16} className="ml-1" />
-          </Button>
-          <Button
-            size="lg"
-            className="rounded-full px-8 h-[52px] text-[15px] font-semibold glass-strong text-slate-700 dark:text-slate-200 hover:bg-white/80 dark:hover:bg-slate-800/80 transition-all duration-300 hover:-translate-y-1 shadow-[0_12px_36px_-12px_rgba(15,23,42,0.1)] hover:shadow-[0_16px_40px_-12px_rgba(15,23,42,0.15)]"
-          >
-            Get In Touch
-          </Button>
+            <Button
+              size="lg"
+              className="rounded-full px-8 h-[52px] text-[15px] font-semibold glass-strong text-slate-700 dark:text-slate-200 hover:bg-white/80 dark:hover:bg-slate-800/80 transition-all duration-300 hover:-translate-y-1 shadow-[0_12px_36px_-12px_rgba(15,23,42,0.1)] hover:shadow-[0_16px_40px_-12px_rgba(15,23,42,0.15)]"
+            >
+              Get In Touch
+            </Button>
+          </a>
         </motion.div>
 
         {/* Glass stat pills — subtle credibility */}

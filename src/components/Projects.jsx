@@ -13,12 +13,14 @@ const projectsData = {
     { id: 5, title: "SIMAsuransi", desc: "Sistem Informasi Management Asuransi.", stack: ["Angular", "Spring Boot", "Oracle"], img: "/images/projects/simasuransi.webp" },
     { id: 8, title: "AnselEnamel", desc: "Calculator Tank: Rekomendasi Hitungan Kebutuhan Tank.", stack: ["NextJs", "AppScript", "Vercel", "Shadcn"], img: "/images/projects/ansal/ansal-cover.webp" },
     { id: 9, title: "CGN Logistik", desc: "Sistem Informasi Management Logistik dan Landing Page.", stack: ["Laravel", "MySQL", "TailwindCSS"], img: "/images/projects/cgn-logistik/cgn-cover.webp" },
-    { id: 10, title: "IdeTravel.com", desc: "Landing Page Travel Umroh.", stack: ["React", "Framer Motion", "Tailwind"], img: "/images/projects/idetravel.webp" },
+    { id: 10, title: "Ide Tour Travel", desc: "Landing Page Travel Umroh.", stack: ["React", "Framer Motion", "Tailwind"], img: "/images/projects/idetour/travel.png" },
     { id: 11, title: "Sistem Informasi Dinas", desc: "Sistem Informasi Dinas Kelautan dan Perikanan Sulawesi Selatan.", stack: ["PHP", "CodeIgniter", "MySQL"], img: "/images/projects/sistem_dinas.webp" }
   ],
   "Mobile Apps": [
     { id: 6, title: "TemuHobi.com", desc: "Platform yang mempertemukan pegiat hobi dan komunitas, meraih penghargaan dari Kemenparekraf.", stack: ["ReactTS", "AntDesign", "Express", "PostgreSQL", "Cloudflare"], img: "/images/projects/temuhobi/temuhobi-cover.webp" },
-    { id: 7, title: "Uangku", desc: "Aplikasi Pencatatan Keuangan berbasis whatsapp.", stack: ["Node.js", "WhatsApp API", "MongoDB"], img: "/images/projects/uangku.webp" }
+    { id: 7, title: "Uangku", desc: "Aplikasi Pencatatan Keuangan berbasis whatsapp.", stack: ["Node.js", "WhatsApp API", "MongoDB"], img: "/images/projects/uangku.webp" },
+    { id: 12, title: "MusicRent", desc: "Aplikasi penyewaan alat musik dengan sistem booking dan manajemen inventaris.", stack: ["React Native", "Firebase", "MySQL"], img: "/images/projects/musicrent.webp" },
+    { id: 13, title: "NFC Absensi", desc: "Aplikasi absensi sekolah menggunakan NFC melalui mobile app.", stack: ["Flutter", "AppScript", "NFC"], img: "/images/projects/nfcPresensi.webp" }
   ],
   "UI/UX": []
 };

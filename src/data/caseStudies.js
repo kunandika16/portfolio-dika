@@ -387,15 +387,15 @@ const caseStudies = {
   },
 
   10: {
-    title: "IdeTravel.com — Landing Page Travel Umroh",
+    title: "Ide Tour Travel — Landing Page Travel Umroh",
     subtitle: "Landing page travel umroh yang elegan dan informatif, dirancang untuk membangun kepercayaan calon jemaah dan mendorong konversi pendaftaran.",
-    heroImage: "/images/projects/idetravel.webp",
-    company: "Client",
+    heroImage: "/images/projects/idetour/travel.png",
+    company: "Ide Tour Travel",
     role: "Frontend Developer",
     scope: "UI/UX Design, Frontend Development, Motion Design",
     period: "2024",
     overview:
-      "IdeTravel.com adalah landing page untuk biro perjalanan umroh yang ingin tampil profesional dan meyakinkan di era digital. Halaman ini menyajikan informasi paket, itinerary, testimoni, dan proses pendaftaran dengan desain yang elegan serta animasi yang halus, sehingga calon jemaah merasa nyaman dan percaya untuk memilih layanan ini.",
+      "Ide Tour Travel adalah landing page untuk biro perjalanan umroh yang ingin tampil profesional dan meyakinkan di era digital. Halaman ini menyajikan informasi paket, itinerary, testimoni, dan proses pendaftaran dengan desain yang elegan serta animasi yang halus, sehingga calon jemaah merasa nyaman dan percaya untuk memilih layanan ini.",
     challenges: [
       {
         title: "Kepercayaan Calon Jemaah",
@@ -411,17 +411,18 @@ const caseStudies = {
       },
     ],
     solution:
-      "Landing page IdeTravel dirancang dengan hierarki visual yang kuat: hero yang menenangkan, penyajian paket yang rapi, sosial bukti dari testimoni, dan call-to-action yang jelas di setiap bagian. Animasi framer-motion dipakai halus untuk menghadirkan kesan premium tanpa mengganggu performa.",
+      "Landing page Ide Tour Travel dirancang dengan hierarki visual yang kuat: hero yang menenangkan, penyajian paket yang rapi, sosial bukti dari testimoni, dan call-to-action yang jelas di setiap bagian. Animasi framer-motion dipakai halus untuk menghadirkan kesan premium tanpa mengganggu performa.",
     features: [
       { title: "Hero & Branding Elegan", text: "Pembuka visual yang menyampaikan nilai layanan secara emosional." },
       { title: "Katalog Paket", text: "Penyajian paket umroh dengan detail fasilitas dan harga yang jelas." },
+      { title: "Cek Ketersediaan", text: "Fitur interaktif untuk memeriksa jadwal dan kuota keberangkatan setiap paket secara langsung." },
       { title: "Testimoni Jemaah", text: "Sosial bukti dari pengalaman jemaah untuk membangun kepercayaan." },
       { title: "Call-to-Action Terarah", text: "Alur pendaftaran dan kontak yang jelas di setiap bagian halaman." },
     ],
     stack: ["React", "Framer Motion", "Tailwind"],
-    screenshots: ["/images/projects/idetravel.webp"],
+    screenshots: ["/images/projects/idetour/isi.png"],
     result:
-      "IdeTravel.com memberikan kesan profesional dan menenangkan yang relevan dengan konteks ibadah umroh. Landing page ini memperkuat kepercayaan calon jemaah dan menyediakan jalur konversi yang jelas, mendukung pertumbuhan pendaftaran klien.",
+      "Ide Tour Travel memberikan kesan profesional dan menenangkan yang relevan dengan konteks ibadah umroh. Landing page ini memperkuat kepercayaan calon jemaah dan menyediakan jalur konversi yang jelas, mendukung pertumbuhan pendaftaran klien.",
     link: null,
   },
 
@@ -461,6 +462,84 @@ const caseStudies = {
     screenshots: ["/images/projects/sistem_dinas.webp"],
     result:
       "Sistem ini memberikan dinas kemampuan memantau data kelautan dan perikanan secara terpusat dan real-time. Pelaporan menjadi lebih cepat dan akurat, serta pimpinan dinas dapat mengambil keputusan berbasis data yang lebih baik.",
+    link: null,
+  },
+
+  12: {
+    title: "MusicRent — Aplikasi Penyewaan Alat Musik",
+    subtitle: "Aplikasi penyewaan alat musik dengan sistem booking, manajemen inventaris, dan pembayaran terintegrasi untuk memudahkan penyewa maupun pemilik usaha rental.",
+    heroImage: "/images/projects/musicrent.webp",
+    company: "Startup",
+    role: "Mobile Developer",
+    scope: "Mobile Development, Booking System, Firebase Integration",
+    period: "2025",
+    overview:
+      "MusicRent adalah aplikasi mobile yang menghubungkan penyewa dengan penyedia alat musik. Aplikasi ini memungkinkan pengguna mencari dan memesan alat musik — mulai dari gitar, keyboard, hingga drum — dengan status ketersediaan real-time, sistem booking yang jelas, dan pembayaran yang terintegrasi. Di sisi penyedia, aplikasi membantu mengelola inventaris dan jadwal penyewaan agar operasional lebih tertib.",
+    challenges: [
+      {
+        title: "Pencarian Alat Musik Manual",
+        text: "Penyewa harus menghubungi satu per satu tempat rental atau mencarinya lewat media sosial tanpa informasi ketersediaan yang jelas.",
+      },
+      {
+        title: "Jadwal Sewa Bentrok",
+        text: "Penyedia kesulitan mengelola jadwal penyewaan sehingga sering terjadi bentrok antar penyewa atau alat yang terlewat.",
+      },
+      {
+        title: "Proses Transaksi Rumit",
+        text: "Booking dan pembayaran masih dilakukan manual, menyulitkan pelacakan status dan riwayat sewa.",
+      },
+    ],
+    solution:
+      "MusicRent dibangun dengan React Native untuk pengalaman mobile yang konsisten di Android dan iOS, Firebase sebagai backend untuk autentikasi, notifikasi, dan data real-time, serta MySQL untuk penyimpanan data transaksi dan inventaris yang terstruktur. Sistem booking dirancang agar status ketersediaan alat selalu akurat dan pembayaran dapat diproses langsung di aplikasi.",
+    features: [
+      { title: "Katalog Alat Musik", text: "Jelajahi alat musik berdasarkan kategori, harga, dan ketersediaan." },
+      { title: "Sistem Booking", text: "Pesan alat dengan jadwal yang jelas dan status real-time." },
+      { title: "Manajemen Inventaris", text: "Penyedia mengelola stok dan jadwal penyewaan dalam satu dashboard." },
+      { title: "Pembayaran Terintegrasi", text: "Proses pembayaran dan riwayat transaksi yang tercatat otomatis." },
+    ],
+    stack: ["React Native", "Firebase", "MySQL"],
+    screenshots: ["/images/projects/musicrent.webp"],
+    result:
+      "MusicRent mempermudah penyewa menemukan dan memesan alat musik secara instan, sekaligus membantu penyedia mengelola inventaris dan jadwal dengan lebih rapi. Proses booking yang jelas dan pembayaran terintegrasi membuat transaksi lebih cepat dan terhindar dari jadwal bentrok.",
+    link: null,
+  },
+
+  13: {
+    title: "NFC Absensi — Absensi Sekolah via NFC",
+    subtitle: "Aplikasi absensi sekolah berbasis NFC yang memungkinkan pencatatan kehadiran siswa secara cepat dan akurat melalui mobile app.",
+    heroImage: "/images/projects/nfcPresensi.webp",
+    company: "School",
+    role: "Mobile Developer",
+    scope: "Mobile Development, NFC Integration, AppScript Backend",
+    period: "2025",
+    overview:
+      "NFC Absensi adalah aplikasi mobile yang mengubah cara pencatatan kehadiran di sekolah. Dengan menempelkan kartu atau perangkat NFC ke smartphone, kehadiran siswa tercatat otomatis dalam hitungan detik. Aplikasi ini menghilangkan antrean panjang dan kesalahan pencatatan manual, sekaligus memberi guru dan orang tua data kehadiran yang akurat secara real-time.",
+    challenges: [
+      {
+        title: "Absensi Manual yang Lambat",
+        text: "Pencatatan kehadiran manual memakan waktu lama, terutama di jam-jam sibuk, dan rawan salah catat.",
+      },
+      {
+        title: "Data Kehadiran Tidak Tersentralisasi",
+        text: "Rekap kehadiran tersebar di kertas atau file terpisah sehingga sulit dipantau oleh guru dan orang tua.",
+      },
+      {
+        title: "Rentan Titip Absen",
+        text: "Sistem absen tradisional mudah dimanipulasi karena tidak ada verifikasi identitas yang kuat.",
+      },
+    ],
+    solution:
+      "NFC Absensi dibangun dengan Flutter untuk performa dan pengalaman antarmuka yang mulus di berbagai perangkat Android, memanfaatkan pembacaan NFC untuk verifikasi identitas siswa yang unik, serta Google Apps Script sebagai backend ringan untuk menyimpan dan merekap data kehadiran. Proses absen cukup sekali tempel — data langsung tercatat dan terkirim ke rekap kehadiran.",
+    features: [
+      { title: "Absen NFC Instan", text: "Cukup tempelkan kartu NFC untuk mencatat kehadiran dalam hitungan detik." },
+      { title: "Rekap Kehadiran Otomatis", text: "Data kehadiran tersimpan dan direkap otomatis untuk guru dan administrasi." },
+      { title: "Verifikasi Identitas", text: "Setiap siswa memiliki ID NFC unik sehingga absen tidak mudah dimanipulasi." },
+      { title: "Monitoring Real-time", text: "Guru dan orang tua dapat memantau kehadiran siswa secara real-time." },
+    ],
+    stack: ["Flutter", "AppScript", "NFC"],
+    screenshots: ["/images/projects/nfcPresensi.webp"],
+    result:
+      "NFC Absensi mempercepat proses pencatatan kehadiran secara signifikan dan membuat data kehadiran lebih akurat serta terpusat. Manipulasi absen dapat ditekan berkat verifikasi NFC, dan guru maupun orang tua mendapatkan visibilitas kehadiran siswa secara real-time.",
     link: null,
   },
 };
