@@ -1,27 +1,28 @@
 import { motion } from 'framer-motion';
-import { Briefcase, Code2, Layout, Database, Award, Trophy, Star, Layers } from 'lucide-react';
+import { Briefcase, Code2, Layout, Database, Smartphone, Award, Trophy } from 'lucide-react';
+import { getTechLogo } from '../data/techLogos';
 
 const experiences = [
   {
     id: 1,
     company: "PT Pos Indonesia",
     role: "Frontend Developer",
-    period: "2023 - Present",
+    period: "2024 - Sekarang",
     description: "Developing internal web applications and dashboards that streamline business operations. Collaborating with cross-functional teams to build clean, scalable interfaces that improve productivity."
   },
   {
     id: 2,
-    company: "Software Development Company",
+    company: "CGN Logistik",
     role: "Fullstack Developer",
     period: "2021 - 2023",
     description: "Designed and built end-to-end applications — from frontend interfaces to backend APIs and databases. Delivered multiple client projects across HR, logistics, and government sectors."
   },
   {
     id: 3,
-    company: "State-Owned Enterprise (BUMN)",
-    role: "IT Consultant",
-    period: "2017 - 2019",
-    description: "Consulted on digital transformation initiatives, modernizing legacy systems into scalable web applications. Conducted workshops to transition teams to agile methodologies."
+    company: "Dinas Kelautan dan Perikanan Sulawesi Selatan",
+    role: "IT Support",
+    period: "2020 - 2021",
+    description: "Provided IT support and maintained information systems for the marine and fisheries agency, ensuring smooth daily operations and reliable technical assistance."
   }
 ];
 
@@ -42,6 +43,13 @@ const skills = [
   },
   {
     id: 3,
+    category: "Mobile App",
+    icon: <Smartphone className="w-6 h-6 text-orange-500" />,
+    color: "bg-orange-50 border-orange-100",
+    items: ["Flutter", "React Native", "Firebase", "NFC", "Mobile UI Design"]
+  },
+  {
+    id: 4,
     category: "UI/UX & Tools",
     icon: <Layout className="w-6 h-6 text-purple-500" />,
     color: "bg-purple-50 border-purple-100",
@@ -52,23 +60,18 @@ const skills = [
 const achievements = [
   {
     id: 1,
-    title: "Best Digital Innovation Award",
-    year: "2023",
-    issuer: "Tech Excellence Awards",
+    title: "POSTAL Innovation Award 2025",
+    year: "2025",
+    issuer: "PT Pos Indonesia",
+    detail: "Juara 2 untuk Project ARMS — Attrition Retention Management System",
     icon: <Trophy className="w-5 h-5 text-amber-500" />
   },
   {
     id: 2,
-    title: "Top 10 Frontend Developers",
-    year: "2022",
-    issuer: "Developer Community ID",
-    icon: <Star className="w-5 h-5 text-amber-500" />
-  },
-  {
-    id: 3,
-    title: "Outstanding Contribution",
-    year: "2020",
-    issuer: "Global Logistics Co.",
+    title: "Recognition of Achievement",
+    year: "2024",
+    issuer: "Kementerian Ekonomi Kreatif",
+    detail: "Pengakuan atas platform TemuHobi.com",
     icon: <Award className="w-5 h-5 text-amber-500" />
   }
 ];
@@ -114,7 +117,7 @@ export default function AboutPage() {
               <div className="relative rounded-[32px] overflow-hidden p-2 bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 shadow-xl shadow-slate-200/50 dark:shadow-black/30">
                 <div className="absolute inset-0 bg-gradient-to-tr from-blue-100 to-indigo-50 opacity-50"></div>
                 <img 
-                  src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=600&auto=format" 
+                  src="/images/profil/dika2.webp" 
                   alt="Andika Rian Ansari Profile" 
                   className="w-full aspect-[4/5] object-cover rounded-[24px] relative z-10"
                   loading="lazy"
@@ -197,7 +200,7 @@ export default function AboutPage() {
             <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">A focused skill set across frontend, backend, and interface design to ship complete software products.</p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
             {skills.map((skill) => (
               <motion.div 
                 key={skill.id}
@@ -209,11 +212,15 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-6">{skill.category}</h3>
                 <div className="flex flex-wrap gap-2.5">
-                  {skill.items.map((item, idx) => (
-                    <span key={idx} className="px-3.5 py-1.5 bg-white dark:bg-slate-700/60 border border-slate-200/60 dark:border-slate-600/60 text-slate-600 dark:text-slate-300 text-sm font-medium rounded-full shadow-sm">
-                      {item}
-                    </span>
-                  ))}
+                  {skill.items.map((item, idx) => {
+                    const logo = getTechLogo(item);
+                    return (
+                      <span key={idx} className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white dark:bg-slate-700/60 border border-slate-200/60 dark:border-slate-600/60 text-slate-600 dark:text-slate-300 text-sm font-medium rounded-full shadow-sm">
+                        {logo && <img src={logo.url} alt={item} className="w-4 h-4" loading="lazy" />}
+                        {item}
+                      </span>
+                    );
+                  })}
                 </div>
               </motion.div>
             ))}
@@ -229,21 +236,24 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold text-slate-900 dark:text-white tracking-tight">Key Achievements</h2>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {achievements.map((achievement) => (
               <motion.div 
                 key={achievement.id}
                 variants={itemVariants}
-                className="flex items-center gap-5 p-6 rounded-[24px] bg-white dark:bg-slate-800/80 border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow"
+                className="flex items-start gap-5 p-6 rounded-[24px] bg-white dark:bg-slate-800/80 border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow"
               >
                 <div className="w-12 h-12 rounded-full bg-amber-50 dark:bg-amber-500/10 flex items-center justify-center flex-shrink-0">
                   {achievement.icon}
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900 dark:text-white leading-tight mb-1">{achievement.title}</h4>
-                  <div className="text-sm text-slate-500 dark:text-slate-400 font-medium">
+                  <div className="text-sm text-slate-500 dark:text-slate-400 font-medium mb-1">
                     {achievement.issuer} <span className="mx-1">•</span> {achievement.year}
                   </div>
+                  {achievement.detail && (
+                    <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">{achievement.detail}</p>
+                  )}
                 </div>
               </motion.div>
             ))}

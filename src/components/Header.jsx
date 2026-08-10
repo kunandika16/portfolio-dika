@@ -11,17 +11,15 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-white/20 dark:border-white/10 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 cursor-pointer group">
-          <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center text-white font-bold text-lg shadow-sm group-hover:shadow-md transition-all group-hover:scale-105">
-            C
-          </div>
-          <span className="font-bold text-xl tracking-tight text-slate-800 dark:text-slate-100">CreativeTech.</span>
+          <img src="/images/profil/icon.png" alt="Andika Rian Ansari logo" className="w-9 h-9 rounded-full object-cover shadow-sm group-hover:shadow-md transition-all group-hover:scale-105" />
+          <span className="font-bold text-xl tracking-tight text-slate-800 dark:text-slate-100">Portfolio</span>
         </Link>
         
         <nav className="hidden md:flex items-center gap-8">
           <Link to="/" className={`text-sm font-semibold transition-colors ${location.pathname === '/' ? 'text-indigo-600 dark:text-indigo-400' : 'text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400'}`}>Home</Link>
           <Link to="/work" className={`text-sm font-semibold transition-colors ${location.pathname === '/work' ? 'text-indigo-600 dark:text-indigo-400' : 'text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400'}`}>Work</Link>
           <Link to="/about" className={`text-sm font-semibold transition-colors ${location.pathname === '/about' ? 'text-indigo-600 dark:text-indigo-400' : 'text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400'}`}>About</Link>
-          <a href="/#resources" className="text-sm font-semibold text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Resources</a>
+          {/* <a href="/#resources" className="text-sm font-semibold text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Resources</a> */}
         </nav>
 
         <div className="flex items-center gap-3">

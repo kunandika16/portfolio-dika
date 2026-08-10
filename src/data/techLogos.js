@@ -38,6 +38,23 @@ const techLogos = {
   Cloudflare: { slug: "cloudflare", color: "F38020" },
   Flutter: { slug: "flutter", color: "02569B" },
   NFC: { slug: "nfc", color: "002E5B" },
+  Docker: { slug: "docker", color: "2496ED" },
+  GraphQL: { slug: "graphql", color: "E10098" },
+  TypeScript: { slug: "typescript", color: "3178C6" },
+  JavaScript: { slug: "javascript", color: "F7DF1E" },
+  Postgres: { slug: "postgresql", color: "4169E1" },
+  LLM: { slug: "openai", color: "412991" },
+  "Meta WA Business Official": { slug: "whatsapp", color: "25D366" },
+  "Tailwind CSS": { slug: "tailwindcss", color: "06B6D4" },
+  "Spring Boot": { slug: "spring", color: "6DB33F" },
+  Figma: { slug: "figma", color: "F24E1E" },
+  Git: { slug: "git", color: "F05032" },
+  Go: { slug: "go", color: "00ADD8" },
+  ReactFlow: { slug: "react", color: "FF4154" },
+  WordPress: { slug: "wordpress", color: "21759B" },
+  WooCommerce: { slug: "woocommerce", color: "96588A" },
+  Minio: { slug: "minio", color: "C72E49" },
+  "RajaOngkir": { slug: "map", color: "4285F4" },
 };
 
 export function getTechLogo(name) {

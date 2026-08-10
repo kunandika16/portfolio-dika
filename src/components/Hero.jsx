@@ -4,8 +4,11 @@ import { Button } from './ui/button';
 import { ArrowRight, Sparkles } from 'lucide-react';
 
 const sliderImages = [
-  "/images/projects/ansal/ansal-cover.webp",
-  "/images/projects/explora/header.webp",
+  "/images/cover/travel.webp",
+  "/images/cover/laundry.webp",
+  "/images/cover/distro-makassar.webp",
+  "/images/cover/bisneslab.webp",
+  "/images/projects/ansal/gfst.webp",
   "/images/projects/itms/itms.webp",
   "/images/projects/temuhobi/temuhobi-cover.webp",
   "/images/projects/musicrent.webp",
@@ -52,9 +55,7 @@ export default function Hero() {
           variants={fadeUp}
           className="glass inline-flex items-center gap-3 px-3 py-2.5 pr-5 rounded-full shadow-[0_8px_32px_-8px_rgba(15,23,42,0.08)] mb-8"
         >
-          <div className="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center text-[11px] text-white font-bold shadow-sm">
-            AR
-          </div>
+          <img src="/images/profil/icon.png" alt="Andika Rian Ansari logo" className="w-8 h-8 rounded-full object-cover shadow-sm" />
           <span className="text-[13px] font-semibold text-slate-700 dark:text-slate-200 tracking-wide">Andika Rian Ansari</span>
           <Sparkles size={14} className="text-indigo-400 opacity-70" />
         </motion.div>
@@ -64,12 +65,11 @@ export default function Hero() {
           variants={fadeUp}
           className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-[72px] font-bold tracking-tight text-slate-900 dark:text-white mb-6 leading-[1.08] max-w-4xl mx-auto"
         >
-          Building{' '}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-violet-500 to-sky-500 text-shimmer">
-            Robust Software
-          </span>
+          Turning Ideas Into
           <br className="hidden sm:block" />
-          For Real-World Needs
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-violet-500 to-sky-500 text-shimmer">
+            Digital Experiences
+          </span>
         </motion.h1>
 
         {/* Subheading */}
@@ -77,7 +77,7 @@ export default function Hero() {
           variants={fadeUp}
           className="font-sans text-base md:text-lg text-slate-500 dark:text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed"
         >
-          A software developer focused on building clean, scalable applications — from web dashboards to mobile experiences that solve real problems.
+          I turn ideas into fast, precise digital products — clean web apps, dashboards, and mobile experiences engineered to work and shipped on time.
         </motion.p>
 
         {/* CTA buttons — glass styling */}
@@ -143,7 +143,7 @@ export default function Hero() {
           {[...sliderImages, ...sliderImages].map((img, idx) => (
             <div
               key={idx}
-              className="w-[280px] md:w-[420px] lg:w-[560px] h-[180px] md:h-[280px] lg:h-[360px] flex-shrink-0 rounded-[20px] overflow-hidden glass shadow-[0_8px_32px_-8px_rgba(15,23,42,0.12)] group cursor-pointer relative transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_16px_48px_-8px_rgba(15,23,42,0.18)]"
+              className="w-[280px] md:w-[420px] lg:w-[560px] aspect-video flex-shrink-0 rounded-[20px] overflow-hidden glass shadow-[0_8px_32px_-8px_rgba(15,23,42,0.12)] group cursor-pointer relative transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_16px_48px_-8px_rgba(15,23,42,0.18)]"
             >
               <img
                 src={img}

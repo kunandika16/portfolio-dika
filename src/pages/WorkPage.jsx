@@ -9,6 +9,50 @@ const categories = ["Web App", "Mobile Apps", "UI/UX"];
 const projectsData = {
   "Web App": [
     {
+      id: 15,
+      title: "Travel Ikatte",
+      company: "Travel Ikatte",
+      year: "2025",
+      description: "Website penyedia jasa tour explore Sulawesi — pemesanan paket tour, penginapan, transportasi, dan paket layanan lainnya.",
+      tags: ["Travel", "Tour", "Booking"],
+      stack: ["NextJs", "Express", "PostgreSQL", "Cloudflare", "Redis"],
+      images: ["/images/cover/travel.webp"],
+      bgColor: "bg-sky-50/60"
+    },
+    {
+      id: 16,
+      title: "Hikmah Laundry",
+      company: "Hikmah Laundry",
+      year: "2025",
+      description: "Sistem informasi laundry untuk pencatatan dan management operasional serta tracking orderan pelanggan.",
+      tags: ["Laundry", "Management", "Tracking"],
+      stack: ["NextJs", "TailwindCSS", "Express", "Postgres", "Minio"],
+      images: ["/images/cover/laundry.webp"],
+      bgColor: "bg-blue-50/60"
+    },
+    {
+      id: 17,
+      title: "Distro Muslim",
+      company: "Distro Muslim Makassar",
+      year: "2025",
+      description: "Ecommerce khusus pakaian muslim di Makassar dengan payment gateway dan ongkir otomatis via RajaOngkir.",
+      tags: ["Ecommerce", "Fashion", "WooCommerce"],
+      stack: ["WordPress", "WooCommerce", "RajaOngkir"],
+      images: ["/images/cover/distro-makassar.webp"],
+      bgColor: "bg-emerald-50/60"
+    },
+    {
+      id: 18,
+      title: "BisnesLab",
+      company: "BisnesLab",
+      year: "2025",
+      description: "Landing page produk digital dengan checkout screen menggunakan WooCommerce headless dan React.",
+      tags: ["Landing Page", "Ecommerce", "Checkout"],
+      stack: ["React", "WooCommerce", "NextJs"],
+      images: ["/images/cover/bisneslab.webp"],
+      bgColor: "bg-violet-50/60"
+    },
+    {
       id: 1,
       title: "ITMS (Integrated Talent Management System)",
       company: "Internal",
@@ -20,58 +64,25 @@ const projectsData = {
       bgColor: "bg-blue-50/60"
     },
     {
-      id: 2,
-      title: "Explora",
-      company: "PT Pos Indonesia",
-      year: "2023",
-      description: "Knowledge Management & Event Management untuk memfasilitasi pertukaran pengetahuan dan pengelolaan acara perusahaan.",
-      tags: ["Knowledge Management", "Event Management", "Web App"],
-      stack: ["ReactJS", "MaterialUI", "Express", "PostgreSQL"],
-      images: ["/images/projects/explora/layar.webp"],
-      bgColor: "bg-fuchsia-50/60"
-    },
-    {
       id: 3,
       title: "Orlens",
       company: "Internal",
       year: "2023",
       description: "Sistem Organization and Job Management yang membantu perusahaan dalam memetakan struktur organisasi dan pekerjaan.",
       tags: ["Organization", "Management", "Dashboard"],
-      stack: ["Vue", "Laravel", "MySQL"],
-      images: ["/images/projects/orlens.webp"],
+      stack: ["ReactTS", "Go", "Postgres", "MaterialUI", "ReactFlow"],
+      images: ["/images/projects/orlen/cover.webp", "/images/projects/orlen/Orlen-isi.webp"],
       bgColor: "bg-emerald-50/60"
     },
     {
-      id: 4,
-      title: "ARMS",
-      company: "Internal",
-      year: "2024",
-      description: "Attrition Retention Management System untuk menganalisis dan mengelola retensi karyawan di perusahaan.",
-      tags: ["Retention", "Analytics", "Dashboard"],
-      stack: ["React", "Python", "PostgreSQL"],
-      images: ["/images/projects/arms.webp"],
-      bgColor: "bg-amber-50/60"
-    },
-    {
-      id: 5,
-      title: "SIMAsuransi",
-      company: "Client",
-      year: "2023",
-      description: "Sistem Informasi Management Asuransi untuk mempermudah proses klaim dan pengelolaan polis asuransi.",
-      tags: ["Insurance", "Management", "Web App"],
-      stack: ["Angular", "Spring Boot", "Oracle"],
-      images: ["/images/projects/simasuransi.webp"],
-      bgColor: "bg-blue-50/60"
-    },
-    {
       id: 8,
-      title: "AnselEnamel Calculator Tank",
+      title: "Ansel Enamel Calculator Tank",
       company: "Ansal Enamel Indonesia",
       year: "2024",
       description: "Aplikasi Rekomendasi Hitungan Kebutuhan Tank berdasarkan volume dan luas lahan dengan antarmuka yang user-friendly.",
       tags: ["Calculator", "Industrial", "Web App"],
       stack: ["NextJs", "AppScript", "Vercel", "Shadcn"],
-      images: ["/images/projects/ansal/ansal-cover.webp"],
+      images: ["/images/projects/ansal/gfst.webp"],
       bgColor: "bg-slate-50/60"
     },
     {
@@ -93,7 +104,7 @@ const projectsData = {
       description: "Landing Page Travel Umroh yang elegan dan informatif untuk menarik calon jemaah.",
       tags: ["Landing Page", "Travel", "Web Design"],
       stack: ["React", "Framer Motion", "Tailwind"],
-      images: ["/images/projects/idetour/travel.png"],
+      images: ["/images/projects/idetour/travel.webp"],
       bgColor: "bg-emerald-50/60"
     },
     {
@@ -106,6 +117,17 @@ const projectsData = {
       stack: ["PHP", "CodeIgniter", "MySQL"],
       images: ["/images/projects/sistem_dinas.webp"],
       bgColor: "bg-cyan-50/60"
+    },
+    {
+      id: 14,
+      title: "Uangku Web",
+      company: "Startup",
+      year: "2025",
+      description: "Aplikasi pencatatan keuangan berbasis web dengan AI analytics, wallet, goals, dan transaksi recurring.",
+      tags: ["Finance", "AI Analytics", "Web App"],
+      stack: ["NextJs", "Postgres", "LLM"],
+      images: ["/images/projects/uangku/uangku.webp", "/images/projects/uangku/login.webp"],
+      bgColor: "bg-emerald-50/60"
     }
   ],
   "Mobile Apps": [
@@ -127,8 +149,8 @@ const projectsData = {
       year: "2024",
       description: "Aplikasi pencatatan keuangan inovatif yang terintegrasi penuh dengan WhatsApp untuk kemudahan input transaksi.",
       tags: ["Finance", "WhatsApp Integration", "Mobile App"],
-      stack: ["Node.js", "WhatsApp API", "MongoDB"],
-      images: ["/images/projects/uangku.webp"],
+      stack: ["Meta WA Business Official"],
+      images: ["/images/projects/uangku/uangku-mobile.webp", "/images/projects/uangku/uangku.webp"],
       bgColor: "bg-green-50/60"
     },
     {
@@ -169,7 +191,7 @@ function ImageSlider({ images, bgColor }) {
   };
 
   return (
-    <div className={`relative w-full h-full rounded-[32px] overflow-hidden ${bgColor} group flex items-center justify-center p-8 md:p-12 min-h-[400px] md:min-h-[500px]`}>
+    <div className={`relative w-full aspect-video rounded-[32px] overflow-hidden ${bgColor} group flex items-center justify-center p-8 md:p-12 max-h-[560px]`}>
       <AnimatePresence mode="wait">
         <motion.img
           key={currentIndex}
@@ -214,7 +236,7 @@ export default function WorkPage() {
   return (
     <div className="pt-36 pb-24 max-w-[1400px] mx-auto px-6 lg:px-12 min-h-screen bg-white dark:bg-slate-900 rounded-[40px] md:rounded-[60px] m-4 bg-grid relative">
       <h1 className="text-4xl md:text-[44px] font-bold text-slate-900 dark:text-white mb-14 tracking-tight">Explore my latest works</h1>
-      
+
       {/* Tabs */}
       <div className="flex gap-10 border-b border-slate-200/60 dark:border-slate-700 mb-16 relative">
         {categories.map(cat => (
@@ -288,7 +310,7 @@ export default function WorkPage() {
                 </div>
 
                 {/* Right Slider */}
-                <div className="w-full lg:w-[62%] min-h-[400px] lg:min-h-[560px]">
+                <div className="w-full lg:w-[62%]">
                   <ImageSlider images={project.images} bgColor={project.bgColor} />
                 </div>
 

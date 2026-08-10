@@ -48,60 +48,13 @@ const caseStudies = {
     link: null,
   },
 
-  2: {
-    title: "Explora — Knowledge Management & Event Management",
-    subtitle: "Platform manajemen pengetahuan dan sistem acara yang memfasilitasi pertukaran knowledge antar karyawan serta pengelolaan event perusahaan dalam satu tempat.",
-    heroImage: "/images/projects/explora/header.webp",
-    company: "PT Pos Indonesia",
-    role: "Frontend Developer",
-    scope: "UI Design, Frontend Development",
-    period: "2023",
-    overview:
-      "Explora dibangun untuk menjadi pusat knowledge sharing dan pengelolaan event di perusahaan. Tujuannya, membangun budaya belajar dengan menyediakan ruang bagi karyawan untuk berbagi artikel, materi pelatihan, dan best practice, sekaligus mempermudah penyelenggaraan event internal mulai dari publikasi, pendaftaran, hingga dokumentasi.",
-    challenges: [
-      {
-        title: "Knowledge yang Tidak Terdokumentasi",
-        text: "Pengalaman dan pengetahuan antar tim banyak tersimpan hanya di kepala orang atau chat, sehingga sulit diakses karyawan lain saat dibutuhkan.",
-      },
-      {
-        title: "Pengelolaan Event Manual",
-        text: "Informasi event, pendaftaran peserta, dan dokumentasi tersebar di media sosial dan email sehingga kurang terpusat dan rawan informasi tertinggal.",
-      },
-      {
-        title: "Sulit Menemukan Konten",
-        text: "Tidak ada mekanisme pencarian dan kategorisasi yang baik untuk menemukan materi atau informasi event yang relevan.",
-      },
-    ],
-    solution:
-      "Explora dirancang dengan dua modul utama: Knowledge Management yang memungkinkan karyawan mempublikasikan dan mencari artikel, serta Event Management System yang mengelola siklus penuh acara perusahaan. Desainnya mengedepankan kemudahan pencarian dan pengalaman membaca yang nyaman agar konten benar-benar dimanfaatkan.",
-    features: [
-      { title: "Knowledge Base & Artikel", text: "Publikasi artikel, materi pelatihan, dan best practice dengan kategori dan pencarian." },
-      { title: "Manajemen Event", text: "Publikasi acara, pendaftaran peserta, dan notifikasi dalam satu alur." },
-      { title: "Pencarian Pintar", text: "Fitur pencarian dan filter yang memudahkan menemukan knowledge dan event." },
-      { title: "Kolaborasi Tim", text: "Ruang berbagi dan diskusi antar departemen untuk memperkuat budaya belajar." },
-    ],
-    stack: ["ReactJS", "MaterialUI", "Express", "PostgreSQL"],
-    screenshots: [
-      "/images/projects/explora/layar.webp",
-      "/images/projects/explora/article.webp",
-      "/images/projects/explora/event.webp",
-    ],
-    gallery: [
-      "/images/projects/explora/article.webp",
-      "/images/projects/explora/event.webp",
-    ],
-    result:
-      "Explora berhasil menjadi pusat dokumentasi pengetahuan perusahaan dan platform pengelolaan event yang andal. Karyawan kini dapat mengakses materi dan mengikuti event internal dengan lebih mudah, mendorong budaya berbagi pengetahuan yang lebih aktif.",
-    link: null,
-  },
-
   3: {
     title: "Orlens — Organization & Job Management",
     subtitle: "Platform untuk memetakan struktur organisasi, jabatan, dan deskripsi pekerjaan secara digital agar lebih transparan dan mudah dikelola.",
-    heroImage: "/images/projects/orlens.webp",
+    heroImage: "/images/projects/orlen/cover.webp",
     company: "Internal",
-    role: "Fullstack Developer",
-    scope: "UI Design, Fullstack Development, Data Modeling",
+    role: "Frontend Developer",
+    scope: "UI Design, Frontend Development, Data Visualization",
     period: "2023",
     overview:
       "Orlens hadir untuk menjawab tantangan perusahaan dalam mengelola struktur organisasi yang dinamis. Melalui platform ini, perusahaan dapat memetakan hierarki, mendefinisikan jabatan beserta tanggung jawabnya, dan memastikan setiap posisi terisi oleh orang yang tepat — semuanya dalam satu sistem yang jelas dan mudah diperbarui.",
@@ -127,88 +80,10 @@ const caseStudies = {
       { title: "Job Description Terstruktur", text: "Deskripsi pekerjaan yang konsisten dan mudah diakses untuk kebutuhan HR." },
       { title: "Pemetaan Kebutuhan SDM", text: "Identifikasi posisi kosong dan kebutuhan sumber daya dengan cepat." },
     ],
-    stack: ["Vue", "Laravel", "MySQL"],
-    screenshots: ["/images/projects/orlens.webp"],
+    stack: ["ReactTS", "Go", "Postgres", "MaterialUI", "ReactFlow"],
+    screenshots: ["/images/projects/orlen/Orlen-isi.webp"],
     result:
       "Orlens memberikan perusahaan satu sumber kebenaran untuk struktur organisasi dan definisi jabatan. Proses perencanaan SDM, rekrutmen, dan evaluasi menjadi lebih cepat karena data organisasi kini transparan, konsisten, dan mudah diakses.",
-    link: null,
-  },
-
-  4: {
-    title: "ARMS — Attrition Retention Management System",
-    subtitle: "Sistem analitik untuk memantau tren attrition dan mengelola strategi retensi karyawan agar perusahaan mampu mempertahankan talenta terbaiknya.",
-    heroImage: "/images/projects/arms.webp",
-    company: "Internal",
-    role: "Frontend Developer",
-    scope: "Dashboard Design, Data Visualization, Frontend Development",
-    period: "2024",
-    overview:
-      "ARMS (Attrition Retention Management System) dibangun untuk membantu perusahaan memahami penyebab keluarnya karyawan (attrition) dan merancang strategi retensi yang berbasis data. Dengan memusatkan data kepegawaian dan analitik churn, manajemen dapat mengidentifikasi pola risiko lebih dini dan mengambil tindakan preventif.",
-    challenges: [
-      {
-        title: "Tingkat Attrition yang Sulit Diprediksi",
-        text: "Perusahaan baru menyadari karyawan keluar setelah terjadi, tanpa indikator awal untuk mengantisipasi risiko.",
-      },
-      {
-        title: "Data Retensi Tidak Terintegrasi",
-        text: "Data kepegawaian, survei, dan historis keluar-masuk karyawan tersebar sehingga analisis sulit dilakukan.",
-      },
-      {
-        title: "Strategi Retensi Kurang Terukur",
-        text: "Program retensi tidak memiliki tolok ukur yang jelas karena tidak didasarkan pada analisis data yang kuat.",
-      },
-    ],
-    solution:
-      "ARMS mengintegrasikan data kepegawaian ke dalam dashboard analitik yang memvisualisasikan tren attrition, profil karyawan berisiko, dan efektivitas program retensi. Data disajikan dalam bentuk grafik yang intuitif sehingga keputusan dapat diambil cepat dan berbasis fakta.",
-    features: [
-      { title: "Analitik Attrition", text: "Visualisasi tren keluar-masuk karyawan per periode, departemen, dan jenjang." },
-      { title: "Identifikasi Risiko", text: "Pemetaan karyawan berisiko tinggi untuk intervensi lebih dini." },
-      { title: "Pelacakan Program Retensi", text: "Monitoring efektivitas program retensi dan keterlibatan karyawan." },
-      { title: "Laporan Manajemen", text: "Ringkasan eksekutif untuk mendukung keputusan strategis HR." },
-    ],
-    stack: ["React", "Python", "PostgreSQL"],
-    screenshots: ["/images/projects/arms.webp"],
-    result:
-      "ARMS memberikan kemampuan prediksi dan pemantauan attrition secara real-time. Manajemen kini dapat mengidentifikasi risiko keluarnya karyawan lebih dini dan mengevaluasi program retensi dengan data yang jelas, sehingga keputusan HR lebih tepat sasaran.",
-    link: null,
-  },
-
-  5: {
-    title: "SIMAsuransi — Sistem Informasi Management Asuransi",
-    subtitle: "Sistem informasi untuk mengelola polis, klaim, dan data nasabah asuransi secara digital agar proses bisnis lebih cepat, akurat, dan terdokumentasi.",
-    heroImage: "/images/projects/simasuransi.webp",
-    company: "Client",
-    role: "Frontend Developer",
-    scope: "UI Design, Frontend Development, Dashboard",
-    period: "2023",
-    overview:
-      "SIMAsuransi merupakan sistem informasi manajemen asuransi yang dibangun untuk klien yang membutuhkan digitalisasi proses pengelolaan polis dan klaim. Sistem ini membantu staf memproses data nasabah, polis, dan pengajuan klaim dalam satu platform, mengurangi ketergantungan pada pencatatan manual yang lambat dan rawan kesalahan.",
-    challenges: [
-      {
-        title: "Proses Klaim yang Lambat",
-        text: "Pengajuan dan persetujuan klaim masih manual, memakan waktu lama dan menyulitkan pelacakan status bagi nasabah maupun staf.",
-      },
-      {
-        title: "Data Nasabah Tidak Terpusat",
-        text: "Data nasabah dan polis tersebar di beberapa sistem sehingga sulit diakses dan sering terjadi duplikasi.",
-      },
-      {
-        title: "Laporan Kurang Akurat",
-        text: "Rekap polis dan klaim dilakukan manual sehingga rawan keterlambatan dan ketidakakuratan data laporan.",
-      },
-    ],
-    solution:
-      "SIMAsuransi menghadirkan dashboard pengelolaan yang menyatukan data nasabah, polis, dan klaim. Alur pemrosesan klaim dirancang lebih transparan dengan status yang dapat dilacak, dan laporan dapat dihasilkan otomatis sesuai kebutuhan manajemen.",
-    features: [
-      { title: "Manajemen Polis", text: "Pencatatan, perpanjangan, dan monitoring polis nasabah dalam satu sistem." },
-      { title: "Alur Klaim Digital", text: "Pengajuan klaim dengan status yang dapat dilacak dari masuk hingga diproses." },
-      { title: "Database Nasabah Terpusat", text: "Data nasabah yang terintegrasi dan mudah dicari, mengurangi duplikasi." },
-      { title: "Laporan Otomatis", text: "Rekap polis, klaim, dan premi yang dapat dihasilkan otomatis dan akurat." },
-    ],
-    stack: ["Angular", "Spring Boot", "Oracle"],
-    screenshots: ["/images/projects/simasuransi.webp"],
-    result:
-      "SIMAsuransi mempercepat proses pengelolaan polis dan klaim secara signifikan. Status klaim kini transparan dan dapat dilacak, laporan lebih akurat, dan data nasabah terpusat sehingga layanan kepada nasabah menjadi lebih responsif.",
     link: null,
   },
 
@@ -260,7 +135,7 @@ const caseStudies = {
   7: {
     title: "Uangku — Pencatatan Keuangan via WhatsApp",
     subtitle: "Aplikasi pencatatan keuangan inovatif yang terintegrasi penuh dengan WhatsApp untuk kemudahan input transaksi harian tanpa perlu membuka aplikasi terpisah.",
-    heroImage: "/images/projects/uangku.webp",
+    heroImage: "/images/projects/uangku/uangku-mobile.webp",
     company: "Startup",
     role: "Backend Developer",
     scope: "System Design, Backend Development, WhatsApp API Integration",
@@ -282,30 +157,30 @@ const caseStudies = {
       },
     ],
     solution:
-      "Uangku dibangun dengan backend yang terhubung ke WhatsApp API untuk memproses pesan transaksi secara otomatis. Sistem mengenali format pesan, mengkategorikan transaksi, menyimpan data di database, dan membalas ringkasan serta laporan keuangan berdasarkan permintaan pengguna.",
+      "Uangku dibangun dengan backend yang terhubung ke WhatsApp Business API resmi dari Meta untuk memproses pesan transaksi secara otomatis. Sistem mengenali format pesan, mengkategorikan transaksi, menyimpan data di database, dan membalas ringkasan serta laporan keuangan berdasarkan permintaan pengguna.",
     features: [
       { title: "Input via Chat", text: "Catat pemasukan dan pengeluaran cukup dengan mengirim pesan ke WhatsApp." },
       { title: "Kategorisasi Otomatis", text: "Transaksi dikelompokkan ke kategori otomatis untuk memudahkan analisis." },
       { title: "Laporan Bulanan", text: "Ringkasan pengeluaran dan pemasukan dikirim otomatis sesuai periode." },
       { title: "Multi-User Support", text: "Mendukung banyak pengguna dengan data yang terpisah dan aman." },
     ],
-    stack: ["Node.js", "WhatsApp API", "MongoDB"],
-    screenshots: ["/images/projects/uangku.webp"],
+    stack: ["Meta WA Business Official"],
+    screenshots: ["/images/projects/uangku/uangku.webp"],
     result:
       "Uangku berhasil menurunkan hambatan mencatat keuangan dengan menghadirkan pencatatan di dalam aplikasi yang paling sering dibuka pengguna. Kategori otomatis dan laporan berkala membantu pengguna memahami pola pengeluaran tanpa usaha tambahan.",
     link: null,
   },
 
   8: {
-    title: "AnselEnamel Calculator Tank",
+    title: "Ansel Enamel Calculator Tank",
     subtitle: "Aplikasi rekomendasi perhitungan kebutuhan tank berdasarkan volume dan luas lahan, dirancang dengan antarmuka yang sederhana dan user-friendly.",
-    heroImage: "/images/projects/ansal/ansal-cover.webp",
+    heroImage: "/images/projects/ansal/gfst.webp",
     company: "Ansal Enamel Indonesia",
     role: "Fullstack Developer",
     scope: "Fullstack Development, UI Design, Calculator Logic",
     period: "2024",
     overview:
-      "AnselEnamel Calculator Tank adalah aplikasi web yang membantu pengguna menghitung kebutuhan tank (tangki) berdasarkan parameter seperti volume dan luas lahan. Dikembangkan untuk klien Ansal Enamel Indonesia, aplikasi ini menyederhanakan proses perhitungan teknis yang sebelumnya rumit menjadi interaktif dan mudah dipahami, lengkap dengan rekomendasi hasil yang informatif. Sebagai fullstack developer, saya membangun aplikasi dengan Next.js, memanfaatkan Google Apps Script untuk logika kalkulasi, komponen UI dari Shadcn, dan men-deploy-nya di Vercel.",
+      "Ansel Enamel Calculator Tank adalah aplikasi web yang membantu pengguna menghitung kebutuhan tank (tangki) berdasarkan parameter seperti volume dan luas lahan. Dikembangkan untuk klien Ansal Enamel Indonesia, aplikasi ini menyederhanakan proses perhitungan teknis yang sebelumnya rumit menjadi interaktif dan mudah dipahami, lengkap dengan rekomendasi hasil yang informatif. Sebagai fullstack developer, saya membangun aplikasi dengan Next.js, memanfaatkan Google Apps Script untuk logika kalkulasi, komponen UI dari Shadcn, dan men-deploy-nya di Vercel.",
     challenges: [
       {
         title: "Perhitungan Teknis yang Rumit",
@@ -321,7 +196,7 @@ const caseStudies = {
       },
     ],
     solution:
-      "AnselEnamel Calculator Tank dikembangkan sebagai aplikasi web interaktif dengan input parameter yang intuitif dan hasil perhitungan langsung. Sebagai fullstack developer, saya merancang arsitektur frontend dengan Next.js dan komponen Shadcn, menghubungkan logika kalkulasi melalui Google Apps Script, serta men-deploy aplikasi di Vercel untuk akses yang cepat dan andal. Tampilan dirancang bersih dan modern agar mudah digunakan sekaligus mencerminkan kualitas produk klien.",
+      "Ansel Enamel Calculator Tank dikembangkan sebagai aplikasi web interaktif dengan input parameter yang intuitif dan hasil perhitungan langsung. Sebagai fullstack developer, saya merancang arsitektur frontend dengan Next.js dan komponen Shadcn, menghubungkan logika kalkulasi melalui Google Apps Script, serta men-deploy aplikasi di Vercel untuk akses yang cepat dan andal. Tampilan dirancang bersih dan modern agar mudah digunakan sekaligus mencerminkan kualitas produk klien.",
     features: [
       { title: "Input Parameter Fleksibel", text: "Masukkan volume, luas lahan, dan parameter lain dengan mudah." },
       { title: "Hasil Perhitungan Instan", text: "Rekomendasi kebutuhan tank dihitung dan ditampilkan secara real-time." },
@@ -331,10 +206,10 @@ const caseStudies = {
     stack: ["NextJs", "AppScript", "Vercel", "Shadcn"],
     screenshots: ["/images/projects/ansal/ansal-isi.webp"],
     gallery: [
-      "/images/projects/ansal/ansal (1).png",
-      "/images/projects/ansal/ansal (2).png",
-      "/images/projects/ansal/ansal (3).png",
-      "/images/projects/ansal/ansal (4).png",
+      "/images/projects/ansal/ansal (1).webp",
+      "/images/projects/ansal/ansal (2).webp",
+      "/images/projects/ansal/ansal (3).webp",
+      "/images/projects/ansal/ansal (4).webp",
     ],
     result:
       "Aplikasi ini membantu klien menyampaikan rekomendasi produk secara lebih jelas dan profesional. Calon pembeli kini dapat menghitung sendiri kebutuhan tank-nya secara mandiri, meningkatkan kepercayaan dan mempercepat proses penjualan.",
@@ -389,7 +264,7 @@ const caseStudies = {
   10: {
     title: "Ide Tour Travel — Landing Page Travel Umroh",
     subtitle: "Landing page travel umroh yang elegan dan informatif, dirancang untuk membangun kepercayaan calon jemaah dan mendorong konversi pendaftaran.",
-    heroImage: "/images/projects/idetour/travel.png",
+    heroImage: "/images/projects/idetour/travel.webp",
     company: "Ide Tour Travel",
     role: "Frontend Developer",
     scope: "UI/UX Design, Frontend Development, Motion Design",
@@ -420,7 +295,7 @@ const caseStudies = {
       { title: "Call-to-Action Terarah", text: "Alur pendaftaran dan kontak yang jelas di setiap bagian halaman." },
     ],
     stack: ["React", "Framer Motion", "Tailwind"],
-    screenshots: ["/images/projects/idetour/isi.png"],
+    screenshots: ["/images/projects/idetour/isi.webp"],
     result:
       "Ide Tour Travel memberikan kesan profesional dan menenangkan yang relevan dengan konteks ibadah umroh. Landing page ini memperkuat kepercayaan calon jemaah dan menyediakan jalur konversi yang jelas, mendukung pertumbuhan pendaftaran klien.",
     link: null,
@@ -540,6 +415,211 @@ const caseStudies = {
     screenshots: ["/images/projects/nfcPresensi.webp"],
     result:
       "NFC Absensi mempercepat proses pencatatan kehadiran secara signifikan dan membuat data kehadiran lebih akurat serta terpusat. Manipulasi absen dapat ditekan berkat verifikasi NFC, dan guru maupun orang tua mendapatkan visibilitas kehadiran siswa secara real-time.",
+    link: null,
+  },
+
+  14: {
+    title: "Uangku Web — Pencatatan Keuangan dengan AI Analytics",
+    subtitle: "Aplikasi pencatatan keuangan berbasis web dengan AI analytics, wallet management, goals, dan transaksi recurring untuk pengelolaan keuangan pribadi yang lebih cerdas.",
+    heroImage: "/images/projects/uangku/uangku.webp",
+    company: "Startup",
+    role: "Fullstack Developer",
+    scope: "Fullstack Development, AI Integration, Database Design",
+    period: "2025",
+    overview:
+      "Uangku Web adalah platform pencatatan keuangan pribadi berbasis web yang dirancang untuk membantu pengguna mengelola keuangan secara menyeluruh. Selain pencatatan transaksi harian, Uangku Web dilengkapi AI analytics yang memberikan insight belanja, wallet untuk mengelola saldo multi-akun, goals untuk menabung target, serta dukungan transaksi recurring untuk pengeluaran berkala seperti tagihan dan langganan.",
+    challenges: [
+      {
+        title: "Pencatatan yang Membosankan",
+        text: "Pengguna sering menyerah mencatat keuangan karena prosesnya manual dan tidak memberikan nilai balik yang instan.",
+      },
+      {
+        title: "Data Keuangan Terpisah-pisah",
+        text: "Saldo tersebar di banyak akun dan dompet digital sehingga sulit melihat posisi keuangan secara utuh.",
+      },
+      {
+        title: "Tidak Ada Insight",
+        text: "Tanpa analisis otomatis, pengguna kesulitan memahami pola pengeluaran dan membuat keputusan keuangan.",
+      },
+    ],
+    solution:
+      "Uangku Web dibangun dengan Next.js untuk pengalaman web yang cepat dan SEO-friendly, PostgreSQL sebagai database utama untuk data transaksi yang konsisten dan terstruktur, serta integrasi LLM untuk AI analytics yang membaca pola keuangan pengguna dan memberikan insight yang mudah dipahami. Fitur wallet, goals, dan recurring transaksi dirancang agar seluruh kebutuhan pencatatan keuangan berada dalam satu platform.",
+    features: [
+      { title: "Pencatatan Transaksi", text: "Catat pemasukan dan pengeluaran dengan kategori, tanggal, dan catatan yang fleksibel." },
+      { title: "AI Analytics", text: "Insight otomatis berbasis LLM tentang pola belanja dan rekomendasi pengelolaan keuangan." },
+      { title: "Wallet Management", text: "Kelola saldo multi-akun — tunai, bank, dan e-wallet — dalam satu tempat." },
+      { title: "Goals", text: "Tetapkan target menabung dan pantau progresnya secara visual." },
+      { title: "Transaksi Recurring", text: "Otomatis catat pengeluaran berkala seperti tagihan dan langganan." },
+    ],
+    stack: ["NextJs", "Postgres", "LLM"],
+    screenshots: ["/images/projects/uangku/login.webp", "/images/projects/uangku/dashboard.webp"],
+    gallery: [
+      "/images/projects/uangku/analystics.webp",
+      "/images/projects/uangku/budget.webp",
+      "/images/projects/uangku/goals.webp",
+    ],
+    result:
+      "Uangku Web memberikan pengalaman pencatatan keuangan yang lebih cerdas dan menyenangkan. Dengan AI analytics, pengguna mendapatkan insight yang berguna tanpa harus menganalisis data secara manual, sementara wallet, goals, dan recurring transaksi menjadikan semua kebutuhan keuangan terpusat dalam satu aplikasi.",
+    link: null,
+  },
+
+  15: {
+    title: "Travel Ikatte — Website Penyedia Jasa Tour Explore Sulawesi",
+    subtitle: "Platform penyedia jasa tour explore Sulawesi dengan pemesanan paket tour, penginapan, transportasi, dan paket layanan lainnya dalam satu tempat.",
+    heroImage: "/images/cover/travel.webp",
+    company: "Travel Ikatte",
+    role: "Fullstack Developer",
+    scope: "Fullstack Development, Booking System, E-commerce Integration",
+    period: "2025",
+    overview:
+      "Travel Ikatte adalah platform web fullstack untuk penyedia jasa tour explore Sulawesi. Melalui platform ini, wisatawan dapat melihat katalog paket tour, memesan penginapan, transportasi, hingga paket layanan tambahan secara online dalam satu alur. Dibangun dengan Next.js di sisi frontend, Express sebagai API backend, PostgreSQL untuk penyimpanan data, Redis untuk caching dan sesi agar halaman cepat, serta di-deploy melalui Cloudflare untuk distribusi CDN dan keamanan edge. Platform ini mengubah pemesanan yang sebelumnya manual menjadi sistem booking yang terpusat, transparan, dan dapat dilacak.",
+    challenges: [
+      {
+        title: "Pemesanan Manual yang Tidak Terorganisir",
+        text: "Pelanggan memesan paket tour lewat chat atau telepon, sehingga informasi pesanan mudah tercampur dan sulit ditindaklanjuti.",
+      },
+      {
+        title: "Informasi Paket Tersebar",
+        text: "Detail paket, harga, dan ketersediaan tersebar di media sosial dan brosur, membuat calon pelanggan bingung membandingkan.",
+      },
+      {
+        title: "Konfirmasi dan Pembayaran Lambat",
+        text: "Proses konfirmasi ketersediaan dan pembayaran dilakukan manual sehingga memakan waktu dan menurunkan kepercayaan pelanggan.",
+      },
+    ],
+    solution:
+      "Travel Ikatte dibangun sebagai platform fullstack dengan Next.js untuk antarmuka yang cepat dan SEO-friendly, Express sebagai REST API, PostgreSQL sebagai database utama, Redis untuk caching data paket dan sesi booking agar respons cepat, serta Cloudflare untuk CDN dan proteksi. Pelanggan dapat menjelajahi paket, melihat ketersediaan, melakukan booking, dan melacak status pesanan; tim travel mengelola seluruh pesanan dari dashboard terpusat.",
+    features: [
+      { title: "Katalog Paket Tour", text: "Jelajahi paket tour explore Sulawesi dengan detail itinerary, harga, dan ketersediaan." },
+      { title: "Pemesanan Online", text: "Alur booking paket, penginapan, dan transportasi dengan status yang dapat dilacak." },
+      { title: "Penginapan & Transportasi", text: "Pilihan akomodasi dan transportasi yang terintegrasi dalam satu pemesanan." },
+      { title: "Dashboard Pesanan", text: "Manajemen pesanan pelanggan, jadwal, dan konfirmasi dari satu tempat." },
+      { title: "Pembayaran & Konfirmasi", text: "Proses pembayaran dan konfirmasi yang lebih cepat dengan notifikasi otomatis." },
+    ],
+    stack: ["NextJs", "Express", "PostgreSQL", "Cloudflare", "Redis"],
+    screenshots: ["/images/cover/travel.webp"],
+    result:
+      "Travel Ikatte menyatukan seluruh proses pemesanan dalam satu platform yang cepat dan andal. Pelanggan dapat memesan paket, penginapan, dan transportasi tanpa bolak-balik chat, sementara tim travel mengelola pesanan dengan lebih teratur. Dengan Redis untuk caching dan Cloudflare di edge, pengalaman browsing tetap responsif meski trafik tinggi.",
+    link: null,
+  },
+
+  16: {
+    title: "Hikmah Laundry — Sistem Informasi Laundry",
+    subtitle: "Sistem informasi laundry untuk pencatatan dan management operasional serta tracking orderan pelanggan secara real-time.",
+    heroImage: "/images/cover/laundry.webp",
+    company: "Hikmah Laundry",
+    role: "Fullstack Developer",
+    scope: "Fullstack Development, Operational Management, Order Tracking",
+    period: "2025",
+    overview:
+      "Hikmah Laundry adalah sistem informasi yang mendigitalkan seluruh proses bisnis laundry — dari pencatatan order masuk, pengelolaan layanan dan harga, hingga tracking status proses (cuci, setrika, siap ambil) yang dapat dipantau pelanggan. Dibangun dengan Next.js dan TailwindCSS untuk antarmuka yang responsif dan modern, Express sebagai backend API, PostgreSQL untuk data operasional, serta MinIO untuk penyimpanan bukti foto order dan dokumen. Sistem ini menggantikan pencatatan manual yang rawan hilang dengan pencatatan digital yang terpusat dan dapat dilaporkan.",
+    challenges: [
+      {
+        title: "Pencatatan Manual Rentan Kesalahan",
+        text: "Order dicatat di buku atau kertas sehingga mudah hilang, salah tulis, dan sulit dicari kembali.",
+      },
+      {
+        title: "Pelanggan Tidak Tahu Status Order",
+        text: "Pelanggan harus datang atau menelepon untuk menanyakan apakah cuciannya sudah selesai.",
+      },
+      {
+        title: "Laporan Operasional Sulit Direkap",
+        text: "Rekap omset, jumlah order, dan layanan terlaris harus dihitung manual sehingga lambat dan tidak akurat.",
+      },
+    ],
+    solution:
+      "Hikmah Laundry dibangun sebagai sistem informasi fullstack: pencatatan order digital dengan nomor antrian, manajemen layanan dan tarif, serta tracking status yang diperbarui di setiap tahap proses. Data operasional tersimpan terpusat di PostgreSQL, bukti foto order disimpan di MinIO, dan antarmuka dibangun dengan Next.js serta TailwindCSS agar mudah dipakai di kasir maupun perangkat mobile. Laporan omset dan kinerja operasional dapat dihasilkan otomatis.",
+    features: [
+      { title: "Pencatatan Order", text: "Input order baru dengan detail layanan, berat, dan nomor antrian otomatis." },
+      { title: "Manajemen Layanan & Harga", text: "Kelola daftar layanan, tarif per kilogram, dan paket dalam satu pengaturan." },
+      { title: "Tracking Status Real-time", text: "Status order diperbarui dari cuci, setrika, hingga siap ambil — dapat dipantau pelanggan." },
+      { title: "Dashboard Operasional", text: "Pemantauan order aktif, beban kerja, dan pendapatan harian secara terpusat." },
+      { title: "Laporan Omset", text: "Rekap pendapatan dan layanan terlaris yang dihasilkan otomatis per periode." },
+    ],
+    stack: ["NextJs", "TailwindCSS", "Express", "Postgres", "Minio"],
+    screenshots: ["/images/cover/laundry.webp"],
+    result:
+      "Hikmah Laundry membuat operasional laundry lebih tertib dan transparan. Pencatatan digital menghilangkan order yang hilang, pelanggan dapat memantau status cucian secara real-time tanpa bertanya berulang kali, dan laporan omset yang otomatis membantu pemilik mengambil keputusan bisnis dengan data yang akurat.",
+    link: null,
+  },
+
+  17: {
+    title: "Distro Muslim — Ecommerce Pakaian Muslim Makassar",
+    subtitle: "Toko online khusus pakaian muslim di Makassar dengan katalog produk, keranjang belanja, payment gateway, dan ongkir otomatis via RajaOngkir.",
+    heroImage: "/images/cover/distro-makassar.webp",
+    company: "Distro Muslim Makassar",
+    role: "Fullstack Developer",
+    scope: "Ecommerce Development, Payment Integration, Shipping Integration",
+    period: "2025",
+    overview:
+      "Distro Muslim adalah website ecommerce khusus pakaian muslim di Makassar yang dibangun di atas WordPress dengan WooCommerce sebagai engine toko. Toko ini menyediakan katalog produk lengkap dengan kategori, keranjang belanja, checkout, pembayaran online melalui payment gateway, serta perhitungan ongkos kirim otomatis menggunakan RajaOngkir. Integrasi ini memungkinkan penjualan yang sebelumnya lewat chat dan media sosial bertransformasi menjadi toko online yang terukur, dengan manajemen produk dan pesanan yang terpusat di dashboard WooCommerce.",
+    challenges: [
+      {
+        title: "Penjualan Tidak Terukur",
+        text: "Penjualan lewat chat dan media sosial membuat data produk, stok, dan pesanan tidak terkelola dengan baik.",
+      },
+      {
+        title: "Ongkir Dihitung Manual",
+        text: "Ongkos kirim dihitung satu per satu secara manual sehingga lambat dan sering berbeda dari tarif ekspedisi sebenarnya.",
+      },
+      {
+        title: "Pembayaran Tidak Terintegrasi",
+        text: "Tanpa payment gateway, pembayaran dilakukan transfer manual yang rawan keterlambatan dan menurunkan kepercayaan pembeli.",
+      },
+    ],
+    solution:
+      "Distro Muslim dibangun dengan WordPress dan WooCommerce sebagai platform ecommerce yang matang, lengkap dengan katalog produk, keranjang, dan manajemen pesanan. Payment gateway diintegrasikan agar pembeli dapat membayar langsung dengan berbagai metode, dan RajaOngkir diintegrasikan untuk menghitung ongkos kirim real-time dari berbagai ekspedisi berdasarkan alamat tujuan. Tampilan toko dirancang sesuai identitas brand pakaian muslim agar nyaman dan meyakinkan.",
+    features: [
+      { title: "Katalog Produk & Kategori", text: "Pakaian muslim diorganisir dalam kategori dan filter yang memudahkan pencarian." },
+      { title: "Keranjang & Checkout", text: "Alur belanja yang jelas dari keranjang hingga checkout dengan form alamat lengkap." },
+      { title: "Payment Gateway", text: "Pembayaran online dengan berbagai metode yang terverifikasi otomatis." },
+      { title: "Ongkir Otomatis RajaOngkir", text: "Perhitungan ongkos kirim real-time dari berbagai ekspedisi berdasarkan alamat tujuan." },
+      { title: "Manajemen Pesanan", text: "Kelola stok, pesanan, dan status pengiriman dari dashboard WooCommerce." },
+    ],
+    stack: ["WordPress", "WooCommerce", "RajaOngkir"],
+    screenshots: ["/images/cover/distro-makassar.webp"],
+    result:
+      "Distro Muslim menjadi toko online yang profesional dengan alur belanja yang mulus: katalog rapi, ongkir akurat secara real-time, dan pembayaran terintegrasi yang meningkatkan kepercayaan pembeli. Manajemen produk dan pesanan terpusat membuat operasional toko lebih mudah dikelola dan penjualan lebih terukur.",
+    link: null,
+  },
+
+  18: {
+    title: "BisnesLab — Landing Page Produk Digital + Checkout",
+    subtitle: "Landing page produk digital dengan checkout screen, memanfaatkan WooCommerce headless sebagai backend commerce dan React untuk antarmuka modern.",
+    heroImage: "/images/cover/bisneslab.webp",
+    company: "BisnesLab",
+    role: "Fullstack Developer",
+    scope: "Frontend Development, Headless Commerce, Payment Integration",
+    period: "2025",
+    overview:
+      "BisnesLab adalah landing page produk digital yang dilengkapi checkout screen, dibangun dengan arsitektur headless commerce: frontend React (Next.js) yang modern dan cepat terpisah sepenuhnya dari engine commerce WooCommerce. Produk, keranjang, dan pesanan dikelola melalui WooCommerce API sebagai backend, sementara antarmuka dibuat khusus untuk mendorong konversi — dari penjelasan produk di landing page hingga proses checkout yang singkat dan terintegrasi payment gateway.",
+    challenges: [
+      {
+        title: "Landing Page Tidak Bisa Bertransaksi",
+        text: "Halaman promosi statis hanya menampilkan info produk tanpa kemampuan untuk langsung membeli.",
+      },
+      {
+        title: "Checkout yang Panjang Menurunkan Konversi",
+        text: "Alur pembelian yang berbelit dan banyak langkah membuat calon pembeli meninggalkan halaman sebelum selesai.",
+      },
+      {
+        title: "Butuh Backend Commerce yang Matang",
+        text: "Mengelola produk digital, pesanan, dan pembayaran membutuhkan sistem yang sudah terbukti dan mudah dikelola tim non-teknis.",
+      },
+    ],
+    solution:
+      "BisnesLab dibangun dengan pendekatan headless: WooCommerce berperan sebagai backend commerce — mengelola produk digital, keranjang, pesanan, dan pembayaran lewat API — sementara frontend React (Next.js) menyajikan landing page yang menarik dengan checkout screen satu halaman. Checkout dirancang sesingkat mungkin dengan integrasi payment gateway sehingga pembeli dapat menyelesaikan transaksi dalam hitungan menit.",
+    features: [
+      { title: "Landing Page Produk Digital", text: "Halaman promosi modern dengan hierarki visual dan call-to-action yang jelas." },
+      { title: "Checkout Screen", text: "Proses checkout satu halaman yang singkat dan bebas hambatan." },
+      { title: "WooCommerce Headless", text: "Backend commerce matang yang mengelola produk, keranjang, dan pesanan via API." },
+      { title: "Payment Gateway", text: "Pembayaran online terintegrasi dengan konfirmasi otomatis." },
+      { title: "Manajemen Produk & Pesanan", text: "Kelola produk digital dan riwayat pesanan dari dashboard WooCommerce." },
+    ],
+    stack: ["React", "WooCommerce", "NextJs"],
+    screenshots: ["/images/cover/bisneslab.webp"],
+    result:
+      "BisnesLab menggabungkan kekuatan landing page yang menarik dengan fungsionalitas transaksi yang nyata. Calon pembeli dapat memahami produk dan langsung membeli melalui checkout yang singkat, sementara tim dapat mengelola produk dan pesanan dengan mudah lewat WooCommerce — kombinasi yang meningkatkan konversi tanpa mengorbankan kemudahan operasional.",
     link: null,
   },
 };

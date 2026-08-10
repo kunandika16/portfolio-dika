@@ -6,19 +6,21 @@ import { getTechLogo } from '../data/techLogos';
 
 const projectsData = {
   "Web App": [
+    { id: 15, title: "Travel Ikatte", desc: "Website penyedia jasa tour explore Sulawesi — pemesanan paket tour, penginapan, transportasi.", stack: ["NextJs", "Express", "PostgreSQL", "Cloudflare", "Redis"], img: "/images/cover/travel.webp" },
+    { id: 16, title: "Hikmah Laundry", desc: "Sistem informasi laundry — pencatatan, management operasional, tracking orderan.", stack: ["NextJs", "TailwindCSS", "Express", "Postgres", "Minio"], img: "/images/cover/laundry.webp" },
+    { id: 17, title: "Distro Muslim", desc: "Ecommerce pakaian muslim Makassar dengan WooCommerce, payment gateway, dan RajaOngkir.", stack: ["WordPress", "WooCommerce", "RajaOngkir"], img: "/images/cover/distro-makassar.webp" },
+    { id: 18, title: "BisnesLab", desc: "Landing page produk digital + checkout screen dengan WooCommerce headless.", stack: ["React", "WooCommerce", "NextJs"], img: "/images/cover/bisneslab.webp" },
     { id: 1, title: "ITMS", desc: "Integrated Talent Management System with HR analytics.", stack: ["ReactJS", "MaterialUI", "Redis", "Express", "PostgreSQL",  ], img: "/images/projects/itms/itms.webp" },
-    { id: 2, title: "Explora", desc: "Knowledge Management & Event Management.", stack: ["ReactJS", "MaterialUI", "Express", "PostgreSQL"], img: "/images/projects/explora/header.webp" },
-    { id: 3, title: "Orlens", desc: "Organization and Job Management platform.", stack: ["Vue", "Laravel", "MySQL"], img: "/images/projects/orlens.webp" },
-    { id: 4, title: "ARMS", desc: "Attrition Retention Management System.", stack: ["React", "Python", "PostgreSQL"], img: "/images/projects/arms.webp" },
-    { id: 5, title: "SIMAsuransi", desc: "Sistem Informasi Management Asuransi.", stack: ["Angular", "Spring Boot", "Oracle"], img: "/images/projects/simasuransi.webp" },
-    { id: 8, title: "AnselEnamel", desc: "Calculator Tank: Rekomendasi Hitungan Kebutuhan Tank.", stack: ["NextJs", "AppScript", "Vercel", "Shadcn"], img: "/images/projects/ansal/ansal-cover.webp" },
+    { id: 3, title: "Orlens", desc: "Organization and Job Management platform.", stack: ["ReactTS", "Go", "Postgres", "MaterialUI", "ReactFlow"], img: "/images/projects/orlen/cover.webp" },
+    { id: 8, title: "Ansel Enamel", desc: "Calculator Tank: Rekomendasi Hitungan Kebutuhan Tank.", stack: ["NextJs", "AppScript", "Vercel", "Shadcn"], img: "/images/projects/ansal/gfst.webp" },
     { id: 9, title: "CGN Logistik", desc: "Sistem Informasi Management Logistik dan Landing Page.", stack: ["Laravel", "MySQL", "TailwindCSS"], img: "/images/projects/cgn-logistik/cgn-cover.webp" },
-    { id: 10, title: "Ide Tour Travel", desc: "Landing Page Travel Umroh.", stack: ["React", "Framer Motion", "Tailwind"], img: "/images/projects/idetour/travel.png" },
-    { id: 11, title: "Sistem Informasi Dinas", desc: "Sistem Informasi Dinas Kelautan dan Perikanan Sulawesi Selatan.", stack: ["PHP", "CodeIgniter", "MySQL"], img: "/images/projects/sistem_dinas.webp" }
+    { id: 10, title: "Ide Tour Travel", desc: "Landing Page Travel Umroh.", stack: ["React", "Framer Motion", "Tailwind"], img: "/images/projects/idetour/travel.webp" },
+    { id: 11, title: "Sistem Informasi Dinas", desc: "Sistem Informasi Dinas Kelautan dan Perikanan Sulawesi Selatan.", stack: ["PHP", "CodeIgniter", "MySQL"], img: "/images/projects/sistem_dinas.webp" },
+    { id: 14, title: "Uangku Web", desc: "Pencatatan keuangan dengan AI analytics, wallet, goals, dan recurring.", stack: ["NextJs", "Postgres", "LLM"], img: "/images/projects/uangku/uangku.webp" }
   ],
   "Mobile Apps": [
     { id: 6, title: "TemuHobi.com", desc: "Platform yang mempertemukan pegiat hobi dan komunitas, meraih penghargaan dari Kemenparekraf.", stack: ["ReactTS", "AntDesign", "Express", "PostgreSQL", "Cloudflare"], img: "/images/projects/temuhobi/temuhobi-cover.webp" },
-    { id: 7, title: "Uangku", desc: "Aplikasi Pencatatan Keuangan berbasis whatsapp.", stack: ["Node.js", "WhatsApp API", "MongoDB"], img: "/images/projects/uangku.webp" },
+    { id: 7, title: "Uangku", desc: "Aplikasi Pencatatan Keuangan berbasis WhatsApp.", stack: ["Meta WA Business Official"], img: "/images/projects/uangku/uangku-mobile.webp" },
     { id: 12, title: "MusicRent", desc: "Aplikasi penyewaan alat musik dengan sistem booking dan manajemen inventaris.", stack: ["React Native", "Firebase", "MySQL"], img: "/images/projects/musicrent.webp" },
     { id: 13, title: "NFC Absensi", desc: "Aplikasi absensi sekolah menggunakan NFC melalui mobile app.", stack: ["Flutter", "AppScript", "NFC"], img: "/images/projects/nfcPresensi.webp" }
   ],
