@@ -11,7 +11,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-white/20 dark:border-white/10 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 cursor-pointer group">
-          <img src="/images/profil/icon.png" alt="Andika Rian Ansari logo" className="w-9 h-9 rounded-full object-cover shadow-sm group-hover:shadow-md transition-all group-hover:scale-105" />
+          <img src="/images/profil/icon.webp" alt="Andika Rian Ansari logo" width="36" height="36" className="w-9 h-9 rounded-full object-cover shadow-sm group-hover:shadow-md transition-all group-hover:scale-105" />
           <span className="font-bold text-xl tracking-tight text-slate-800 dark:text-slate-100">Portfolio</span>
         </Link>
         
@@ -30,9 +30,11 @@ export default function Header() {
           >
             {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
           </button>
-          <Button variant="outline" className="rounded-full shadow-sm hover:shadow-md transition-all border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
-            Contact Us
-          </Button>
+          <a href="https://wa.me/6285398212081?text=halo%20kak%20saya%20mau%20info%20terkait%20jasa%20pembuatan%20aplikasi" target="_blank" rel="noopener noreferrer">
+            <Button variant="outline" className="rounded-full shadow-sm hover:shadow-md transition-all border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
+              Contact Me
+            </Button>
+          </a>
         </div>
       </div>
     </header>

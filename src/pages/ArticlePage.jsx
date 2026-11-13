@@ -5,11 +5,19 @@ import { ArrowLeft, ArrowUpRight, ChevronLeft, ChevronRight, Images, MonitorSmar
 import { Link, useParams } from 'react-router-dom';
 import caseStudies from '../data/caseStudies';
 import { getTechLogo } from '../data/techLogos';
+import useSeo from '../lib/useSeo';
+import { articleMeta } from '../lib/site';
 
 export default function ArticlePage() {
   const { id } = useParams();
   const article = caseStudies[id];
   const [lightbox, setLightbox] = useState(null); // { index } dari gallery
+
+  useSeo(
+    article
+      ? articleMeta(id, article)
+      : { path: `/article/${id}`, title: 'Case study tidak ditemukan — Andika Rian Ansari', description: 'Halaman case study tidak tersedia.', noindex: true }
+  );
 
   // Fallback ketika id tidak ditemukan
   if (!article) {
@@ -60,7 +68,7 @@ export default function ArticlePage() {
         transition={{ duration: 0.5, delay: 0.1 }}
         className="w-full aspect-video rounded-[24px] overflow-hidden mb-16 border border-slate-100 dark:border-slate-700 shadow-sm"
       >
-        <img src={article.heroImage} alt={article.title} className="w-full h-full object-cover" loading="lazy" />
+        <img src={article.heroImage} alt={article.title} className="w-full h-full object-cover" loading="eager" fetchPriority="high" decoding="async" />
       </motion.div>
 
       {/* Meta Info Grid */}
@@ -69,18 +77,18 @@ export default function ArticlePage() {
           <h4 className="text-slate-900 dark:text-white font-semibold text-[15px] mb-2">Company</h4>
           <p className="text-slate-500 dark:text-slate-400 text-[15px]">{article.company}</p>
         </div>
-        <div>
+        {article.role && <div>
           <h4 className="text-slate-900 dark:text-white font-semibold text-[15px] mb-2">Role</h4>
           <p className="text-slate-500 dark:text-slate-400 text-[15px]">{article.role}</p>
-        </div>
+        </div>}
         <div>
           <h4 className="text-slate-900 dark:text-white font-semibold text-[15px] mb-2">Scope</h4>
           <p className="text-slate-500 dark:text-slate-400 text-[15px]">{article.scope}</p>
         </div>
-        <div>
+        {article.period && <div>
           <h4 className="text-slate-900 dark:text-white font-semibold text-[15px] mb-2">Period</h4>
           <p className="text-slate-500 dark:text-slate-400 text-[15px]">{article.period}</p>
-        </div>
+        </div>}
       </div>
 
       {/* Overview Section */}
@@ -161,7 +169,7 @@ export default function ArticlePage() {
           transition={{ duration: 0.5 }}
           className="w-full rounded-[24px] overflow-hidden mb-8 border border-slate-100 shadow-sm"
         >
-          <img src={src} alt={`${article.title} screenshot`} className="w-full object-cover" loading="lazy" />
+          <img src={src} alt={`${article.title} screenshot`} className="w-full object-cover" loading="lazy" decoding="async" />
         </motion.div>
       ))}
 
@@ -226,7 +234,7 @@ export default function ArticlePage() {
                 onClick={() => setLightbox({ index })}
                 className="group relative rounded-[24px] overflow-hidden border border-slate-100 shadow-sm cursor-pointer text-left"
               >
-                <img src={src} alt={`${article.title} gallery ${index + 1}`} className="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                <img src={src} alt={`${article.title} gallery ${index + 1}`} className="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" decoding="async" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <span className="absolute bottom-4 left-4 text-white font-semibold text-sm opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
                   Lihat detail

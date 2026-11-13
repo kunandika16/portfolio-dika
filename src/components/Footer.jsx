@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
-import { Mail, ArrowRight } from 'lucide-react';
+import { Mail, ArrowRight, AtSign } from 'lucide-react';
+
+const WA_URL = 'https://wa.me/6285398212081?text=halo%20kak%20saya%20mau%20info%20terkait%20jasa%20pembuatan%20aplikasi';
 
 const Instagram = ({ size = 24, className }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
@@ -9,24 +11,11 @@ const Instagram = ({ size = 24, className }) => (
   </svg>
 );
 
-const Twitter = ({ size = 24, className }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
-  </svg>
-);
-
 const Linkedin = ({ size = 24, className }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
     <rect x="2" y="9" width="4" height="12"></rect>
     <circle cx="4" cy="4" r="2"></circle>
-  </svg>
-);
-
-const Dribbble = ({ size = 24, className }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <circle cx="12" cy="12" r="10"></circle>
-    <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"></path>
   </svg>
 );
 
@@ -72,7 +61,7 @@ export default function Footer() {
                   <Mail size={18} className="text-slate-400 group-hover:text-white transition-colors" />
                   <span className="text-slate-200">andikaryan16@gmail.com</span>
                 </a>
-                <a href="#" className="flex items-center gap-2 px-6 py-3.5 rounded-lg bg-white text-[#0B0B14] text-sm font-bold hover:bg-slate-200 transition-all shadow-lg">
+                <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-6 py-3.5 rounded-lg bg-white text-[#0B0B14] text-sm font-bold hover:bg-slate-200 transition-all shadow-lg">
                   Get in touch <ArrowRight size={18} />
                 </a>
               </div>
@@ -92,17 +81,14 @@ export default function Footer() {
           <div className="w-full flex flex-col xl:flex-row items-stretch text-sm text-slate-300 font-medium">
             {/* Social Links */}
             <div className="flex flex-wrap flex-1 border-r-0 xl:border-r border-[#1e1e2d]">
-              <a href="#" className="flex-1 xl:flex-none flex justify-center items-center gap-2 py-5 px-8 border-b xl:border-b-0 border-r border-[#1e1e2d] hover:text-white hover:bg-white/5 transition-colors">
-                <Instagram size={18}/> <span className="hidden sm:inline">Instagram</span>
-              </a>
-              <a href="#" className="flex-1 xl:flex-none flex justify-center items-center gap-2 py-5 px-8 border-b xl:border-b-0 border-r border-[#1e1e2d] hover:text-white hover:bg-white/5 transition-colors">
-                <Twitter size={18}/> <span className="hidden sm:inline">X/Twitter</span>
-              </a>
-              <a href="#" className="flex-1 xl:flex-none flex justify-center items-center gap-2 py-5 px-8 border-b xl:border-b-0 border-r border-[#1e1e2d] hover:text-white hover:bg-white/5 transition-colors">
+              <a href="https://www.linkedin.com/in/andika-rian-ansari" target="_blank" rel="noopener noreferrer" className="flex-1 xl:flex-none flex justify-center items-center gap-2 py-5 px-8 border-b xl:border-b-0 border-r border-[#1e1e2d] hover:text-white hover:bg-white/5 transition-colors">
                 <Linkedin size={18}/> <span className="hidden sm:inline">LinkedIn</span>
               </a>
-              <a href="#" className="flex-1 xl:flex-none flex justify-center items-center gap-2 py-5 px-8 border-b xl:border-b-0 hover:text-white hover:bg-white/5 transition-colors">
-                <Dribbble size={18}/> <span className="hidden sm:inline">Dribbble</span>
+              <a href="https://www.instagram.com/kunandikaa16" target="_blank" rel="noopener noreferrer" className="flex-1 xl:flex-none flex justify-center items-center gap-2 py-5 px-8 border-b xl:border-b-0 border-r border-[#1e1e2d] hover:text-white hover:bg-white/5 transition-colors">
+                <Instagram size={18}/> <span className="hidden sm:inline">Instagram</span>
+              </a>
+              <a href="https://www.threads.com/@kunandikaa16" target="_blank" rel="noopener noreferrer" className="flex-1 xl:flex-none flex justify-center items-center gap-2 py-5 px-8 border-b xl:border-b-0 hover:text-white hover:bg-white/5 transition-colors">
+                <AtSign size={18}/> <span className="hidden sm:inline">Threads</span>
               </a>
             </div>
 
@@ -117,9 +103,9 @@ export default function Footer() {
 
         {/* Giant "ANDIKA" background text - Positioned in flow to drive container height naturally */}
         <div className="w-full overflow-hidden flex justify-center items-end bg-[#0B0B14] pt-4 md:pt-8">
-          <h1 className="text-[20vw] md:text-[18vw] lg:text-[14vw] font-black uppercase text-white/[0.06] leading-[0.8] tracking-tighter select-none translate-y-[8%]">
+          <div aria-hidden="true" className="text-[20vw] md:text-[18vw] lg:text-[14vw] font-black uppercase text-white/[0.06] leading-[0.8] tracking-tighter select-none translate-y-[8%]">
             ANDIKA
-          </h1>
+          </div>
         </div>
       </footer>
     </>

@@ -1,7 +1,9 @@
 // Data case study untuk halaman /article/:id
 // Struktur: kunci = id project (sesuai WorkPage.jsx)
+import { newProjectCaseStudies } from './newProjects';
 
 const caseStudies = {
+  ...newProjectCaseStudies,
   1: {
     title: "ITMS — Integrated Talent Management System",
     subtitle: "Platform talent management terintegrasi yang menyatukan Talent Management, Talent Development, Career Management, One Sheet Kompetensi, dan Dashboard analitik — satu sumber kebenaran untuk siklus talenta karyawan.",

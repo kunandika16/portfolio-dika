@@ -2,17 +2,19 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from './ui/button';
 import { ArrowRight, Sparkles } from 'lucide-react';
+import { siteStats } from '../data/siteStats';
 
 const sliderImages = [
-  "/images/cover/travel.webp",
-  "/images/cover/laundry.webp",
-  "/images/cover/distro-makassar.webp",
-  "/images/cover/bisneslab.webp",
-  "/images/projects/ansal/gfst.webp",
-  "/images/projects/itms/itms.webp",
-  "/images/projects/temuhobi/temuhobi-cover.webp",
-  "/images/projects/musicrent.webp",
-  "/images/projects/nfcPresensi.webp",
+  { src: "/images/cover/loyra.webp", alt: "Loyra — platform loyalitas pelanggan NFC" },
+  { src: "/images/cover/pos-indonesia-hub.webp", alt: "Pos Indonesia Hub — portal HCIS dan AI" },
+  { src: "/images/projects/itms/itms.webp", alt: "ITMS — Integrated Talent Management System" },
+  { src: "/images/cover/travel.webp", alt: "Travel Ikatte — website tour Sulawesi" },
+  { src: "/images/cover/laundry.webp", alt: "Hikmah Laundry — sistem informasi laundry" },
+  { src: "/images/cover/distro-makassar.webp", alt: "Distro Muslim — ecommerce pakaian muslim" },
+  { src: "/images/cover/bisneslab.webp", alt: "BisnesLab — landing page produk digital" },
+  { src: "/images/projects/temuhobi/temuhobi-cover.webp", alt: "TemuHobi.com — platform komunitas hobi" },
+  { src: "/images/projects/musicrent.webp", alt: "MusicRent — aplikasi sewa alat musik" },
+  { src: "/images/projects/nfcPresensi.webp", alt: "NFC Absensi — aplikasi presensi sekolah" },
 ];
 
 const stagger = {
@@ -55,7 +57,7 @@ export default function Hero() {
           variants={fadeUp}
           className="glass inline-flex items-center gap-3 px-3 py-2.5 pr-5 rounded-full shadow-[0_8px_32px_-8px_rgba(15,23,42,0.08)] mb-8"
         >
-          <img src="/images/profil/icon.png" alt="Andika Rian Ansari logo" className="w-8 h-8 rounded-full object-cover shadow-sm" />
+          <img src="/images/profil/icon.webp" alt="Andika Rian Ansari logo" width="32" height="32" className="w-8 h-8 rounded-full object-cover shadow-sm" />
           <span className="text-[13px] font-semibold text-slate-700 dark:text-slate-200 tracking-wide">Andika Rian Ansari</span>
           <Sparkles size={14} className="text-indigo-400 opacity-70" />
         </motion.div>
@@ -113,9 +115,9 @@ export default function Hero() {
           className="flex flex-wrap justify-center gap-3 mt-10"
         >
           {[
-            { label: '5+ Years', value: 'Experience' },
-            { label: '50+ Projects', value: 'Delivered' },
-            { label: '100+ Brands', value: 'Collaborated' },
+            { label: `${siteStats.years} Years`, value: 'Experience' },
+            { label: `${siteStats.projects} Projects`, value: 'Delivered' },
+            { label: `${siteStats.brands} Brands`, value: 'Collaborated' },
           ].map((stat, i) => (
             <div
               key={i}
@@ -143,13 +145,18 @@ export default function Hero() {
           {[...sliderImages, ...sliderImages].map((img, idx) => (
             <div
               key={idx}
+              aria-hidden={idx >= sliderImages.length ? "true" : undefined}
               className="w-[280px] md:w-[420px] lg:w-[560px] aspect-video flex-shrink-0 rounded-[20px] overflow-hidden glass shadow-[0_8px_32px_-8px_rgba(15,23,42,0.12)] group cursor-pointer relative transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_16px_48px_-8px_rgba(15,23,42,0.18)]"
             >
               <img
-                src={img}
+                src={img.src}
+                width="1280"
+                height="720"
                 className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700"
-                alt="Project showcase"
-                loading="lazy"
+                alt={idx >= sliderImages.length ? "" : img.alt}
+                loading={idx < 2 ? "eager" : "lazy"}
+                fetchPriority={idx < 2 ? "high" : "auto"}
+                decoding="async"
               />
               {/* Glass overlay on hover */}
               <div className="absolute inset-0 bg-gradient-to-t from-white/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

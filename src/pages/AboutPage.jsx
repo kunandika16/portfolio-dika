@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { Briefcase, Code2, Layout, Database, Smartphone, Award, Trophy } from 'lucide-react';
 import { getTechLogo } from '../data/techLogos';
+import useSeo from '../lib/useSeo';
+import { pageMeta } from '../lib/site';
 
 const experiences = [
   {
@@ -77,6 +79,7 @@ const achievements = [
 ];
 
 export default function AboutPage() {
+  useSeo(pageMeta.about);
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -119,8 +122,10 @@ export default function AboutPage() {
                 <img 
                   src="/images/profil/dika2.webp" 
                   alt="Andika Rian Ansari Profile" 
-                  className="w-full aspect-[4/5] object-cover rounded-[24px] relative z-10"
-                  loading="lazy"
+                  width="900"
+                  height="1125"
+                  className="w-full aspect-[4/5] object-cover object-top rounded-[24px] relative z-10"
+                  decoding="async"
                 />
                 
                 {/* Floating badge */}
@@ -134,7 +139,7 @@ export default function AboutPage() {
             {/* Bio & Motto */}
             <motion.div variants={itemVariants} className="w-full lg:w-[60%] flex flex-col justify-center pt-4 lg:pt-10">
               <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mb-6 tracking-tight">
-                Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Andika</span>
+                Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Andika Rian Ansari</span>
               </h1>
               
               <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-10">

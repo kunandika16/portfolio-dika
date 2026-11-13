@@ -3,11 +3,15 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { getTechLogo } from '../data/techLogos';
+import newProjects from '../data/newProjects';
+import useSeo from '../lib/useSeo';
+import { pageMeta } from '../lib/site';
 
-const categories = ["Web App", "Mobile Apps", "UI/UX"];
+const categories = ["Web App", "Mobile Apps"];
 
 const projectsData = {
   "Web App": [
+    ...newProjects,
     {
       id: 15,
       title: "Travel Ikatte",
@@ -179,7 +183,7 @@ const projectsData = {
   "UI/UX": []
 };
 
-function ImageSlider({ images, bgColor }) {
+function ImageSlider({ images, bgColor, title, priority }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -201,21 +205,26 @@ function ImageSlider({ images, bgColor }) {
           exit={{ opacity: 0, x: -20 }}
           transition={{ duration: 0.3 }}
           className="w-full h-full object-cover rounded-2xl shadow-xl border border-slate-200/50 dark:border-slate-700/50"
-          alt="Project mockup"
-          loading="lazy"
+          alt={`${title} — tampilan ${currentIndex + 1} dari ${images.length}`}
+          width="1280"
+          height="720"
+          loading={priority ? "eager" : "lazy"}
+          decoding="async"
         />
       </AnimatePresence>
 
       {/* Navigation Arrows */}
       <button 
         onClick={prevSlide}
-        className="absolute left-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/40 hover:bg-white/70 text-slate-800 dark:bg-white/10 dark:hover:bg-white/25 dark:text-white backdrop-blur-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all shadow-sm z-10"
+        aria-label="Gambar sebelumnya"
+        className="absolute left-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/40 hover:bg-white/70 text-slate-800 dark:bg-white/10 dark:hover:bg-white/25 dark:text-white backdrop-blur-md flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 max-md:opacity-100 transition-all shadow-sm z-10"
       >
         <ChevronLeft size={20} />
       </button>
       <button 
         onClick={nextSlide}
-        className="absolute right-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/40 hover:bg-white/70 text-slate-800 dark:bg-white/10 dark:hover:bg-white/25 dark:text-white backdrop-blur-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all shadow-sm z-10"
+        aria-label="Gambar berikutnya"
+        className="absolute right-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/40 hover:bg-white/70 text-slate-800 dark:bg-white/10 dark:hover:bg-white/25 dark:text-white backdrop-blur-md flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 max-md:opacity-100 transition-all shadow-sm z-10"
       >
         <ChevronRight size={20} />
       </button>
@@ -231,6 +240,7 @@ function ImageSlider({ images, bgColor }) {
 }
 
 export default function WorkPage() {
+  useSeo(pageMeta.work);
   const [activeTab, setActiveTab] = useState(categories[0]);
 
   return (
@@ -268,14 +278,15 @@ export default function WorkPage() {
             transition={{ duration: 0.4 }}
             className="flex flex-col gap-16 md:gap-24"
           >
-            {projectsData[activeTab].map(project => (
+            {projectsData[activeTab].map((project, projectIndex) => (
               <div key={project.id} className="flex flex-col lg:flex-row gap-8">
                 
                 {/* Left Content */}
                 <div className="w-full lg:w-[38%] bg-[#f8fafc] dark:bg-slate-800/80 rounded-[32px] p-10 lg:p-12 flex flex-col border border-slate-100 dark:border-slate-700 shadow-sm">
                   <h2 className="text-2xl md:text-[28px] leading-[1.3] font-bold text-slate-900 dark:text-white mb-5">{project.title}</h2>
                   <div className="text-slate-500 dark:text-slate-400 text-[15px] font-medium mb-8">
-                    {project.company} <span className="mx-2 text-slate-300 dark:text-slate-600">•</span> {project.year}
+                    {project.company}
+                    {project.year && <><span className="mx-2 text-slate-300 dark:text-slate-600">•</span>{project.year}</>}
                   </div>
                   
                   <p className="text-slate-500 dark:text-slate-400 leading-relaxed mb-10 text-[15px]">
@@ -311,7 +322,7 @@ export default function WorkPage() {
 
                 {/* Right Slider */}
                 <div className="w-full lg:w-[62%]">
-                  <ImageSlider images={project.images} bgColor={project.bgColor} />
+                  <ImageSlider images={project.images} bgColor={project.bgColor} title={project.title} priority={projectIndex === 0} />
                 </div>
 
               </div>

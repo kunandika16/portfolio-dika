@@ -3,9 +3,17 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { getTechLogo } from '../data/techLogos';
+import newProjects from '../data/newProjects';
 
 const projectsData = {
   "Web App": [
+    ...newProjects.map(project => ({
+      id: project.id,
+      title: project.title,
+      desc: project.description,
+      stack: project.stack,
+      img: project.images[0],
+    })),
     { id: 15, title: "Travel Ikatte", desc: "Website penyedia jasa tour explore Sulawesi — pemesanan paket tour, penginapan, transportasi.", stack: ["NextJs", "Express", "PostgreSQL", "Cloudflare", "Redis"], img: "/images/cover/travel.webp" },
     { id: 16, title: "Hikmah Laundry", desc: "Sistem informasi laundry — pencatatan, management operasional, tracking orderan.", stack: ["NextJs", "TailwindCSS", "Express", "Postgres", "Minio"], img: "/images/cover/laundry.webp" },
     { id: 17, title: "Distro Muslim", desc: "Ecommerce pakaian muslim Makassar dengan WooCommerce, payment gateway, dan RajaOngkir.", stack: ["WordPress", "WooCommerce", "RajaOngkir"], img: "/images/cover/distro-makassar.webp" },
@@ -28,7 +36,7 @@ const projectsData = {
 };
 
 export default function Projects() {
-  const categories = ["Web App", "Mobile Apps", "UI/UX"];
+  const categories = ["Web App", "Mobile Apps"];
   const [activeTab, setActiveTab] = useState(categories[0]);
 
   return (
@@ -37,7 +45,7 @@ export default function Projects() {
         
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4 text-slate-900 dark:text-white">Selected Work</h2>
-          <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">A collection of software projects — web applications, mobile apps, and interface design — built to solve real problems.</p>
+          <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">A collection of software projects — web applications and mobile apps — built to solve real problems.</p>
         </div>
 
         {/* Tab Indicator System with Framer Motion (Equal Size Tabs) */}
@@ -101,7 +109,7 @@ function ProjectCard({ project, category }) {
           className="bg-white dark:bg-slate-800/80 rounded-[20px] p-4 border border-slate-100 dark:border-slate-700 shadow-xl shadow-slate-200/40 dark:shadow-black/20 group overflow-hidden flex flex-col h-full"
         >
           <div className="w-full h-48 rounded-xl overflow-hidden relative mb-5 border border-slate-100 dark:border-slate-700 group-hover:shadow-md transition-all">
-             <img src={project.img} alt={project.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+             <img src={project.img} alt={project.title} width="640" height="360" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
           </div>
           <div className="px-1 flex flex-col flex-grow">
              <h3 className="font-bold text-lg mb-2 text-slate-900 dark:text-white group-hover:text-primary transition-colors">{project.title}</h3>
@@ -138,7 +146,7 @@ function ProjectCard({ project, category }) {
         className="bg-white dark:bg-slate-800/80 rounded-[20px] p-4 border border-slate-100 dark:border-slate-700 shadow-xl shadow-slate-200/40 dark:shadow-black/20 group overflow-hidden flex flex-col h-full"
       >
         <div className="w-full h-48 rounded-xl overflow-hidden relative mb-5 border border-slate-100 dark:border-slate-700 group-hover:shadow-md transition-all">
-           <img src={project.img} alt={project.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+           <img src={project.img} alt={project.title} width="640" height="360" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
         </div>
         <div className="px-1 flex flex-col flex-grow">
            <h3 className="font-bold text-lg mb-2 text-slate-900 dark:text-white group-hover:text-primary transition-colors">{project.title}</h3>
